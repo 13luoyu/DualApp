@@ -44,6 +44,7 @@ We first provide commands that will install all the necessary dependencies step 
     sudo apt upgrade -y
     sudo apt install build-essential zlib1g-dev libbz2-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev
     sudo apt-get install -y libgl1-mesa-dev
+    sudo apt-get install libglib2.0-dev
     ```
 2. Install miniconda
     ```
@@ -55,6 +56,7 @@ We first provide commands that will install all the necessary dependencies step 
     conda create -n dualapp python=3.7.5
     conda activate dualapp
     pip install -r requirements.txt
+    pip install opencv-contrib-python==3.4.11.45
     ```
 4. Modify one file of tensorflow package:
     ```
@@ -64,7 +66,7 @@ We first provide commands that will install all the necessary dependencies step 
 ### Start From Docker
 We provide a docker image to run:
 
-1. Download the docker image dualapp.tar from https://figshare.com/articles/software/abscert_tar/21571533.
+1. Download the docker image dualapp.tar from https://figshare.com.
 
 2. Load the docker image:
     ```
