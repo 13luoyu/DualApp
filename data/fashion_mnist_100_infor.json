@@ -1,0 +1,402 @@
+{
+  "img_0": {
+    "path": "data/fashion_mnist/fashion_mnist_img_0_label_9.jpg",
+    "label": 9
+  },
+  "img_1": {
+    "path": "data/fashion_mnist/fashion_mnist_img_1_label_2.jpg",
+    "label": 2
+  },
+  "img_2": {
+    "path": "data/fashion_mnist/fashion_mnist_img_2_label_1.jpg",
+    "label": 1
+  },
+  "img_3": {
+    "path": "data/fashion_mnist/fashion_mnist_img_3_label_1.jpg",
+    "label": 1
+  },
+  "img_4": {
+    "path": "data/fashion_mnist/fashion_mnist_img_4_label_6.jpg",
+    "label": 6
+  },
+  "img_5": {
+    "path": "data/fashion_mnist/fashion_mnist_img_5_label_1.jpg",
+    "label": 1
+  },
+  "img_6": {
+    "path": "data/fashion_mnist/fashion_mnist_img_6_label_4.jpg",
+    "label": 4
+  },
+  "img_7": {
+    "path": "data/fashion_mnist/fashion_mnist_img_7_label_6.jpg",
+    "label": 6
+  },
+  "img_8": {
+    "path": "data/fashion_mnist/fashion_mnist_img_8_label_5.jpg",
+    "label": 5
+  },
+  "img_9": {
+    "path": "data/fashion_mnist/fashion_mnist_img_9_label_7.jpg",
+    "label": 7
+  },
+  "img_10": {
+    "path": "data/fashion_mnist/fashion_mnist_img_10_label_4.jpg",
+    "label": 4
+  },
+  "img_11": {
+    "path": "data/fashion_mnist/fashion_mnist_img_11_label_5.jpg",
+    "label": 5
+  },
+  "img_12": {
+    "path": "data/fashion_mnist/fashion_mnist_img_12_label_7.jpg",
+    "label": 7
+  },
+  "img_13": {
+    "path": "data/fashion_mnist/fashion_mnist_img_13_label_3.jpg",
+    "label": 3
+  },
+  "img_14": {
+    "path": "data/fashion_mnist/fashion_mnist_img_14_label_4.jpg",
+    "label": 4
+  },
+  "img_15": {
+    "path": "data/fashion_mnist/fashion_mnist_img_15_label_1.jpg",
+    "label": 1
+  },
+  "img_16": {
+    "path": "data/fashion_mnist/fashion_mnist_img_16_label_2.jpg",
+    "label": 2
+  },
+  "img_17": {
+    "path": "data/fashion_mnist/fashion_mnist_img_17_label_4.jpg",
+    "label": 4
+  },
+  "img_18": {
+    "path": "data/fashion_mnist/fashion_mnist_img_18_label_8.jpg",
+    "label": 8
+  },
+  "img_19": {
+    "path": "data/fashion_mnist/fashion_mnist_img_19_label_0.jpg",
+    "label": 0
+  },
+  "img_20": {
+    "path": "data/fashion_mnist/fashion_mnist_img_20_label_2.jpg",
+    "label": 2
+  },
+  "img_21": {
+    "path": "data/fashion_mnist/fashion_mnist_img_21_label_5.jpg",
+    "label": 5
+  },
+  "img_22": {
+    "path": "data/fashion_mnist/fashion_mnist_img_22_label_7.jpg",
+    "label": 7
+  },
+  "img_23": {
+    "path": "data/fashion_mnist/fashion_mnist_img_23_label_9.jpg",
+    "label": 9
+  },
+  "img_24": {
+    "path": "data/fashion_mnist/fashion_mnist_img_24_label_1.jpg",
+    "label": 1
+  },
+  "img_25": {
+    "path": "data/fashion_mnist/fashion_mnist_img_25_label_4.jpg",
+    "label": 4
+  },
+  "img_26": {
+    "path": "data/fashion_mnist/fashion_mnist_img_26_label_6.jpg",
+    "label": 6
+  },
+  "img_27": {
+    "path": "data/fashion_mnist/fashion_mnist_img_27_label_0.jpg",
+    "label": 0
+  },
+  "img_28": {
+    "path": "data/fashion_mnist/fashion_mnist_img_28_label_9.jpg",
+    "label": 9
+  },
+  "img_29": {
+    "path": "data/fashion_mnist/fashion_mnist_img_29_label_3.jpg",
+    "label": 3
+  },
+  "img_30": {
+    "path": "data/fashion_mnist/fashion_mnist_img_30_label_8.jpg",
+    "label": 8
+  },
+  "img_31": {
+    "path": "data/fashion_mnist/fashion_mnist_img_31_label_8.jpg",
+    "label": 8
+  },
+  "img_32": {
+    "path": "data/fashion_mnist/fashion_mnist_img_32_label_3.jpg",
+    "label": 3
+  },
+  "img_33": {
+    "path": "data/fashion_mnist/fashion_mnist_img_33_label_3.jpg",
+    "label": 3
+  },
+  "img_34": {
+    "path": "data/fashion_mnist/fashion_mnist_img_34_label_8.jpg",
+    "label": 8
+  },
+  "img_35": {
+    "path": "data/fashion_mnist/fashion_mnist_img_35_label_0.jpg",
+    "label": 0
+  },
+  "img_36": {
+    "path": "data/fashion_mnist/fashion_mnist_img_36_label_7.jpg",
+    "label": 7
+  },
+  "img_37": {
+    "path": "data/fashion_mnist/fashion_mnist_img_37_label_5.jpg",
+    "label": 5
+  },
+  "img_38": {
+    "path": "data/fashion_mnist/fashion_mnist_img_38_label_7.jpg",
+    "label": 7
+  },
+  "img_39": {
+    "path": "data/fashion_mnist/fashion_mnist_img_39_label_9.jpg",
+    "label": 9
+  },
+  "img_40": {
+    "path": "data/fashion_mnist/fashion_mnist_img_40_label_6.jpg",
+    "label": 6
+  },
+  "img_41": {
+    "path": "data/fashion_mnist/fashion_mnist_img_41_label_1.jpg",
+    "label": 1
+  },
+  "img_42": {
+    "path": "data/fashion_mnist/fashion_mnist_img_42_label_3.jpg",
+    "label": 3
+  },
+  "img_43": {
+    "path": "data/fashion_mnist/fashion_mnist_img_43_label_7.jpg",
+    "label": 7
+  },
+  "img_44": {
+    "path": "data/fashion_mnist/fashion_mnist_img_44_label_6.jpg",
+    "label": 6
+  },
+  "img_45": {
+    "path": "data/fashion_mnist/fashion_mnist_img_45_label_7.jpg",
+    "label": 7
+  },
+  "img_46": {
+    "path": "data/fashion_mnist/fashion_mnist_img_46_label_2.jpg",
+    "label": 2
+  },
+  "img_47": {
+    "path": "data/fashion_mnist/fashion_mnist_img_47_label_1.jpg",
+    "label": 1
+  },
+  "img_48": {
+    "path": "data/fashion_mnist/fashion_mnist_img_48_label_2.jpg",
+    "label": 2
+  },
+  "img_49": {
+    "path": "data/fashion_mnist/fashion_mnist_img_49_label_2.jpg",
+    "label": 2
+  },
+  "img_50": {
+    "path": "data/fashion_mnist/fashion_mnist_img_50_label_4.jpg",
+    "label": 4
+  },
+  "img_51": {
+    "path": "data/fashion_mnist/fashion_mnist_img_51_label_4.jpg",
+    "label": 4
+  },
+  "img_52": {
+    "path": "data/fashion_mnist/fashion_mnist_img_52_label_5.jpg",
+    "label": 5
+  },
+  "img_53": {
+    "path": "data/fashion_mnist/fashion_mnist_img_53_label_8.jpg",
+    "label": 8
+  },
+  "img_54": {
+    "path": "data/fashion_mnist/fashion_mnist_img_54_label_2.jpg",
+    "label": 2
+  },
+  "img_55": {
+    "path": "data/fashion_mnist/fashion_mnist_img_55_label_2.jpg",
+    "label": 2
+  },
+  "img_56": {
+    "path": "data/fashion_mnist/fashion_mnist_img_56_label_8.jpg",
+    "label": 8
+  },
+  "img_57": {
+    "path": "data/fashion_mnist/fashion_mnist_img_57_label_4.jpg",
+    "label": 4
+  },
+  "img_58": {
+    "path": "data/fashion_mnist/fashion_mnist_img_58_label_8.jpg",
+    "label": 8
+  },
+  "img_59": {
+    "path": "data/fashion_mnist/fashion_mnist_img_59_label_0.jpg",
+    "label": 0
+  },
+  "img_60": {
+    "path": "data/fashion_mnist/fashion_mnist_img_60_label_7.jpg",
+    "label": 7
+  },
+  "img_61": {
+    "path": "data/fashion_mnist/fashion_mnist_img_61_label_7.jpg",
+    "label": 7
+  },
+  "img_62": {
+    "path": "data/fashion_mnist/fashion_mnist_img_62_label_8.jpg",
+    "label": 8
+  },
+  "img_63": {
+    "path": "data/fashion_mnist/fashion_mnist_img_63_label_5.jpg",
+    "label": 5
+  },
+  "img_64": {
+    "path": "data/fashion_mnist/fashion_mnist_img_64_label_1.jpg",
+    "label": 1
+  },
+  "img_65": {
+    "path": "data/fashion_mnist/fashion_mnist_img_65_label_1.jpg",
+    "label": 1
+  },
+  "img_66": {
+    "path": "data/fashion_mnist/fashion_mnist_img_66_label_2.jpg",
+    "label": 2
+  },
+  "img_67": {
+    "path": "data/fashion_mnist/fashion_mnist_img_67_label_3.jpg",
+    "label": 3
+  },
+  "img_68": {
+    "path": "data/fashion_mnist/fashion_mnist_img_68_label_9.jpg",
+    "label": 9
+  },
+  "img_69": {
+    "path": "data/fashion_mnist/fashion_mnist_img_69_label_8.jpg",
+    "label": 8
+  },
+  "img_70": {
+    "path": "data/fashion_mnist/fashion_mnist_img_70_label_7.jpg",
+    "label": 7
+  },
+  "img_71": {
+    "path": "data/fashion_mnist/fashion_mnist_img_71_label_0.jpg",
+    "label": 0
+  },
+  "img_72": {
+    "path": "data/fashion_mnist/fashion_mnist_img_72_label_2.jpg",
+    "label": 2
+  },
+  "img_73": {
+    "path": "data/fashion_mnist/fashion_mnist_img_73_label_6.jpg",
+    "label": 6
+  },
+  "img_74": {
+    "path": "data/fashion_mnist/fashion_mnist_img_74_label_2.jpg",
+    "label": 2
+  },
+  "img_75": {
+    "path": "data/fashion_mnist/fashion_mnist_img_75_label_3.jpg",
+    "label": 3
+  },
+  "img_76": {
+    "path": "data/fashion_mnist/fashion_mnist_img_76_label_1.jpg",
+    "label": 1
+  },
+  "img_77": {
+    "path": "data/fashion_mnist/fashion_mnist_img_77_label_2.jpg",
+    "label": 2
+  },
+  "img_78": {
+    "path": "data/fashion_mnist/fashion_mnist_img_78_label_8.jpg",
+    "label": 8
+  },
+  "img_79": {
+    "path": "data/fashion_mnist/fashion_mnist_img_79_label_4.jpg",
+    "label": 4
+  },
+  "img_80": {
+    "path": "data/fashion_mnist/fashion_mnist_img_80_label_1.jpg",
+    "label": 1
+  },
+  "img_81": {
+    "path": "data/fashion_mnist/fashion_mnist_img_81_label_8.jpg",
+    "label": 8
+  },
+  "img_82": {
+    "path": "data/fashion_mnist/fashion_mnist_img_82_label_5.jpg",
+    "label": 5
+  },
+  "img_83": {
+    "path": "data/fashion_mnist/fashion_mnist_img_83_label_9.jpg",
+    "label": 9
+  },
+  "img_84": {
+    "path": "data/fashion_mnist/fashion_mnist_img_84_label_5.jpg",
+    "label": 5
+  },
+  "img_85": {
+    "path": "data/fashion_mnist/fashion_mnist_img_85_label_0.jpg",
+    "label": 0
+  },
+  "img_86": {
+    "path": "data/fashion_mnist/fashion_mnist_img_86_label_3.jpg",
+    "label": 3
+  },
+  "img_87": {
+    "path": "data/fashion_mnist/fashion_mnist_img_87_label_2.jpg",
+    "label": 2
+  },
+  "img_88": {
+    "path": "data/fashion_mnist/fashion_mnist_img_88_label_0.jpg",
+    "label": 0
+  },
+  "img_89": {
+    "path": "data/fashion_mnist/fashion_mnist_img_89_label_6.jpg",
+    "label": 6
+  },
+  "img_90": {
+    "path": "data/fashion_mnist/fashion_mnist_img_90_label_5.jpg",
+    "label": 5
+  },
+  "img_91": {
+    "path": "data/fashion_mnist/fashion_mnist_img_91_label_3.jpg",
+    "label": 3
+  },
+  "img_92": {
+    "path": "data/fashion_mnist/fashion_mnist_img_92_label_6.jpg",
+    "label": 6
+  },
+  "img_93": {
+    "path": "data/fashion_mnist/fashion_mnist_img_93_label_7.jpg",
+    "label": 7
+  },
+  "img_94": {
+    "path": "data/fashion_mnist/fashion_mnist_img_94_label_1.jpg",
+    "label": 1
+  },
+  "img_95": {
+    "path": "data/fashion_mnist/fashion_mnist_img_95_label_8.jpg",
+    "label": 8
+  },
+  "img_96": {
+    "path": "data/fashion_mnist/fashion_mnist_img_96_label_0.jpg",
+    "label": 0
+  },
+  "img_97": {
+    "path": "data/fashion_mnist/fashion_mnist_img_97_label_1.jpg",
+    "label": 1
+  },
+  "img_98": {
+    "path": "data/fashion_mnist/fashion_mnist_img_98_label_4.jpg",
+    "label": 4
+  },
+  "img_99": {
+    "path": "data/fashion_mnist/fashion_mnist_img_99_label_2.jpg",
+    "label": 2
+  }
+}

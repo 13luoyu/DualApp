@@ -1,0 +1,168 @@
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__Point.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__Point.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__Point.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__Point.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__Point.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__Point.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.1.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.1.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.1.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.1.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.1.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.1.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGSIGMOID__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__Point.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__Point.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__Point.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__Point.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__Point.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__Point.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.1.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.1.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.1.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.1.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.1.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.1.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/mnist/convMedGTANH__PGDK_w_0.3.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__Point.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__Point.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__Point.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__Point.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__Point.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__Point.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGSIGMOID__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__Point.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__Point.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__Point.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__Point.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__Point.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__Point.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0078.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0313.h5
+===========================================
+model name = pretrained_model/fig8/cifar10/convMedGTANH__PGDK_w_0.0313.h5

@@ -1,0 +1,64 @@
+===========================================
+model name = pretrained_model/fig9_10/mnist_cnn_2layer_1_5_sigmoid_local.h5
+[L0] method = guided_by_endpoint-sigmoid, total images = 92, avg robustness = 0.05104, avg verify runtime = 0.05, avg sample runtime = 1.38, avg GD runtime = 0.00, sample num = 1000, step = 15
+[L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.05104, std = 0.01771, var = 0.00031, max = 0.09749, min = 0.00758
+===========================================
+model name = pretrained_model/fig9_10/mnist_cnn_2layer_2_5_sigmoid_local.h5
+[L0] method = guided_by_endpoint-sigmoid, total images = 96, avg robustness = 0.05476, avg verify runtime = 0.05, avg sample runtime = 2.18, avg GD runtime = 0.00, sample num = 1000, step = 15
+[L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.05476, std = 0.02115, var = 0.00045, max = 0.11334, min = 0.01275
+===========================================
+model name = pretrained_model/fig9_10/mnist_cnn_2layer_3_5_sigmoid_local.h5
+[L0] method = guided_by_endpoint-sigmoid, total images = 97, avg robustness = 0.05310, avg verify runtime = 0.06, avg sample runtime = 3.02, avg GD runtime = 0.00, sample num = 1000, step = 15
+[L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.05310, std = 0.02006, var = 0.00040, max = 0.12933, min = 0.01412
+===========================================
+model name = pretrained_model/fig9_10/mnist_cnn_2layer_4_5_sigmoid_local.h5
+[L0] method = guided_by_endpoint-sigmoid, total images = 94, avg robustness = 0.06362, avg verify runtime = 0.07, avg sample runtime = 3.82, avg GD runtime = 0.00, sample num = 1000, step = 15
+[L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.06362, std = 0.02354, var = 0.00055, max = 0.12427, min = 0.02227
+===========================================
+model name = pretrained_model/fig9_10/mnist_cnn_2layer_1_5_sigmoid_local.h5
+[L0] method = gradient_descent-sigmoid, total images = 92, avg robustness = 0.05112, avg verify runtime = 0.05, avg sample runtime = 0.00, avg GD runtime = 18.19, sample num = 0, step = 15
+[L0] method = gradient_descent-sigmoid, robustness: mean = 0.05112, std = 0.01775, var = 0.00031, max = 0.09774, min = 0.00759
+===========================================
+model name = pretrained_model/fig9_10/mnist_cnn_2layer_2_5_sigmoid_local.h5
+[L0] method = gradient_descent-sigmoid, total images = 96, avg robustness = 0.05476, avg verify runtime = 0.05, avg sample runtime = 0.00, avg GD runtime = 38.02, sample num = 0, step = 15
+[L0] method = gradient_descent-sigmoid, robustness: mean = 0.05476, std = 0.02114, var = 0.00045, max = 0.11324, min = 0.01275
+===========================================
+model name = pretrained_model/fig9_10/mnist_cnn_2layer_3_5_sigmoid_local.h5
+[L0] method = gradient_descent-sigmoid, total images = 97, avg robustness = 0.05311, avg verify runtime = 0.06, avg sample runtime = 0.00, avg GD runtime = 59.54, sample num = 0, step = 15
+[L0] method = gradient_descent-sigmoid, robustness: mean = 0.05311, std = 0.02008, var = 0.00040, max = 0.12944, min = 0.01412
+===========================================
+model name = pretrained_model/fig9_10/mnist_cnn_2layer_4_5_sigmoid_local.h5
+[L0] method = gradient_descent-sigmoid, total images = 94, avg robustness = 0.06364, avg verify runtime = 0.08, avg sample runtime = 0.00, avg GD runtime = 82.79, sample num = 0, step = 15
+[L0] method = gradient_descent-sigmoid, robustness: mean = 0.06364, std = 0.02355, var = 0.00055, max = 0.12431, min = 0.02227
+===========================================
+model name = pretrained_model/fig9_10/fashion_mnist_cnn_2layer_1_5_sigmoid_local.h5
+[L0] method = guided_by_endpoint-sigmoid, total images = 77, avg robustness = 0.08943, avg verify runtime = 0.05, avg sample runtime = 1.37, avg GD runtime = 0.00, sample num = 1000, step = 15
+[L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.08943, std = 0.03970, var = 0.00158, max = 0.17358, min = 0.01583
+===========================================
+model name = pretrained_model/fig9_10/fashion_mnist_cnn_2layer_2_5_sigmoid_local.h5
+[L0] method = guided_by_endpoint-sigmoid, total images = 79, avg robustness = 0.08331, avg verify runtime = 0.05, avg sample runtime = 2.20, avg GD runtime = 0.00, sample num = 1000, step = 15
+[L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.08331, std = 0.03622, var = 0.00131, max = 0.17173, min = 0.01897
+===========================================
+model name = pretrained_model/fig9_10/fashion_mnist_cnn_2layer_3_5_sigmoid_local.h5
+[L0] method = guided_by_endpoint-sigmoid, total images = 79, avg robustness = 0.08567, avg verify runtime = 0.06, avg sample runtime = 3.00, avg GD runtime = 0.00, sample num = 1000, step = 15
+[L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.08567, std = 0.03866, var = 0.00149, max = 0.20324, min = 0.01980
+===========================================
+model name = pretrained_model/fig9_10/fashion_mnist_cnn_2layer_4_5_sigmoid_local.h5
+[L0] method = guided_by_endpoint-sigmoid, total images = 85, avg robustness = 0.08243, avg verify runtime = 0.07, avg sample runtime = 3.81, avg GD runtime = 0.00, sample num = 1000, step = 15
+[L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.08243, std = 0.03758, var = 0.00141, max = 0.18010, min = 0.00883
+===========================================
+model name = pretrained_model/fig9_10/fashion_mnist_cnn_2layer_1_5_sigmoid_local.h5
+[L0] method = gradient_descent-sigmoid, total images = 77, avg robustness = 0.08944, avg verify runtime = 0.05, avg sample runtime = 0.00, avg GD runtime = 18.19, sample num = 0, step = 15
+[L0] method = gradient_descent-sigmoid, robustness: mean = 0.08944, std = 0.03970, var = 0.00158, max = 0.17350, min = 0.01583
+===========================================
+model name = pretrained_model/fig9_10/fashion_mnist_cnn_2layer_2_5_sigmoid_local.h5
+[L0] method = gradient_descent-sigmoid, total images = 79, avg robustness = 0.08325, avg verify runtime = 0.06, avg sample runtime = 0.00, avg GD runtime = 37.84, sample num = 0, step = 15
+[L0] method = gradient_descent-sigmoid, robustness: mean = 0.08325, std = 0.03616, var = 0.00131, max = 0.17160, min = 0.01895
+===========================================
+model name = pretrained_model/fig9_10/fashion_mnist_cnn_2layer_3_5_sigmoid_local.h5
+[L0] method = gradient_descent-sigmoid, total images = 79, avg robustness = 0.08571, avg verify runtime = 0.06, avg sample runtime = 0.00, avg GD runtime = 59.70, sample num = 0, step = 15
+[L0] method = gradient_descent-sigmoid, robustness: mean = 0.08571, std = 0.03868, var = 0.00150, max = 0.20324, min = 0.01980
+===========================================
+model name = pretrained_model/fig9_10/fashion_mnist_cnn_2layer_4_5_sigmoid_local.h5
+[L0] method = gradient_descent-sigmoid, total images = 85, avg robustness = 0.08240, avg verify runtime = 0.07, avg sample runtime = 0.00, avg GD runtime = 82.91, sample num = 0, step = 15
+[L0] method = gradient_descent-sigmoid, robustness: mean = 0.08240, std = 0.03755, var = 0.00141, max = 0.18014, min = 0.00883
