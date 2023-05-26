@@ -57,6 +57,17 @@ For simplify, we provide a docker image to run:
     ```
     python demo.py
     ```
+    After the command runs, the terminal will print out a series of related information. The result is at the last two rows of each result, like:
+    ```
+    [L0] method = guided_by_endpoint-sigmoid, total images = 97, avg robustness = 0.05819, avg verify runtime = 1.02, avg sample runtime = 13.86, avg GD runtime = 0.00, sample num = 1000, step = 15
+    [L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.05819, std = 0.01627, var = 0.00026, max = 0.10264, min = 0.02296
+
+    [L0] method = guided_by_endpoint-sigmoid, total images = 84, avg robustness = 0.07703, avg verify runtime = 1.06, avg sample runtime = 14.02, avg GD runtime = 0.00, sample num = 1000, step = 15
+    [L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.07703, std = 0.04249, var = 0.00181, max = 0.24479, min = 0.00661
+
+    [L0] method = guided_by_endpoint-sigmoid, total images = 52, avg robustness = 0.00370, avg verify runtime = 4.18, avg sample runtime = 13.72, avg GD runtime = 0.00, sample num = 1000, step = 15
+    [L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.00370, std = 0.00166, var = 0.00000, max = 0.00773, min = 0.00098
+    ```
 
 ### Install Step-By-Step
 
@@ -100,11 +111,39 @@ We also provide commands that will install all the necessary dependencies step b
     python main_figure_8.py
     ```
     Then, record the verified robustness ratios in each experiment to a *.txt* file and run **draw_figure_8/draw.sh** to draw images. The example *.txt* files are given in **draw_figure_8/**. The first part is the perturbations, and the rests are the verified robustness ratio for DualApp on Sigmoid, DualApp on Tanh, $\alpha$-$\beta$-CROWN on Sigmoid, $\alpha$-$\beta$-CROWN on Tanh, ERAN on Sigmoid, and ERAN on Tanh, respectively.
+    
+    Example output of Figure 8 (models with sigmoid activation function on Mnist):
+    
+    | Model | Epsilon | Verified Robustness Ratio (%) |
+    |:--------:|:-------------:|:-------------:|
+    | FC 6*500 | 0.01 | 93.68 |
+    | FC 6*500 | 0.02 | 84.21 |
+    | FC 6*500 | 0.03 | 66.32 |
+    | FC 6*500 | 0.04 | 46.32 |
+    | FC PGD 0.1 | 0.02 | 98.00 |
+    | FC PGD 0.1 | 0.04 | 97.00 |
+    | FC PGD 0.1 | 0.06 | 93.00 |
+    | FC PGD 0.3 | 0.04 | 92.78 |
+    | FC PGD 0.3 | 0.06 | 85.57 |
+    | FC PGD 0.3 | 0.08 | 78.35 |
+    | FC PGD 0.3 | 0.1 | 63.92 |
+
 
 2. To obtain the results in Table 1, run:
     ```
     python main_table_1.py
     ```
+
+    Example output of Figure 8 (models with sigmoid activation function on Mnist):
+    
+    | Model | Certified Lower Bound |
+    |:--------:|:-------------:|
+    | CNN 4-5 | 0.05819 |
+    | CNN 5-5 | 0.05985 |
+    | CNN 6-5 | 0.06450 |
+    | CNN 8-5 | 0.11412 |
+    | FNN 5*100 | 0.00633 |
+    | FNN 6*200 | 0.02969 |
 
 3. To obtain the results in Figure 9, run:
     ```
