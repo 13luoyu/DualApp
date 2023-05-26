@@ -31,14 +31,38 @@ DualApp is a prototype tool for the robustness verification of neural networks. 
 > - Others
 
 
-## Installation
+## Getting Started
 ***
+
+### Start From Docker
+For simplify, we provide a docker image to run:
+
+1. Download the docker image from https://figshare.com/articles/software/DualApp/23173448.
+
+2. Load the docker image.
+    ```
+    docker load -i dualapp.tar
+    ```
+3. Start a container with the image.
+    ```
+     docker run -it dualapp:v1 /bin/bash
+    ```
+4. Navigate to the project directory.
+    ```
+    cd /root/DualApp
+    conda activate dualapp
+    ```
+
+5. Run demo to get parts of the results of DualApp in Table 1, including CNN4-5 on Mnist, Fashion Mnist, and FNN5*100 on Cifar-10.
+    ```
+    python demo.py
+    ```
 
 ### Install Step-By-Step
 
-We first provide commands that will install all the necessary dependencies step by step(sudo rights might be required). 
+We also provide commands that will install all the necessary dependencies step by step(sudo rights might be required). 
 
-1. Install dependencies:
+1. Install dependencies.
     ```
     sudo apt update
     sudo apt upgrade -y
@@ -46,50 +70,36 @@ We first provide commands that will install all the necessary dependencies step 
     sudo apt-get install -y libgl1-mesa-dev
     sudo apt-get install libglib2.0-dev
     ```
-2. Install miniconda
+2. Install miniconda.
     ```
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     ./Miniconda3-latest-Linux-x86_64.sh
     ```
-3. Create a virtual python environment and install all the required python dependencies(such as numpy and tensorflow):
+3. Create a virtual python environment and install all the required python dependencies(such as numpy and tensorflow).
     ```
     conda create -n dualapp python=3.7.5
     conda activate dualapp
     pip install -r requirements.txt
     pip install opencv-contrib-python==3.4.11.45
     ```
-4. Modify one file of tensorflow package:
+4. Modify one file of tensorflow package.
     ```
     python modify_file.py
     ```
 
-### Start From Docker
-We provide a docker image to run:
-
-1. Download the docker image dualapp.tar from https://figshare.com.
-
-2. Load the docker image:
+5. Run demo to get parts of the results of DualApp in Table 1, including CNN4-5 on Mnist, Fashion Mnist, and FNN5*100 on Cifar-10.
     ```
-    docker load -i dualapp.tar
-    ```
-3. Start a container with the image:
-    ```
-     docker run -it dualapp:v1 /bin/bash
-    ```
-4. Navigate to the project directory
-    ```
-    cd /root/DualApp
-    conda activate dualapp
+    python demo.py
     ```
 
 
-## How to Run
+## Detailed Instructions
 
 1. To obtain the results in Figure 8, run:
     ```
     python main_figure_8.py
     ```
-    Then, record the verified robustness ratios in each experiment to a *.txt* file and run **draw_figure_8/draw.py** to draw images. The example *.txt* files are given in **draw_figure_8/**. 
+    Then, record the verified robustness ratios in each experiment to a *.txt* file and run **draw_figure_8/draw.sh** to draw images. The example *.txt* files are given in **draw_figure_8/**. The first part is the perturbations, and the rests are the verified robustness ratio for DualApp on Sigmoid, DualApp on Tanh, $\alpha$-$\beta$-CROWN on Sigmoid, $\alpha$-$\beta$-CROWN on Tanh, ERAN on Sigmoid, and ERAN on Tanh, respectively.
 
 2. To obtain the results in Table 1, run:
     ```
@@ -109,13 +119,15 @@ We provide a docker image to run:
     Then, record the certified lower bounds and time in each experiment and write them to **draw_figure_10/draw.py** to draw images. The example datas are given in **draw_figure_10/draw.py**. 
 
 
-The corresbonding pretrained models are provided in the folder 'pretrained_model/'. Note that we just submit models used in the experiments in body part of the paper due to the limit of supplementary material. You can refer to https://github.com/AnonymousAuthorsForISSTA2023/trained_network for other models used in Appendix. 
+The corresbonding pretrained models are provided in the folder 'pretrained_model/'. Note that we just submit models used in the experiments in body part of the paper due to the limit of supplementary material. You can refer to https://github.com/13luoyu/trained_network for other models used in Appendix. 
 
-Results will be saved in 'logs/'. The result of FNNs will be saved in 'logs/cnn_bounds_full_with_LP_xxx.txt', and that of CNNs will be saved in 'logs/cnn_bounds_full_core_with_LP_xxx.txt'.
+Results will be saved in 'logs/'. The result of FNNs will be saved in 'logs/cnn_bounds_full_with_LP_xxx.txt', and that of CNNs will be saved in 'logs/cnn_bounds_full_core_with_LP_xxx.txt'. Here xxx refers to the time stamp.
+
 
 
 ## Interface
 
+### In cnn_bounds.py
 ```
 run_certified_bounds(file_name, n_samples, p_n, q_n, data_from_local=True, method='NeWise', sample_num=0, cnn_cert_model=False, vnn_comp_model=False, eran_fnn=False, eran_cnn=False, activation = 'sigmoid', mnist=False, cifar=False, fashion_mnist=False, gtsrb=False, step_tmp = 0.45)
 ```
@@ -154,6 +166,7 @@ This function is used to compute the verified robustness ratio of a FNN.
 - eps: The size of perturbation under which we verify the neural network. 
 
 
+### In cnn_bounds_core.py
 ```
 run_certified_bounds_core(file_name, n_samples, p_n, q_n, data_from_local=True, method='NeWise', sample_num=0, cnn_cert_model=False, activation = 'sigmoid', mnist=False, cifar=False, fashion_mnist=False, gtsrb=False, step_tmp = 0.45, eran_fnn=False)
 ```

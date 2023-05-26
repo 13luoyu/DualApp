@@ -187,4 +187,7 @@ def draw4(file_name, xtick=None):
 
 
 if __name__ == '__main__':
-    draw1("mnist_fc_normal.txt", xtick=[0.01,0.02,0.03,0.04])
+    draw2("mnist_fc_pgd1.txt", xtick=[0.02,0.04,0.06])
+    draw2("mnist_fc_pgd2.txt", xtick=[0.04,0.06,0.08,0.1])
+    draw2("cifar_fc_pgd1.txt", xtick=[0.002,0.004,0.006])
+    draw2("cifar_fc_pgd2.txt", xtick=[0.004,0.008,0.012])
