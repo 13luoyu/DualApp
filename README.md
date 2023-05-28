@@ -21,11 +21,12 @@ DualApp is a prototype tool for the robustness verification of neural networks. 
 >    - main_table_1.py
 >    - main_figure_3_approximation_domain.py
 >    - main_figure_3_actual_domain.py
-> - Draw Pictures in Paper: 
+> - Draw Pictures and Table in Paper: 
 >    - draw_figure_3/draw.py
 >    - draw_figure_8/draw.py
 >    - draw_figure_9/draw.py
 >    - draw_figure_10/draw.py
+>    - draw_table/draw_table_1.py
 > - Log file:
 >    - logs/
 > - Others
@@ -55,8 +56,15 @@ For simplify, we provide a docker image to run:
 
 5. Run demo to get parts of the results of DualApp in Table 1, including CNN 4-5 on Mnist and FNN 5*100 on Cifar-10.
     ```
-    python demo.py
+    nohup ./run_demo.sh >logs/run_demo.log &
     ```
+    After the command finishes running, the results are organized into tabular data in *CSV* format and stored in **draw_table/demo_table.csv**. 
+
+    |Dataset|Model|Nodes|DA bounds|DA time (s)|
+    |----|----|----|----|----|
+    |Mnist|CNN 4-5|8690|0.05816|12.45|
+    |Cifar-10|FNN 5x100|510|0.00370|11.32|
+
 
 
 ### Install Step-By-Step
@@ -78,20 +86,28 @@ We also provide commands that will install all the necessary dependencies step b
     ```
 3. Create a virtual python environment and install all the required python dependencies(such as numpy and tensorflow).
     ```
+    git clone https://github.com/13luoyu/DualApp.git
+    cd DualApp
     conda create -n dualapp python=3.7.5
     conda activate dualapp
     pip install -r requirements.txt
-    pip install opencv-contrib-python==3.4.11.45
     ```
 4. Modify one file of tensorflow package.
     ```
     python modify_file.py
     ```
 
-5. Run demo to get parts of the results of DualApp in Table 1, including CNN4-5 on Mnist, Fashion Mnist, and FNN5*100 on Cifar-10.
+5. Run demo to get parts of the results of DualApp in Table 1, including CNN 4-5 on Mnist and FNN 5*100 on Cifar-10.
     ```
-    python demo.py
+    nohup ./run_demo.sh >logs/run_demo.log &
     ```
+    After the command finishes running, the results are organized into tabular data in *CSV* format and stored in **draw_table/demo_table.csv**. 
+
+    |Dataset|Model|Nodes|DA bounds|DA time (s)|
+    |----|----|----|----|----|
+    |Mnist|CNN 4-5|8690|0.05816|12.45|
+    |Cifar-10|FNN 5x100|510|0.00370|11.32|
+
 
 
 ## Detailed Instructions

@@ -1,4 +1,0 @@
-===========================================
-model name = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid
-[L0] method = guided_by_endpoint-sigmoid, total images = 97, avg robustness = 0.05816, avg verify runtime = 0.78, avg sample runtime = 11.67, avg GD runtime = 0.00, sample num = 1000, step = 15
-[L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.05816, std = 0.01576, var = 0.00025, max = 0.10264, min = 0.02296

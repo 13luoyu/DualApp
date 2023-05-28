@@ -1,2 +1,0 @@
-===========================================
-model name = pretrained_model/fig9_10/mnist_cnn_2layer_1_5_sigmoid_local.h5

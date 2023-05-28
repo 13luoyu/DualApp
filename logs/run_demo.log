@@ -1,0 +1,3347 @@
+2023-05-28 16:45:18.440265: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2023-05-28 16:45:18.440356: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-05-28 16:45:19.475631: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2023-05-28 16:45:19.662670: E tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:968] could not open file to read NUMA node: /sys/bus/pci/devices/0000:41:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-05-28 16:45:19.664752: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:41:00.0 name: NVIDIA GeForce RTX 3090 Ti computeCapability: 8.6
+coreClock: 1.86GHz coreCount: 84 deviceMemorySize: 23.99GiB deviceMemoryBandwidth: 938.86GiB/s
+2023-05-28 16:45:19.664847: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2023-05-28 16:45:19.664952: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory
+2023-05-28 16:45:19.684702: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2023-05-28 16:45:19.685035: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2023-05-28 16:45:19.685159: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcusolver.so.10'; dlerror: libcusolver.so.10: cannot open shared object file: No such file or directory
+2023-05-28 16:45:19.685275: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcusparse.so.10'; dlerror: libcusparse.so.10: cannot open shared object file: No such file or directory
+2023-05-28 16:45:19.685390: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudnn.so.7'; dlerror: libcudnn.so.7: cannot open shared object file: No such file or directory
+2023-05-28 16:45:19.685423: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1753] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-05-28 16:45:19.685712: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-28 16:45:19.693516: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3593250000 Hz
+2023-05-28 16:45:19.697279: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55d1565eaa50 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2023-05-28 16:45:19.697317: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2023-05-28 16:45:19.698195: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-05-28 16:45:19.698230: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      
+This is a demo for evaluation.
+----------- (28, 28, 1) ---------
+(28, 28, 1)
+conv
+(26, 26, 5)
+lambda
+(26, 26, 5)
+conv
+(24, 24, 5)
+lambda
+(24, 24, 5)
+conv
+(22, 22, 5)
+lambda
+(22, 22, 5)
+flatten
+(22, 22, 5)
+FC
+(1, 1, 10)
+--------abstracted model-----------
+data_from_local:  True
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 28, 28, 1)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 28, 28, 1)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 28, 28, 1)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 28, 28, 1)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 28, 28, 1)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 28, 28, 1)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 28, 28, 1)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 28, 28, 1)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+generating labels...
+[DATAGEN][L1] no = 1, true_id = 0, true_label = 7, predicted = 7, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 2, true_id = 1, true_label = 2, predicted = 2, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 3, true_id = 2, true_label = 1, predicted = 1, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 4, true_id = 3, true_label = 0, predicted = 0, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 5, true_id = 4, true_label = 4, predicted = 4, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 6, true_id = 5, true_label = 1, predicted = 1, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 7, true_id = 6, true_label = 4, predicted = 4, correct = True, seq = [9], info = ['random']
+[DATAGEN][L1] no = 8, true_id = 7, true_label = 9, predicted = 9, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 9, true_id = 8, true_label = 5, predicted = 6, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 10, true_id = 9, true_label = 9, predicted = 9, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 11, true_id = 10, true_label = 0, predicted = 0, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 12, true_id = 11, true_label = 6, predicted = 6, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 13, true_id = 12, true_label = 9, predicted = 9, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 14, true_id = 13, true_label = 0, predicted = 0, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 15, true_id = 14, true_label = 1, predicted = 1, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 16, true_id = 15, true_label = 5, predicted = 5, correct = True, seq = [4], info = ['random']
+[DATAGEN][L1] no = 17, true_id = 16, true_label = 9, predicted = 9, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 18, true_id = 17, true_label = 7, predicted = 7, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 19, true_id = 18, true_label = 3, predicted = 3, correct = True, seq = [0], info = ['random']
+[DATAGEN][L1] no = 20, true_id = 19, true_label = 4, predicted = 4, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 21, true_id = 20, true_label = 9, predicted = 9, correct = True, seq = [0], info = ['random']
+[DATAGEN][L1] no = 22, true_id = 21, true_label = 6, predicted = 6, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 23, true_id = 22, true_label = 6, predicted = 6, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 24, true_id = 23, true_label = 5, predicted = 5, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 25, true_id = 24, true_label = 4, predicted = 4, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 26, true_id = 25, true_label = 0, predicted = 0, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 27, true_id = 26, true_label = 7, predicted = 7, correct = True, seq = [4], info = ['random']
+[DATAGEN][L1] no = 28, true_id = 27, true_label = 4, predicted = 4, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 29, true_id = 28, true_label = 0, predicted = 0, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 30, true_id = 29, true_label = 1, predicted = 1, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 31, true_id = 30, true_label = 3, predicted = 3, correct = True, seq = [4], info = ['random']
+[DATAGEN][L1] no = 32, true_id = 31, true_label = 1, predicted = 1, correct = True, seq = [9], info = ['random']
+[DATAGEN][L1] no = 33, true_id = 32, true_label = 3, predicted = 3, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 34, true_id = 33, true_label = 4, predicted = 5, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 35, true_id = 34, true_label = 7, predicted = 7, correct = True, seq = [9], info = ['random']
+[DATAGEN][L1] no = 36, true_id = 35, true_label = 2, predicted = 2, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 37, true_id = 36, true_label = 7, predicted = 7, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 38, true_id = 37, true_label = 1, predicted = 1, correct = True, seq = [4], info = ['random']
+[DATAGEN][L1] no = 39, true_id = 38, true_label = 2, predicted = 2, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 40, true_id = 39, true_label = 1, predicted = 1, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 41, true_id = 40, true_label = 1, predicted = 1, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 42, true_id = 41, true_label = 7, predicted = 7, correct = True, seq = [1], info = ['random']
+[DATAGEN][L1] no = 43, true_id = 42, true_label = 4, predicted = 4, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 44, true_id = 43, true_label = 2, predicted = 2, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 45, true_id = 44, true_label = 3, predicted = 3, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 46, true_id = 45, true_label = 5, predicted = 5, correct = True, seq = [1], info = ['random']
+[DATAGEN][L1] no = 47, true_id = 46, true_label = 1, predicted = 1, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 48, true_id = 47, true_label = 2, predicted = 2, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 49, true_id = 48, true_label = 4, predicted = 4, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 50, true_id = 49, true_label = 4, predicted = 4, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 51, true_id = 50, true_label = 6, predicted = 6, correct = True, seq = [0], info = ['random']
+[DATAGEN][L1] no = 52, true_id = 51, true_label = 3, predicted = 3, correct = True, seq = [9], info = ['random']
+[DATAGEN][L1] no = 53, true_id = 52, true_label = 5, predicted = 5, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 54, true_id = 53, true_label = 5, predicted = 5, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 55, true_id = 54, true_label = 6, predicted = 6, correct = True, seq = [4], info = ['random']
+[DATAGEN][L1] no = 56, true_id = 55, true_label = 0, predicted = 0, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 57, true_id = 56, true_label = 4, predicted = 4, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 58, true_id = 57, true_label = 1, predicted = 1, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 59, true_id = 58, true_label = 9, predicted = 9, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 60, true_id = 59, true_label = 5, predicted = 5, correct = True, seq = [0], info = ['random']
+[DATAGEN][L1] no = 61, true_id = 60, true_label = 7, predicted = 7, correct = True, seq = [9], info = ['random']
+[DATAGEN][L1] no = 62, true_id = 61, true_label = 8, predicted = 8, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 63, true_id = 62, true_label = 9, predicted = 9, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 64, true_id = 63, true_label = 3, predicted = 3, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 65, true_id = 64, true_label = 7, predicted = 7, correct = True, seq = [0], info = ['random']
+[DATAGEN][L1] no = 66, true_id = 65, true_label = 4, predicted = 4, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 67, true_id = 66, true_label = 6, predicted = 6, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 68, true_id = 67, true_label = 4, predicted = 4, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 69, true_id = 68, true_label = 3, predicted = 3, correct = True, seq = [1], info = ['random']
+[DATAGEN][L1] no = 70, true_id = 69, true_label = 0, predicted = 0, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 71, true_id = 70, true_label = 7, predicted = 7, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 72, true_id = 71, true_label = 0, predicted = 0, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 73, true_id = 72, true_label = 2, predicted = 2, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 74, true_id = 73, true_label = 9, predicted = 9, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 75, true_id = 74, true_label = 1, predicted = 1, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 76, true_id = 75, true_label = 7, predicted = 7, correct = True, seq = [9], info = ['random']
+[DATAGEN][L1] no = 77, true_id = 76, true_label = 3, predicted = 3, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 78, true_id = 77, true_label = 2, predicted = 2, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 79, true_id = 78, true_label = 9, predicted = 9, correct = True, seq = [4], info = ['random']
+[DATAGEN][L1] no = 80, true_id = 79, true_label = 7, predicted = 7, correct = True, seq = [1], info = ['random']
+[DATAGEN][L1] no = 81, true_id = 80, true_label = 7, predicted = 7, correct = True, seq = [0], info = ['random']
+[DATAGEN][L1] no = 82, true_id = 81, true_label = 6, predicted = 6, correct = True, seq = [4], info = ['random']
+[DATAGEN][L1] no = 83, true_id = 82, true_label = 2, predicted = 2, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 84, true_id = 83, true_label = 7, predicted = 7, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 85, true_id = 84, true_label = 8, predicted = 8, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 86, true_id = 85, true_label = 4, predicted = 4, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 87, true_id = 86, true_label = 7, predicted = 7, correct = True, seq = [1], info = ['random']
+[DATAGEN][L1] no = 88, true_id = 87, true_label = 3, predicted = 3, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 89, true_id = 88, true_label = 6, predicted = 6, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 90, true_id = 89, true_label = 1, predicted = 1, correct = True, seq = [9], info = ['random']
+[DATAGEN][L1] no = 91, true_id = 90, true_label = 3, predicted = 3, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 92, true_id = 91, true_label = 6, predicted = 6, correct = True, seq = [9], info = ['random']
+[DATAGEN][L1] no = 93, true_id = 92, true_label = 9, predicted = 4, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 94, true_id = 93, true_label = 3, predicted = 3, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 95, true_id = 94, true_label = 1, predicted = 1, correct = True, seq = [4], info = ['random']
+[DATAGEN][L1] no = 96, true_id = 95, true_label = 4, predicted = 4, correct = True, seq = [0], info = ['random']
+[DATAGEN][L1] no = 97, true_id = 96, true_label = 1, predicted = 1, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 98, true_id = 97, true_label = 7, predicted = 7, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 99, true_id = 98, true_label = 6, predicted = 6, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 100, true_id = 99, true_label = 9, predicted = 9, correct = True, seq = [3], info = ['random']
+labels generated
+97 images generated in total.
+----------generated data---------
+===========================================
+model name = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid
+Warming up...
+enter fn...
+Step 0, eps = 0.05000, f_c_min - f_t_max = 7.2481
+Step 1, eps = 0.13591, f_c_min - f_t_max = -15.66
+Step 2, eps = 0.08244, f_c_min - f_t_max = -0.966
+Step 3, eps = 0.06420, f_c_min - f_t_max = 3.9001
+Step 4, eps = 0.07275, f_c_min - f_t_max = 1.6787
+Step 5, eps = 0.07744, f_c_min - f_t_max = 0.4043
+Step 6, eps = 0.07990, f_c_min - f_t_max = -0.273
+Step 7, eps = 0.07866, f_c_min - f_t_max = 0.0852
+Step 8, eps = 0.07928, f_c_min - f_t_max = -0.084
+Step 9, eps = 0.07897, f_c_min - f_t_max = -0.001
+Step 10, eps = 0.07881, f_c_min - f_t_max = 0.0494
+Step 11, eps = 0.07889, f_c_min - f_t_max = 0.0258
+Step 12, eps = 0.07893, f_c_min - f_t_max = 0.0091
+Step 13, eps = 0.07895, f_c_min - f_t_max = -0.011
+Step 14, eps = 0.07894, f_c_min - f_t_max = -0.003
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 0, true_id = 0, target_label = 8, true_label = 7, robustness = 0.07893
+Step 0, eps = 0.05000, f_c_min - f_t_max = -0.763
+Step 1, eps = 0.01839, f_c_min - f_t_max = 3.9555
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.2859
+Step 3, eps = 0.03894, f_c_min - f_t_max = 0.9977
+Step 4, eps = 0.04412, f_c_min - f_t_max = 0.1935
+Step 5, eps = 0.04697, f_c_min - f_t_max = -0.263
+Step 6, eps = 0.04553, f_c_min - f_t_max = -0.030
+Step 7, eps = 0.04482, f_c_min - f_t_max = 0.0839
+Step 8, eps = 0.04517, f_c_min - f_t_max = 0.0245
+Step 9, eps = 0.04535, f_c_min - f_t_max = -0.004
+Step 10, eps = 0.04526, f_c_min - f_t_max = 0.0108
+Step 11, eps = 0.04530, f_c_min - f_t_max = 0.0052
+Step 12, eps = 0.04533, f_c_min - f_t_max = -0.002
+Step 13, eps = 0.04531, f_c_min - f_t_max = -0.001
+Step 14, eps = 0.04531, f_c_min - f_t_max = 0.0089
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 1, true_id = 1, target_label = 6, true_label = 2, robustness = 0.04531
+Step 0, eps = 0.05000, f_c_min - f_t_max = -1.567
+Step 1, eps = 0.01839, f_c_min - f_t_max = 5.3668
+Step 2, eps = 0.03033, f_c_min - f_t_max = 3.0503
+Step 3, eps = 0.03894, f_c_min - f_t_max = 1.1550
+Step 4, eps = 0.04412, f_c_min - f_t_max = -0.078
+Step 5, eps = 0.04145, f_c_min - f_t_max = 0.5700
+Step 6, eps = 0.04277, f_c_min - f_t_max = 0.2598
+Step 7, eps = 0.04344, f_c_min - f_t_max = 0.0902
+Step 8, eps = 0.04378, f_c_min - f_t_max = 0.0104
+Step 9, eps = 0.04395, f_c_min - f_t_max = -0.034
+Step 10, eps = 0.04387, f_c_min - f_t_max = -0.006
+Step 11, eps = 0.04382, f_c_min - f_t_max = 0.0031
+Step 12, eps = 0.04385, f_c_min - f_t_max = -0.004
+Step 13, eps = 0.04383, f_c_min - f_t_max = -0.002
+Step 14, eps = 0.04383, f_c_min - f_t_max = -0.004
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 2, true_id = 2, target_label = 5, true_label = 1, robustness = 0.04382
+Step 0, eps = 0.05000, f_c_min - f_t_max = 5.7671
+Step 1, eps = 0.13591, f_c_min - f_t_max = -10.57
+Step 2, eps = 0.08244, f_c_min - f_t_max = 0.0013
+Step 3, eps = 0.10585, f_c_min - f_t_max = -4.617
+Step 4, eps = 0.09341, f_c_min - f_t_max = -2.136
+Step 5, eps = 0.08775, f_c_min - f_t_max = -1.017
+Step 6, eps = 0.08505, f_c_min - f_t_max = -0.501
+Step 7, eps = 0.08373, f_c_min - f_t_max = -0.240
+Step 8, eps = 0.08308, f_c_min - f_t_max = -0.103
+Step 9, eps = 0.08276, f_c_min - f_t_max = -0.035
+Step 10, eps = 0.08260, f_c_min - f_t_max = -0.010
+Step 11, eps = 0.08252, f_c_min - f_t_max = 0.0116
+Step 12, eps = 0.08256, f_c_min - f_t_max = 0.0022
+Step 13, eps = 0.08258, f_c_min - f_t_max = 0.0015
+Step 14, eps = 0.08259, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 3, true_id = 3, target_label = 8, true_label = 0, robustness = 0.08258
+Step 0, eps = 0.05000, f_c_min - f_t_max = 1.9169
+Step 1, eps = 0.13591, f_c_min - f_t_max = -20.19
+Step 2, eps = 0.08244, f_c_min - f_t_max = -6.002
+Step 3, eps = 0.06420, f_c_min - f_t_max = -1.370
+Step 4, eps = 0.05666, f_c_min - f_t_max = 0.3972
+Step 5, eps = 0.06031, f_c_min - f_t_max = -0.434
+Step 6, eps = 0.05846, f_c_min - f_t_max = -0.018
+Step 7, eps = 0.05755, f_c_min - f_t_max = 0.2119
+Step 8, eps = 0.05800, f_c_min - f_t_max = 0.0865
+Step 9, eps = 0.05823, f_c_min - f_t_max = 0.0425
+Step 10, eps = 0.05834, f_c_min - f_t_max = 0.0044
+Step 11, eps = 0.05840, f_c_min - f_t_max = 0.0262
+Step 12, eps = 0.05843, f_c_min - f_t_max = 0.0035
+Step 13, eps = 0.05844, f_c_min - f_t_max = -0.001
+Step 14, eps = 0.05843, f_c_min - f_t_max = -0.012
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 4, true_id = 4, target_label = 6, true_label = 4, robustness = 0.05843
+Step 0, eps = 0.05000, f_c_min - f_t_max = 4.0978
+Step 1, eps = 0.13591, f_c_min - f_t_max = -19.36
+Step 2, eps = 0.08244, f_c_min - f_t_max = -4.271
+Step 3, eps = 0.06420, f_c_min - f_t_max = 0.6654
+Step 4, eps = 0.07275, f_c_min - f_t_max = -1.597
+Step 5, eps = 0.06834, f_c_min - f_t_max = -0.405
+Step 6, eps = 0.06624, f_c_min - f_t_max = 0.1428
+Step 7, eps = 0.06728, f_c_min - f_t_max = -0.129
+Step 8, eps = 0.06676, f_c_min - f_t_max = 0.0035
+Step 9, eps = 0.06702, f_c_min - f_t_max = -0.038
+Step 10, eps = 0.06689, f_c_min - f_t_max = -0.015
+Step 11, eps = 0.06682, f_c_min - f_t_max = -0.007
+Step 12, eps = 0.06679, f_c_min - f_t_max = 0.0124
+Step 13, eps = 0.06681, f_c_min - f_t_max = -0.019
+Step 14, eps = 0.06680, f_c_min - f_t_max = -0.006
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 5, true_id = 5, target_label = 6, true_label = 1, robustness = 0.06679
+Step 0, eps = 0.05000, f_c_min - f_t_max = -1.176
+Step 1, eps = 0.01839, f_c_min - f_t_max = 5.1497
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.9418
+Step 3, eps = 0.03894, f_c_min - f_t_max = 1.2136
+Step 4, eps = 0.04412, f_c_min - f_t_max = 0.1101
+Step 5, eps = 0.04697, f_c_min - f_t_max = -0.511
+Step 6, eps = 0.04553, f_c_min - f_t_max = -0.193
+Step 7, eps = 0.04482, f_c_min - f_t_max = -0.043
+Step 8, eps = 0.04447, f_c_min - f_t_max = 0.0431
+Step 9, eps = 0.04464, f_c_min - f_t_max = 0.0014
+Step 10, eps = 0.04473, f_c_min - f_t_max = -0.021
+Step 11, eps = 0.04469, f_c_min - f_t_max = -0.007
+Step 12, eps = 0.04467, f_c_min - f_t_max = -0.002
+Step 13, eps = 0.04466, f_c_min - f_t_max = -0.004
+Step 14, eps = 0.04465, f_c_min - f_t_max = -0.003
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 6, true_id = 6, target_label = 9, true_label = 4, robustness = 0.04464
+Step 0, eps = 0.05000, f_c_min - f_t_max = -0.272
+Step 1, eps = 0.01839, f_c_min - f_t_max = 5.9819
+Step 2, eps = 0.03033, f_c_min - f_t_max = 3.8847
+Step 3, eps = 0.03894, f_c_min - f_t_max = 2.1759
+Step 4, eps = 0.04412, f_c_min - f_t_max = 1.0603
+Step 5, eps = 0.04697, f_c_min - f_t_max = 0.4252
+Step 6, eps = 0.04846, f_c_min - f_t_max = 0.0859
+Step 7, eps = 0.04922, f_c_min - f_t_max = -0.097
+Step 8, eps = 0.04884, f_c_min - f_t_max = -0.006
+Step 9, eps = 0.04865, f_c_min - f_t_max = 0.0387
+Step 10, eps = 0.04875, f_c_min - f_t_max = 0.0172
+Step 11, eps = 0.04879, f_c_min - f_t_max = -0.000
+Step 12, eps = 0.04877, f_c_min - f_t_max = 0.0079
+Step 13, eps = 0.04878, f_c_min - f_t_max = 0.0035
+Step 14, eps = 0.04879, f_c_min - f_t_max = 0.0074
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 7, true_id = 7, target_label = 8, true_label = 9, robustness = 0.04879
+Step 0, eps = 0.05000, f_c_min - f_t_max = -4.703
+Step 1, eps = 0.01839, f_c_min - f_t_max = 1.3426
+Step 2, eps = 0.03033, f_c_min - f_t_max = -0.727
+Step 3, eps = 0.02362, f_c_min - f_t_max = 0.4678
+Step 4, eps = 0.02676, f_c_min - f_t_max = -0.083
+Step 5, eps = 0.02514, f_c_min - f_t_max = 0.2031
+Step 6, eps = 0.02594, f_c_min - f_t_max = 0.0629
+Step 7, eps = 0.02635, f_c_min - f_t_max = -0.008
+Step 8, eps = 0.02614, f_c_min - f_t_max = 0.0253
+Step 9, eps = 0.02625, f_c_min - f_t_max = 0.0083
+Step 10, eps = 0.02630, f_c_min - f_t_max = 0.0015
+Step 11, eps = 0.02632, f_c_min - f_t_max = -0.003
+Step 12, eps = 0.02631, f_c_min - f_t_max = -0.005
+Step 13, eps = 0.02630, f_c_min - f_t_max = -0.003
+Step 14, eps = 0.02630, f_c_min - f_t_max = -0.001
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 8, true_id = 9, target_label = 7, true_label = 9, robustness = 0.02630
+Step 0, eps = 0.05000, f_c_min - f_t_max = 8.2064
+Step 1, eps = 0.13591, f_c_min - f_t_max = -13.15
+Step 2, eps = 0.08244, f_c_min - f_t_max = 0.4933
+Step 3, eps = 0.10585, f_c_min - f_t_max = -5.667
+Step 4, eps = 0.09341, f_c_min - f_t_max = -2.402
+Step 5, eps = 0.08775, f_c_min - f_t_max = -0.896
+Step 6, eps = 0.08505, f_c_min - f_t_max = -0.192
+Step 7, eps = 0.08373, f_c_min - f_t_max = 0.1486
+Step 8, eps = 0.08439, f_c_min - f_t_max = -0.002
+Step 9, eps = 0.08406, f_c_min - f_t_max = 0.0684
+Step 10, eps = 0.08423, f_c_min - f_t_max = 0.0402
+Step 11, eps = 0.08431, f_c_min - f_t_max = 0.0037
+Step 12, eps = 0.08435, f_c_min - f_t_max = -0.010
+Step 13, eps = 0.08433, f_c_min - f_t_max = 0.0072
+Step 14, eps = 0.08434, f_c_min - f_t_max = 0.0244
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 9, true_id = 10, target_label = 7, true_label = 0, robustness = 0.08434
+Step 0, eps = 0.05000, f_c_min - f_t_max = -4.902
+Step 1, eps = 0.01839, f_c_min - f_t_max = 1.5131
+Step 2, eps = 0.03033, f_c_min - f_t_max = -0.717
+Step 3, eps = 0.02362, f_c_min - f_t_max = 0.5641
+Step 4, eps = 0.02676, f_c_min - f_t_max = -0.027
+Step 5, eps = 0.02514, f_c_min - f_t_max = 0.2790
+Step 6, eps = 0.02594, f_c_min - f_t_max = 0.1304
+Step 7, eps = 0.02635, f_c_min - f_t_max = 0.0540
+Step 8, eps = 0.02655, f_c_min - f_t_max = 0.0119
+Step 9, eps = 0.02666, f_c_min - f_t_max = -0.005
+Step 10, eps = 0.02661, f_c_min - f_t_max = 0.0035
+Step 11, eps = 0.02663, f_c_min - f_t_max = -0.003
+Step 12, eps = 0.02662, f_c_min - f_t_max = -0.001
+Step 13, eps = 0.02661, f_c_min - f_t_max = 0.0010
+Step 14, eps = 0.02662, f_c_min - f_t_max = 0.0009
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 10, true_id = 11, target_label = 2, true_label = 6, robustness = 0.02662
+Step 0, eps = 0.05000, f_c_min - f_t_max = -1.149
+Step 1, eps = 0.01839, f_c_min - f_t_max = 5.3099
+Step 2, eps = 0.03033, f_c_min - f_t_max = 3.1595
+Step 3, eps = 0.03894, f_c_min - f_t_max = 1.3953
+Step 4, eps = 0.04412, f_c_min - f_t_max = 0.2404
+Step 5, eps = 0.04697, f_c_min - f_t_max = -0.418
+Step 6, eps = 0.04553, f_c_min - f_t_max = -0.085
+Step 7, eps = 0.04482, f_c_min - f_t_max = 0.0845
+Step 8, eps = 0.04517, f_c_min - f_t_max = 0.0021
+Step 9, eps = 0.04535, f_c_min - f_t_max = -0.040
+Step 10, eps = 0.04526, f_c_min - f_t_max = -0.023
+Step 11, eps = 0.04522, f_c_min - f_t_max = -0.004
+Step 12, eps = 0.04519, f_c_min - f_t_max = 2.0265
+Step 13, eps = 0.04520, f_c_min - f_t_max = -0.005
+Step 14, eps = 0.04520, f_c_min - f_t_max = -0.008
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 11, true_id = 12, target_label = 3, true_label = 9, robustness = 0.04519
+Step 0, eps = 0.05000, f_c_min - f_t_max = 5.7253
+Step 1, eps = 0.13591, f_c_min - f_t_max = -12.81
+Step 2, eps = 0.08244, f_c_min - f_t_max = -0.883
+Step 3, eps = 0.06420, f_c_min - f_t_max = 2.9859
+Step 4, eps = 0.07275, f_c_min - f_t_max = 1.2073
+Step 5, eps = 0.07744, f_c_min - f_t_max = 0.2085
+Step 6, eps = 0.07990, f_c_min - f_t_max = -0.320
+Step 7, eps = 0.07866, f_c_min - f_t_max = -0.053
+Step 8, eps = 0.07805, f_c_min - f_t_max = 0.0849
+Step 9, eps = 0.07835, f_c_min - f_t_max = 0.0106
+Step 10, eps = 0.07851, f_c_min - f_t_max = -0.025
+Step 11, eps = 0.07843, f_c_min - f_t_max = -0.014
+Step 12, eps = 0.07839, f_c_min - f_t_max = 0.0112
+Step 13, eps = 0.07841, f_c_min - f_t_max = 0.0223
+Step 14, eps = 0.07842, f_c_min - f_t_max = -0.011
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 12, true_id = 13, target_label = 6, true_label = 0, robustness = 0.07841
+Step 0, eps = 0.05000, f_c_min - f_t_max = 0.9105
+Step 1, eps = 0.13591, f_c_min - f_t_max = -20.66
+Step 2, eps = 0.08244, f_c_min - f_t_max = -6.815
+Step 3, eps = 0.06420, f_c_min - f_t_max = -2.269
+Step 4, eps = 0.05666, f_c_min - f_t_max = -0.525
+Step 5, eps = 0.05322, f_c_min - f_t_max = 0.2176
+Step 6, eps = 0.05491, f_c_min - f_t_max = -0.156
+Step 7, eps = 0.05406, f_c_min - f_t_max = 0.0306
+Step 8, eps = 0.05449, f_c_min - f_t_max = -0.060
+Step 9, eps = 0.05427, f_c_min - f_t_max = -0.011
+Step 10, eps = 0.05417, f_c_min - f_t_max = 0.0190
+Step 11, eps = 0.05422, f_c_min - f_t_max = 0.0181
+Step 12, eps = 0.05425, f_c_min - f_t_max = -0.004
+Step 13, eps = 0.05423, f_c_min - f_t_max = 0.0078
+Step 14, eps = 0.05424, f_c_min - f_t_max = 0.0154
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 13, true_id = 14, target_label = 8, true_label = 1, robustness = 0.05424
+Step 0, eps = 0.05000, f_c_min - f_t_max = 0.1105
+Step 1, eps = 0.13591, f_c_min - f_t_max = -20.39
+Step 2, eps = 0.08244, f_c_min - f_t_max = -7.374
+Step 3, eps = 0.06420, f_c_min - f_t_max = -3.039
+Step 4, eps = 0.05666, f_c_min - f_t_max = -1.336
+Step 5, eps = 0.05322, f_c_min - f_t_max = -0.575
+Step 6, eps = 0.05159, f_c_min - f_t_max = -0.224
+Step 7, eps = 0.05079, f_c_min - f_t_max = -0.057
+Step 8, eps = 0.05039, f_c_min - f_t_max = 0.0217
+Step 9, eps = 0.05059, f_c_min - f_t_max = -0.018
+Step 10, eps = 0.05049, f_c_min - f_t_max = 0.0013
+Step 11, eps = 0.05054, f_c_min - f_t_max = -0.002
+Step 12, eps = 0.05052, f_c_min - f_t_max = 0.0048
+Step 13, eps = 0.05053, f_c_min - f_t_max = 0.0042
+Step 14, eps = 0.05053, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 14, true_id = 15, target_label = 4, true_label = 5, robustness = 0.05053
+Step 0, eps = 0.05000, f_c_min - f_t_max = -0.846
+Step 1, eps = 0.01839, f_c_min - f_t_max = 5.6815
+Step 2, eps = 0.03033, f_c_min - f_t_max = 3.5020
+Step 3, eps = 0.03894, f_c_min - f_t_max = 1.7212
+Step 4, eps = 0.04412, f_c_min - f_t_max = 0.5531
+Step 5, eps = 0.04697, f_c_min - f_t_max = -0.108
+Step 6, eps = 0.04553, f_c_min - f_t_max = 0.2204
+Step 7, eps = 0.04624, f_c_min - f_t_max = 0.0614
+Step 8, eps = 0.04661, f_c_min - f_t_max = -0.023
+Step 9, eps = 0.04642, f_c_min - f_t_max = 0.0171
+Step 10, eps = 0.04651, f_c_min - f_t_max = -0.004
+Step 11, eps = 0.04647, f_c_min - f_t_max = 0.0103
+Step 12, eps = 0.04649, f_c_min - f_t_max = 0.0052
+Step 13, eps = 0.04650, f_c_min - f_t_max = -0.000
+Step 14, eps = 0.04650, f_c_min - f_t_max = -0.003
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 15, true_id = 16, target_label = 2, true_label = 9, robustness = 0.04649
+Step 0, eps = 0.05000, f_c_min - f_t_max = 5.3868
+Step 1, eps = 0.13591, f_c_min - f_t_max = -21.91
+Step 2, eps = 0.08244, f_c_min - f_t_max = -4.393
+Step 3, eps = 0.06420, f_c_min - f_t_max = 1.4491
+Step 4, eps = 0.07275, f_c_min - f_t_max = -1.188
+Step 5, eps = 0.06834, f_c_min - f_t_max = 0.1823
+Step 6, eps = 0.07051, f_c_min - f_t_max = -0.487
+Step 7, eps = 0.06942, f_c_min - f_t_max = -0.153
+Step 8, eps = 0.06888, f_c_min - f_t_max = 0.0149
+Step 9, eps = 0.06915, f_c_min - f_t_max = -0.062
+Step 10, eps = 0.06901, f_c_min - f_t_max = -0.013
+Step 11, eps = 0.06895, f_c_min - f_t_max = 0.0055
+Step 12, eps = 0.06898, f_c_min - f_t_max = -0.008
+Step 13, eps = 0.06896, f_c_min - f_t_max = -0.005
+Step 14, eps = 0.06895, f_c_min - f_t_max = -0.003
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 16, true_id = 17, target_label = 5, true_label = 7, robustness = 0.06895
+Step 0, eps = 0.05000, f_c_min - f_t_max = 0.8829
+Step 1, eps = 0.13591, f_c_min - f_t_max = -17.86
+Step 2, eps = 0.08244, f_c_min - f_t_max = -5.850
+Step 3, eps = 0.06420, f_c_min - f_t_max = -1.933
+Step 4, eps = 0.05666, f_c_min - f_t_max = -0.414
+Step 5, eps = 0.05322, f_c_min - f_t_max = 0.2606
+Step 6, eps = 0.05491, f_c_min - f_t_max = -0.070
+Step 7, eps = 0.05406, f_c_min - f_t_max = 0.0976
+Step 8, eps = 0.05449, f_c_min - f_t_max = 0.0150
+Step 9, eps = 0.05470, f_c_min - f_t_max = -0.025
+Step 10, eps = 0.05459, f_c_min - f_t_max = -0.000
+Step 11, eps = 0.05454, f_c_min - f_t_max = 0.0001
+Step 12, eps = 0.05457, f_c_min - f_t_max = 0.0007
+Step 13, eps = 0.05458, f_c_min - f_t_max = -0.013
+Step 14, eps = 0.05457, f_c_min - f_t_max = 0.0038
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 17, true_id = 18, target_label = 0, true_label = 3, robustness = 0.05457
+Step 0, eps = 0.05000, f_c_min - f_t_max = 2.3642
+Step 1, eps = 0.13591, f_c_min - f_t_max = -23.14
+Step 2, eps = 0.08244, f_c_min - f_t_max = -6.610
+Step 3, eps = 0.06420, f_c_min - f_t_max = -1.262
+Step 4, eps = 0.05666, f_c_min - f_t_max = 0.7236
+Step 5, eps = 0.06031, f_c_min - f_t_max = -0.220
+Step 6, eps = 0.05846, f_c_min - f_t_max = 0.2664
+Step 7, eps = 0.05938, f_c_min - f_t_max = 0.0208
+Step 8, eps = 0.05984, f_c_min - f_t_max = -0.102
+Step 9, eps = 0.05961, f_c_min - f_t_max = -0.040
+Step 10, eps = 0.05949, f_c_min - f_t_max = 0.0108
+Step 11, eps = 0.05955, f_c_min - f_t_max = -0.025
+Step 12, eps = 0.05952, f_c_min - f_t_max = -0.002
+Step 13, eps = 0.05951, f_c_min - f_t_max = -0.005
+Step 14, eps = 0.05950, f_c_min - f_t_max = -0.004
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 18, true_id = 19, target_label = 3, true_label = 4, robustness = 0.05949
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.8782
+Step 1, eps = 0.13591, f_c_min - f_t_max = -17.18
+Step 2, eps = 0.08244, f_c_min - f_t_max = -3.695
+Step 3, eps = 0.06420, f_c_min - f_t_max = 0.8079
+Step 4, eps = 0.07275, f_c_min - f_t_max = -1.252
+Step 5, eps = 0.06834, f_c_min - f_t_max = -0.173
+Step 6, eps = 0.06624, f_c_min - f_t_max = 0.3197
+Step 7, eps = 0.06728, f_c_min - f_t_max = 0.0780
+Step 8, eps = 0.06781, f_c_min - f_t_max = -0.050
+Step 9, eps = 0.06755, f_c_min - f_t_max = 0.0022
+Step 10, eps = 0.06768, f_c_min - f_t_max = -0.025
+Step 11, eps = 0.06761, f_c_min - f_t_max = -0.003
+Step 12, eps = 0.06758, f_c_min - f_t_max = 0.0062
+Step 13, eps = 0.06760, f_c_min - f_t_max = -0.006
+Step 14, eps = 0.06759, f_c_min - f_t_max = -0.001
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 19, true_id = 20, target_label = 0, true_label = 9, robustness = 0.06758
+Step 0, eps = 0.05000, f_c_min - f_t_max = -0.583
+Step 1, eps = 0.01839, f_c_min - f_t_max = 5.3090
+Step 2, eps = 0.03033, f_c_min - f_t_max = 3.3259
+Step 3, eps = 0.03894, f_c_min - f_t_max = 1.7169
+Step 4, eps = 0.04412, f_c_min - f_t_max = 0.6742
+Step 5, eps = 0.04697, f_c_min - f_t_max = 0.0726
+Step 6, eps = 0.04846, f_c_min - f_t_max = -0.246
+Step 7, eps = 0.04771, f_c_min - f_t_max = -0.084
+Step 8, eps = 0.04734, f_c_min - f_t_max = -0.002
+Step 9, eps = 0.04715, f_c_min - f_t_max = 0.0375
+Step 10, eps = 0.04725, f_c_min - f_t_max = 0.0175
+Step 11, eps = 0.04729, f_c_min - f_t_max = 0.0014
+Step 12, eps = 0.04732, f_c_min - f_t_max = 0.0003
+Step 13, eps = 0.04733, f_c_min - f_t_max = -0.002
+Step 14, eps = 0.04732, f_c_min - f_t_max = -0.003
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 20, true_id = 21, target_label = 2, true_label = 6, robustness = 0.04732
+Step 0, eps = 0.05000, f_c_min - f_t_max = -0.261
+Step 1, eps = 0.01839, f_c_min - f_t_max = 5.7491
+Step 2, eps = 0.03033, f_c_min - f_t_max = 3.6622
+Step 3, eps = 0.03894, f_c_min - f_t_max = 2.0201
+Step 4, eps = 0.04412, f_c_min - f_t_max = 0.9736
+Step 5, eps = 0.04697, f_c_min - f_t_max = 0.3872
+Step 6, eps = 0.04846, f_c_min - f_t_max = 0.0628
+Step 7, eps = 0.04922, f_c_min - f_t_max = -0.095
+Step 8, eps = 0.04884, f_c_min - f_t_max = 0.0008
+Step 9, eps = 0.04903, f_c_min - f_t_max = -0.046
+Step 10, eps = 0.04894, f_c_min - f_t_max = -0.041
+Step 11, eps = 0.04889, f_c_min - f_t_max = -0.019
+Step 12, eps = 0.04887, f_c_min - f_t_max = -0.016
+Step 13, eps = 0.04885, f_c_min - f_t_max = -0.013
+Step 14, eps = 0.04885, f_c_min - f_t_max = -0.016
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 21, true_id = 22, target_label = 8, true_label = 6, robustness = 0.04884
+Step 0, eps = 0.05000, f_c_min - f_t_max = 2.1433
+Step 1, eps = 0.13591, f_c_min - f_t_max = -21.47
+Step 2, eps = 0.08244, f_c_min - f_t_max = -6.272
+Step 3, eps = 0.06420, f_c_min - f_t_max = -1.280
+Step 4, eps = 0.05666, f_c_min - f_t_max = 0.5921
+Step 5, eps = 0.06031, f_c_min - f_t_max = -0.297
+Step 6, eps = 0.05846, f_c_min - f_t_max = 0.1591
+Step 7, eps = 0.05938, f_c_min - f_t_max = -0.060
+Step 8, eps = 0.05891, f_c_min - f_t_max = 0.0403
+Step 9, eps = 0.05914, f_c_min - f_t_max = -0.007
+Step 10, eps = 0.05903, f_c_min - f_t_max = 0.0128
+Step 11, eps = 0.05909, f_c_min - f_t_max = 0.0088
+Step 12, eps = 0.05912, f_c_min - f_t_max = -0.003
+Step 13, eps = 0.05910, f_c_min - f_t_max = -0.000
+Step 14, eps = 0.05909, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 22, true_id = 23, target_label = 2, true_label = 5, robustness = 0.05909
+Step 0, eps = 0.05000, f_c_min - f_t_max = 1.5488
+Step 1, eps = 0.13591, f_c_min - f_t_max = -22.56
+Step 2, eps = 0.08244, f_c_min - f_t_max = -7.074
+Step 3, eps = 0.06420, f_c_min - f_t_max = -2.048
+Step 4, eps = 0.05666, f_c_min - f_t_max = -0.092
+Step 5, eps = 0.05322, f_c_min - f_t_max = 0.7595
+Step 6, eps = 0.05491, f_c_min - f_t_max = 0.3461
+Step 7, eps = 0.05578, f_c_min - f_t_max = 0.1303
+Step 8, eps = 0.05622, f_c_min - f_t_max = 0.0221
+Step 9, eps = 0.05644, f_c_min - f_t_max = -0.048
+Step 10, eps = 0.05633, f_c_min - f_t_max = -0.006
+Step 11, eps = 0.05627, f_c_min - f_t_max = 0.0135
+Step 12, eps = 0.05630, f_c_min - f_t_max = -0.005
+Step 13, eps = 0.05629, f_c_min - f_t_max = -0.001
+Step 14, eps = 0.05628, f_c_min - f_t_max = 0.0205
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 23, true_id = 24, target_label = 6, true_label = 4, robustness = 0.05628
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.5814
+Step 1, eps = 0.13591, f_c_min - f_t_max = -12.57
+Step 2, eps = 0.08244, f_c_min - f_t_max = -2.138
+Step 3, eps = 0.06420, f_c_min - f_t_max = 1.1930
+Step 4, eps = 0.07275, f_c_min - f_t_max = -0.334
+Step 5, eps = 0.06834, f_c_min - f_t_max = 0.4463
+Step 6, eps = 0.07051, f_c_min - f_t_max = 0.0744
+Step 7, eps = 0.07162, f_c_min - f_t_max = -0.121
+Step 8, eps = 0.07106, f_c_min - f_t_max = -0.030
+Step 9, eps = 0.07079, f_c_min - f_t_max = 0.0244
+Step 10, eps = 0.07093, f_c_min - f_t_max = -0.010
+Step 11, eps = 0.07086, f_c_min - f_t_max = 0.0195
+Step 12, eps = 0.07089, f_c_min - f_t_max = -0.004
+Step 13, eps = 0.07087, f_c_min - f_t_max = -0.002
+Step 14, eps = 0.07087, f_c_min - f_t_max = 0.0096
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 24, true_id = 25, target_label = 5, true_label = 0, robustness = 0.07087
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.7502
+Step 1, eps = 0.13591, f_c_min - f_t_max = -21.56
+Step 2, eps = 0.08244, f_c_min - f_t_max = -5.307
+Step 3, eps = 0.06420, f_c_min - f_t_max = 0.0884
+Step 4, eps = 0.07275, f_c_min - f_t_max = -2.361
+Step 5, eps = 0.06834, f_c_min - f_t_max = -1.078
+Step 6, eps = 0.06624, f_c_min - f_t_max = -0.492
+Step 7, eps = 0.06521, f_c_min - f_t_max = -0.214
+Step 8, eps = 0.06470, f_c_min - f_t_max = -0.056
+Step 9, eps = 0.06445, f_c_min - f_t_max = 0.0102
+Step 10, eps = 0.06458, f_c_min - f_t_max = -0.024
+Step 11, eps = 0.06452, f_c_min - f_t_max = -0.002
+Step 12, eps = 0.06448, f_c_min - f_t_max = 0.0074
+Step 13, eps = 0.06450, f_c_min - f_t_max = -0.000
+Step 14, eps = 0.06449, f_c_min - f_t_max = 0.0088
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 25, true_id = 26, target_label = 4, true_label = 7, robustness = 0.06449
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.0206
+Step 1, eps = 0.13591, f_c_min - f_t_max = -17.53
+Step 2, eps = 0.08244, f_c_min - f_t_max = -4.134
+Step 3, eps = 0.06420, f_c_min - f_t_max = 0.0736
+Step 4, eps = 0.07275, f_c_min - f_t_max = -1.851
+Step 5, eps = 0.06834, f_c_min - f_t_max = -0.865
+Step 6, eps = 0.06624, f_c_min - f_t_max = -0.382
+Step 7, eps = 0.06521, f_c_min - f_t_max = -0.151
+Step 8, eps = 0.06470, f_c_min - f_t_max = -0.049
+Step 9, eps = 0.06445, f_c_min - f_t_max = 0.0050
+Step 10, eps = 0.06458, f_c_min - f_t_max = -0.008
+Step 11, eps = 0.06452, f_c_min - f_t_max = -0.004
+Step 12, eps = 0.06448, f_c_min - f_t_max = 0.0061
+Step 13, eps = 0.06450, f_c_min - f_t_max = 0.0063
+Step 14, eps = 0.06451, f_c_min - f_t_max = -0.004
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 26, true_id = 27, target_label = 8, true_label = 4, robustness = 0.06450
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.9048
+Step 1, eps = 0.13591, f_c_min - f_t_max = -11.97
+Step 2, eps = 0.08244, f_c_min - f_t_max = -1.702
+Step 3, eps = 0.06420, f_c_min - f_t_max = 1.5738
+Step 4, eps = 0.07275, f_c_min - f_t_max = 0.0784
+Step 5, eps = 0.07744, f_c_min - f_t_max = -0.758
+Step 6, eps = 0.07506, f_c_min - f_t_max = -0.338
+Step 7, eps = 0.07390, f_c_min - f_t_max = -0.131
+Step 8, eps = 0.07332, f_c_min - f_t_max = -0.015
+Step 9, eps = 0.07303, f_c_min - f_t_max = 0.0191
+Step 10, eps = 0.07318, f_c_min - f_t_max = 0.0219
+Step 11, eps = 0.07325, f_c_min - f_t_max = -0.014
+Step 12, eps = 0.07321, f_c_min - f_t_max = 0.0019
+Step 13, eps = 0.07323, f_c_min - f_t_max = -0.004
+Step 14, eps = 0.07322, f_c_min - f_t_max = -0.015
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 27, true_id = 28, target_label = 8, true_label = 0, robustness = 0.07321
+Step 0, eps = 0.05000, f_c_min - f_t_max = -2.137
+Step 1, eps = 0.01839, f_c_min - f_t_max = 4.4591
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.2545
+Step 3, eps = 0.03894, f_c_min - f_t_max = 0.4540
+Step 4, eps = 0.04412, f_c_min - f_t_max = -0.720
+Step 5, eps = 0.04145, f_c_min - f_t_max = -0.107
+Step 6, eps = 0.04018, f_c_min - f_t_max = 0.1774
+Step 7, eps = 0.04081, f_c_min - f_t_max = 0.0426
+Step 8, eps = 0.04113, f_c_min - f_t_max = -0.033
+Step 9, eps = 0.04097, f_c_min - f_t_max = 0.0036
+Step 10, eps = 0.04105, f_c_min - f_t_max = -0.014
+Step 11, eps = 0.04101, f_c_min - f_t_max = -0.004
+Step 12, eps = 0.04099, f_c_min - f_t_max = -0.004
+Step 13, eps = 0.04098, f_c_min - f_t_max = 0.0027
+Step 14, eps = 0.04098, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 28, true_id = 29, target_label = 2, true_label = 1, robustness = 0.04098
+Step 0, eps = 0.05000, f_c_min - f_t_max = 2.6239
+Step 1, eps = 0.13591, f_c_min - f_t_max = -16.59
+Step 2, eps = 0.08244, f_c_min - f_t_max = -4.362
+Step 3, eps = 0.06420, f_c_min - f_t_max = -0.265
+Step 4, eps = 0.05666, f_c_min - f_t_max = 1.3097
+Step 5, eps = 0.06031, f_c_min - f_t_max = 0.5599
+Step 6, eps = 0.06223, f_c_min - f_t_max = 0.1580
+Step 7, eps = 0.06321, f_c_min - f_t_max = -0.048
+Step 8, eps = 0.06271, f_c_min - f_t_max = 0.0446
+Step 9, eps = 0.06296, f_c_min - f_t_max = 0.0054
+Step 10, eps = 0.06308, f_c_min - f_t_max = -0.015
+Step 11, eps = 0.06302, f_c_min - f_t_max = -0.010
+Step 12, eps = 0.06299, f_c_min - f_t_max = -0.004
+Step 13, eps = 0.06297, f_c_min - f_t_max = -0.008
+Step 14, eps = 0.06297, f_c_min - f_t_max = 0.0037
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 29, true_id = 30, target_label = 4, true_label = 3, robustness = 0.06297
+Step 0, eps = 0.05000, f_c_min - f_t_max = -1.367
+Step 1, eps = 0.01839, f_c_min - f_t_max = 5.0709
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.8565
+Step 3, eps = 0.03894, f_c_min - f_t_max = 1.1003
+Step 4, eps = 0.04412, f_c_min - f_t_max = -0.025
+Step 5, eps = 0.04145, f_c_min - f_t_max = 0.5571
+Step 6, eps = 0.04277, f_c_min - f_t_max = 0.2733
+Step 7, eps = 0.04344, f_c_min - f_t_max = 0.1211
+Step 8, eps = 0.04378, f_c_min - f_t_max = 0.0523
+Step 9, eps = 0.04395, f_c_min - f_t_max = 0.0025
+Step 10, eps = 0.04404, f_c_min - f_t_max = -0.013
+Step 11, eps = 0.04400, f_c_min - f_t_max = 0.0082
+Step 12, eps = 0.04402, f_c_min - f_t_max = 0.0023
+Step 13, eps = 0.04403, f_c_min - f_t_max = 0.0035
+Step 14, eps = 0.04403, f_c_min - f_t_max = -0.006
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 30, true_id = 31, target_label = 9, true_label = 1, robustness = 0.04403
+Step 0, eps = 0.05000, f_c_min - f_t_max = 1.6772
+Step 1, eps = 0.13591, f_c_min - f_t_max = -18.50
+Step 2, eps = 0.08244, f_c_min - f_t_max = -5.632
+Step 3, eps = 0.06420, f_c_min - f_t_max = -1.343
+Step 4, eps = 0.05666, f_c_min - f_t_max = 0.3058
+Step 5, eps = 0.06031, f_c_min - f_t_max = -0.480
+Step 6, eps = 0.05846, f_c_min - f_t_max = -0.090
+Step 7, eps = 0.05755, f_c_min - f_t_max = 0.1136
+Step 8, eps = 0.05800, f_c_min - f_t_max = 0.0049
+Step 9, eps = 0.05823, f_c_min - f_t_max = -0.043
+Step 10, eps = 0.05811, f_c_min - f_t_max = -0.004
+Step 11, eps = 0.05806, f_c_min - f_t_max = -0.006
+Step 12, eps = 0.05803, f_c_min - f_t_max = 0.0094
+Step 13, eps = 0.05804, f_c_min - f_t_max = 0.0019
+Step 14, eps = 0.05805, f_c_min - f_t_max = 0.0002
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 31, true_id = 32, target_label = 2, true_label = 3, robustness = 0.05805
+Step 0, eps = 0.05000, f_c_min - f_t_max = -1.634
+Step 1, eps = 0.01839, f_c_min - f_t_max = 4.0307
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.0531
+Step 3, eps = 0.03894, f_c_min - f_t_max = 0.5066
+Step 4, eps = 0.04412, f_c_min - f_t_max = -0.474
+Step 5, eps = 0.04145, f_c_min - f_t_max = 0.0392
+Step 6, eps = 0.04277, f_c_min - f_t_max = -0.210
+Step 7, eps = 0.04210, f_c_min - f_t_max = -0.089
+Step 8, eps = 0.04178, f_c_min - f_t_max = -0.025
+Step 9, eps = 0.04161, f_c_min - f_t_max = 0.0100
+Step 10, eps = 0.04170, f_c_min - f_t_max = -0.007
+Step 11, eps = 0.04165, f_c_min - f_t_max = 0.0024
+Step 12, eps = 0.04167, f_c_min - f_t_max = -0.005
+Step 13, eps = 0.04166, f_c_min - f_t_max = -0.006
+Step 14, eps = 0.04166, f_c_min - f_t_max = 0.0006
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 32, true_id = 34, target_label = 9, true_label = 7, robustness = 0.04166
+Step 0, eps = 0.05000, f_c_min - f_t_max = 7.5271
+Step 1, eps = 0.13591, f_c_min - f_t_max = -9.196
+Step 2, eps = 0.08244, f_c_min - f_t_max = 1.4958
+Step 3, eps = 0.10585, f_c_min - f_t_max = -3.172
+Step 4, eps = 0.09341, f_c_min - f_t_max = -0.677
+Step 5, eps = 0.08775, f_c_min - f_t_max = 0.4381
+Step 6, eps = 0.09054, f_c_min - f_t_max = -0.103
+Step 7, eps = 0.08913, f_c_min - f_t_max = 0.1411
+Step 8, eps = 0.08983, f_c_min - f_t_max = 0.0355
+Step 9, eps = 0.09019, f_c_min - f_t_max = -0.043
+Step 10, eps = 0.09001, f_c_min - f_t_max = -0.019
+Step 11, eps = 0.08992, f_c_min - f_t_max = 0.0006
+Step 12, eps = 0.08997, f_c_min - f_t_max = -0.023
+Step 13, eps = 0.08994, f_c_min - f_t_max = -0.009
+Step 14, eps = 0.08993, f_c_min - f_t_max = -0.007
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 33, true_id = 35, target_label = 6, true_label = 2, robustness = 0.08992
+Step 0, eps = 0.05000, f_c_min - f_t_max = 1.7765
+Step 1, eps = 0.13591, f_c_min - f_t_max = -24.89
+Step 2, eps = 0.08244, f_c_min - f_t_max = -7.761
+Step 3, eps = 0.06420, f_c_min - f_t_max = -2.099
+Step 4, eps = 0.05666, f_c_min - f_t_max = 0.0301
+Step 5, eps = 0.06031, f_c_min - f_t_max = -0.991
+Step 6, eps = 0.05846, f_c_min - f_t_max = -0.468
+Step 7, eps = 0.05755, f_c_min - f_t_max = -0.213
+Step 8, eps = 0.05710, f_c_min - f_t_max = -0.099
+Step 9, eps = 0.05688, f_c_min - f_t_max = -0.029
+Step 10, eps = 0.05677, f_c_min - f_t_max = -0.008
+Step 11, eps = 0.05671, f_c_min - f_t_max = 0.0045
+Step 12, eps = 0.05674, f_c_min - f_t_max = 0.0061
+Step 13, eps = 0.05675, f_c_min - f_t_max = -0.006
+Step 14, eps = 0.05675, f_c_min - f_t_max = 0.0088
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 34, true_id = 36, target_label = 5, true_label = 7, robustness = 0.05675
+Step 0, eps = 0.05000, f_c_min - f_t_max = 1.4848
+Step 1, eps = 0.13591, f_c_min - f_t_max = -23.66
+Step 2, eps = 0.08244, f_c_min - f_t_max = -7.486
+Step 3, eps = 0.06420, f_c_min - f_t_max = -2.159
+Step 4, eps = 0.05666, f_c_min - f_t_max = -0.177
+Step 5, eps = 0.05322, f_c_min - f_t_max = 0.7009
+Step 6, eps = 0.05491, f_c_min - f_t_max = 0.2608
+Step 7, eps = 0.05578, f_c_min - f_t_max = 0.0476
+Step 8, eps = 0.05622, f_c_min - f_t_max = -0.062
+Step 9, eps = 0.05600, f_c_min - f_t_max = -0.004
+Step 10, eps = 0.05589, f_c_min - f_t_max = 0.0301
+Step 11, eps = 0.05594, f_c_min - f_t_max = 0.0162
+Step 12, eps = 0.05597, f_c_min - f_t_max = 0.0013
+Step 13, eps = 0.05598, f_c_min - f_t_max = -0.008
+Step 14, eps = 0.05598, f_c_min - f_t_max = 0.0018
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 35, true_id = 37, target_label = 4, true_label = 1, robustness = 0.05598
+Step 0, eps = 0.05000, f_c_min - f_t_max = 8.0591
+Step 1, eps = 0.13591, f_c_min - f_t_max = -14.32
+Step 2, eps = 0.08244, f_c_min - f_t_max = 0.0178
+Step 3, eps = 0.10585, f_c_min - f_t_max = -6.408
+Step 4, eps = 0.09341, f_c_min - f_t_max = -2.942
+Step 5, eps = 0.08775, f_c_min - f_t_max = -1.410
+Step 6, eps = 0.08505, f_c_min - f_t_max = -0.662
+Step 7, eps = 0.08373, f_c_min - f_t_max = -0.302
+Step 8, eps = 0.08308, f_c_min - f_t_max = -0.165
+Step 9, eps = 0.08276, f_c_min - f_t_max = -0.086
+Step 10, eps = 0.08260, f_c_min - f_t_max = -0.003
+Step 11, eps = 0.08252, f_c_min - f_t_max = 0.0234
+Step 12, eps = 0.08256, f_c_min - f_t_max = -0.001
+Step 13, eps = 0.08254, f_c_min - f_t_max = 0.0178
+Step 14, eps = 0.08255, f_c_min - f_t_max = -0.002
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 36, true_id = 38, target_label = 7, true_label = 2, robustness = 0.08254
+Step 0, eps = 0.05000, f_c_min - f_t_max = 1.1507
+Step 1, eps = 0.13591, f_c_min - f_t_max = -21.29
+Step 2, eps = 0.08244, f_c_min - f_t_max = -6.987
+Step 3, eps = 0.06420, f_c_min - f_t_max = -2.177
+Step 4, eps = 0.05666, f_c_min - f_t_max = -0.362
+Step 5, eps = 0.05322, f_c_min - f_t_max = 0.4260
+Step 6, eps = 0.05491, f_c_min - f_t_max = 0.0453
+Step 7, eps = 0.05578, f_c_min - f_t_max = -0.163
+Step 8, eps = 0.05534, f_c_min - f_t_max = -0.061
+Step 9, eps = 0.05513, f_c_min - f_t_max = -0.005
+Step 10, eps = 0.05502, f_c_min - f_t_max = 0.0205
+Step 11, eps = 0.05508, f_c_min - f_t_max = -0.004
+Step 12, eps = 0.05505, f_c_min - f_t_max = 0.0219
+Step 13, eps = 0.05506, f_c_min - f_t_max = 8.2969
+Step 14, eps = 0.05507, f_c_min - f_t_max = 0.0044
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 37, true_id = 39, target_label = 7, true_label = 1, robustness = 0.05507
+Step 0, eps = 0.05000, f_c_min - f_t_max = -1.882
+Step 1, eps = 0.01839, f_c_min - f_t_max = 5.1656
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.8143
+Step 3, eps = 0.03894, f_c_min - f_t_max = 0.8896
+Step 4, eps = 0.04412, f_c_min - f_t_max = -0.368
+Step 5, eps = 0.04145, f_c_min - f_t_max = 0.2975
+Step 6, eps = 0.04277, f_c_min - f_t_max = -0.027
+Step 7, eps = 0.04210, f_c_min - f_t_max = 0.1349
+Step 8, eps = 0.04243, f_c_min - f_t_max = 0.0530
+Step 9, eps = 0.04260, f_c_min - f_t_max = 0.0087
+Step 10, eps = 0.04268, f_c_min - f_t_max = -0.007
+Step 11, eps = 0.04264, f_c_min - f_t_max = 0.0029
+Step 12, eps = 0.04266, f_c_min - f_t_max = -0.002
+Step 13, eps = 0.04265, f_c_min - f_t_max = -0.003
+Step 14, eps = 0.04265, f_c_min - f_t_max = 0.0011
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 38, true_id = 40, target_label = 3, true_label = 1, robustness = 0.04265
+Step 0, eps = 0.05000, f_c_min - f_t_max = 1.0705
+Step 1, eps = 0.13591, f_c_min - f_t_max = -24.07
+Step 2, eps = 0.08244, f_c_min - f_t_max = -8.052
+Step 3, eps = 0.06420, f_c_min - f_t_max = -2.677
+Step 4, eps = 0.05666, f_c_min - f_t_max = -0.635
+Step 5, eps = 0.05322, f_c_min - f_t_max = 0.2484
+Step 6, eps = 0.05491, f_c_min - f_t_max = -0.188
+Step 7, eps = 0.05406, f_c_min - f_t_max = 0.0294
+Step 8, eps = 0.05449, f_c_min - f_t_max = -0.072
+Step 9, eps = 0.05427, f_c_min - f_t_max = -0.015
+Step 10, eps = 0.05417, f_c_min - f_t_max = 0.0076
+Step 11, eps = 0.05422, f_c_min - f_t_max = -0.000
+Step 12, eps = 0.05420, f_c_min - f_t_max = -0.005
+Step 13, eps = 0.05418, f_c_min - f_t_max = -0.008
+Step 14, eps = 0.05418, f_c_min - f_t_max = 0.0073
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 39, true_id = 41, target_label = 1, true_label = 7, robustness = 0.05418
+Step 0, eps = 0.05000, f_c_min - f_t_max = 0.4805
+Step 1, eps = 0.13591, f_c_min - f_t_max = -23.63
+Step 2, eps = 0.08244, f_c_min - f_t_max = -8.031
+Step 3, eps = 0.06420, f_c_min - f_t_max = -2.984
+Step 4, eps = 0.05666, f_c_min - f_t_max = -1.094
+Step 5, eps = 0.05322, f_c_min - f_t_max = -0.271
+Step 6, eps = 0.05159, f_c_min - f_t_max = 0.1177
+Step 7, eps = 0.05240, f_c_min - f_t_max = -0.071
+Step 8, eps = 0.05199, f_c_min - f_t_max = 0.0171
+Step 9, eps = 0.05220, f_c_min - f_t_max = -0.024
+Step 10, eps = 0.05209, f_c_min - f_t_max = -0.004
+Step 11, eps = 0.05204, f_c_min - f_t_max = 0.0165
+Step 12, eps = 0.05207, f_c_min - f_t_max = 0.0009
+Step 13, eps = 0.05208, f_c_min - f_t_max = 0.0073
+Step 14, eps = 0.05209, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 40, true_id = 42, target_label = 5, true_label = 4, robustness = 0.05208
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.6002
+Step 1, eps = 0.13591, f_c_min - f_t_max = -17.58
+Step 2, eps = 0.08244, f_c_min - f_t_max = -4.091
+Step 3, eps = 0.06420, f_c_min - f_t_max = 0.4196
+Step 4, eps = 0.07275, f_c_min - f_t_max = -1.658
+Step 5, eps = 0.06834, f_c_min - f_t_max = -0.580
+Step 6, eps = 0.06624, f_c_min - f_t_max = -0.067
+Step 7, eps = 0.06521, f_c_min - f_t_max = 0.1693
+Step 8, eps = 0.06572, f_c_min - f_t_max = 0.0425
+Step 9, eps = 0.06598, f_c_min - f_t_max = -0.002
+Step 10, eps = 0.06585, f_c_min - f_t_max = 0.0200
+Step 11, eps = 0.06592, f_c_min - f_t_max = 0.0028
+Step 12, eps = 0.06595, f_c_min - f_t_max = -0.003
+Step 13, eps = 0.06593, f_c_min - f_t_max = 0.0073
+Step 14, eps = 0.06594, f_c_min - f_t_max = -0.014
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 41, true_id = 43, target_label = 7, true_label = 2, robustness = 0.06593
+Step 0, eps = 0.05000, f_c_min - f_t_max = -0.891
+Step 1, eps = 0.01839, f_c_min - f_t_max = 4.0207
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.3059
+Step 3, eps = 0.03894, f_c_min - f_t_max = 0.9741
+Step 4, eps = 0.04412, f_c_min - f_t_max = 0.1079
+Step 5, eps = 0.04697, f_c_min - f_t_max = -0.362
+Step 6, eps = 0.04553, f_c_min - f_t_max = -0.117
+Step 7, eps = 0.04482, f_c_min - f_t_max = -0.002
+Step 8, eps = 0.04447, f_c_min - f_t_max = 0.0685
+Step 9, eps = 0.04464, f_c_min - f_t_max = 0.0367
+Step 10, eps = 0.04473, f_c_min - f_t_max = 0.0257
+Step 11, eps = 0.04478, f_c_min - f_t_max = 0.0061
+Step 12, eps = 0.04480, f_c_min - f_t_max = 0.0126
+Step 13, eps = 0.04481, f_c_min - f_t_max = 0.0071
+Step 14, eps = 0.04481, f_c_min - f_t_max = 0.0097
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 42, true_id = 44, target_label = 6, true_label = 3, robustness = 0.04481
+Step 0, eps = 0.05000, f_c_min - f_t_max = 6.5131
+Step 1, eps = 0.13591, f_c_min - f_t_max = -17.13
+Step 2, eps = 0.08244, f_c_min - f_t_max = -2.019
+Step 3, eps = 0.06420, f_c_min - f_t_max = 2.9967
+Step 4, eps = 0.07275, f_c_min - f_t_max = 0.6939
+Step 5, eps = 0.07744, f_c_min - f_t_max = -0.573
+Step 6, eps = 0.07506, f_c_min - f_t_max = 0.1084
+Step 7, eps = 0.07624, f_c_min - f_t_max = -0.232
+Step 8, eps = 0.07565, f_c_min - f_t_max = -0.081
+Step 9, eps = 0.07535, f_c_min - f_t_max = -0.011
+Step 10, eps = 0.07521, f_c_min - f_t_max = 0.0114
+Step 11, eps = 0.07528, f_c_min - f_t_max = 0.0244
+Step 12, eps = 0.07532, f_c_min - f_t_max = -0.001
+Step 13, eps = 0.07530, f_c_min - f_t_max = 0.0222
+Step 14, eps = 0.07531, f_c_min - f_t_max = 0.0149
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 43, true_id = 45, target_label = 1, true_label = 5, robustness = 0.07531
+Step 0, eps = 0.05000, f_c_min - f_t_max = -2.675
+Step 1, eps = 0.01839, f_c_min - f_t_max = 3.5506
+Step 2, eps = 0.03033, f_c_min - f_t_max = 1.4357
+Step 3, eps = 0.03894, f_c_min - f_t_max = -0.264
+Step 4, eps = 0.03436, f_c_min - f_t_max = 0.6598
+Step 5, eps = 0.03658, f_c_min - f_t_max = 0.2179
+Step 6, eps = 0.03774, f_c_min - f_t_max = -0.016
+Step 7, eps = 0.03716, f_c_min - f_t_max = 0.1009
+Step 8, eps = 0.03745, f_c_min - f_t_max = 0.0424
+Step 9, eps = 0.03759, f_c_min - f_t_max = 0.0107
+Step 10, eps = 0.03767, f_c_min - f_t_max = -0.002
+Step 11, eps = 0.03763, f_c_min - f_t_max = 0.0048
+Step 12, eps = 0.03765, f_c_min - f_t_max = 0.0014
+Step 13, eps = 0.03766, f_c_min - f_t_max = -0.002
+Step 14, eps = 0.03765, f_c_min - f_t_max = 0.0003
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 44, true_id = 46, target_label = 2, true_label = 1, robustness = 0.03765
+Step 0, eps = 0.05000, f_c_min - f_t_max = -0.060
+Step 1, eps = 0.01839, f_c_min - f_t_max = 6.4903
+Step 2, eps = 0.03033, f_c_min - f_t_max = 4.2342
+Step 3, eps = 0.03894, f_c_min - f_t_max = 2.4384
+Step 4, eps = 0.04412, f_c_min - f_t_max = 1.3001
+Step 5, eps = 0.04697, f_c_min - f_t_max = 0.6391
+Step 6, eps = 0.04846, f_c_min - f_t_max = 0.2898
+Step 7, eps = 0.04922, f_c_min - f_t_max = 0.1088
+Step 8, eps = 0.04961, f_c_min - f_t_max = 0.0323
+Step 9, eps = 0.04981, f_c_min - f_t_max = -0.021
+Step 10, eps = 0.04971, f_c_min - f_t_max = -0.000
+Step 11, eps = 0.04966, f_c_min - f_t_max = 0.0136
+Step 12, eps = 0.04968, f_c_min - f_t_max = 0.0037
+Step 13, eps = 0.04970, f_c_min - f_t_max = 0.0011
+Step 14, eps = 0.04970, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 45, true_id = 47, target_label = 5, true_label = 2, robustness = 0.04970
+Step 0, eps = 0.05000, f_c_min - f_t_max = 7.6440
+Step 1, eps = 0.13591, f_c_min - f_t_max = -10.88
+Step 2, eps = 0.08244, f_c_min - f_t_max = 1.0825
+Step 3, eps = 0.10585, f_c_min - f_t_max = -4.179
+Step 4, eps = 0.09341, f_c_min - f_t_max = -1.379
+Step 5, eps = 0.08775, f_c_min - f_t_max = -0.117
+Step 6, eps = 0.08505, f_c_min - f_t_max = 0.5034
+Step 7, eps = 0.08639, f_c_min - f_t_max = 0.2116
+Step 8, eps = 0.08707, f_c_min - f_t_max = 0.0749
+Step 9, eps = 0.08741, f_c_min - f_t_max = -0.022
+Step 10, eps = 0.08724, f_c_min - f_t_max = 0.0154
+Step 11, eps = 0.08733, f_c_min - f_t_max = 0.0048
+Step 12, eps = 0.08737, f_c_min - f_t_max = -0.002
+Step 13, eps = 0.08735, f_c_min - f_t_max = -0.000
+Step 14, eps = 0.08734, f_c_min - f_t_max = -0.006
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 46, true_id = 48, target_label = 6, true_label = 4, robustness = 0.08733
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.7567
+Step 1, eps = 0.13591, f_c_min - f_t_max = -21.43
+Step 2, eps = 0.08244, f_c_min - f_t_max = -5.213
+Step 3, eps = 0.06420, f_c_min - f_t_max = 0.0566
+Step 4, eps = 0.07275, f_c_min - f_t_max = -2.346
+Step 5, eps = 0.06834, f_c_min - f_t_max = -1.100
+Step 6, eps = 0.06624, f_c_min - f_t_max = -0.498
+Step 7, eps = 0.06521, f_c_min - f_t_max = -0.219
+Step 8, eps = 0.06470, f_c_min - f_t_max = -0.073
+Step 9, eps = 0.06445, f_c_min - f_t_max = -0.009
+Step 10, eps = 0.06433, f_c_min - f_t_max = 0.0307
+Step 11, eps = 0.06439, f_c_min - f_t_max = 0.0021
+Step 12, eps = 0.06442, f_c_min - f_t_max = -0.004
+Step 13, eps = 0.06441, f_c_min - f_t_max = 0.0027
+Step 14, eps = 0.06441, f_c_min - f_t_max = 0.0063
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 47, true_id = 49, target_label = 5, true_label = 4, robustness = 0.06441
+Step 0, eps = 0.05000, f_c_min - f_t_max = -0.651
+Step 1, eps = 0.01839, f_c_min - f_t_max = 4.1911
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.5333
+Step 3, eps = 0.03894, f_c_min - f_t_max = 1.2129
+Step 4, eps = 0.04412, f_c_min - f_t_max = 0.3624
+Step 5, eps = 0.04697, f_c_min - f_t_max = -0.126
+Step 6, eps = 0.04553, f_c_min - f_t_max = 0.1247
+Step 7, eps = 0.04624, f_c_min - f_t_max = 0.0019
+Step 8, eps = 0.04661, f_c_min - f_t_max = -0.059
+Step 9, eps = 0.04642, f_c_min - f_t_max = -0.027
+Step 10, eps = 0.04633, f_c_min - f_t_max = -0.013
+Step 11, eps = 0.04629, f_c_min - f_t_max = -0.007
+Step 12, eps = 0.04627, f_c_min - f_t_max = 0.0023
+Step 13, eps = 0.04628, f_c_min - f_t_max = -0.007
+Step 14, eps = 0.04627, f_c_min - f_t_max = 0.0045
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 48, true_id = 50, target_label = 0, true_label = 6, robustness = 0.04627
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.3897
+Step 1, eps = 0.13591, f_c_min - f_t_max = -15.05
+Step 2, eps = 0.08244, f_c_min - f_t_max = -3.081
+Step 3, eps = 0.06420, f_c_min - f_t_max = 0.6898
+Step 4, eps = 0.07275, f_c_min - f_t_max = -1.037
+Step 5, eps = 0.06834, f_c_min - f_t_max = -0.148
+Step 6, eps = 0.06624, f_c_min - f_t_max = 0.2783
+Step 7, eps = 0.06728, f_c_min - f_t_max = 0.0645
+Step 8, eps = 0.06781, f_c_min - f_t_max = -0.054
+Step 9, eps = 0.06755, f_c_min - f_t_max = 0.0173
+Step 10, eps = 0.06768, f_c_min - f_t_max = -0.001
+Step 11, eps = 0.06761, f_c_min - f_t_max = -0.000
+Step 12, eps = 0.06758, f_c_min - f_t_max = 0.0013
+Step 13, eps = 0.06760, f_c_min - f_t_max = 0.0090
+Step 14, eps = 0.06760, f_c_min - f_t_max = 0.0078
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 49, true_id = 51, target_label = 9, true_label = 3, robustness = 0.06760
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.6999
+Step 1, eps = 0.13591, f_c_min - f_t_max = -18.10
+Step 2, eps = 0.08244, f_c_min - f_t_max = -4.187
+Step 3, eps = 0.06420, f_c_min - f_t_max = 0.4326
+Step 4, eps = 0.07275, f_c_min - f_t_max = -1.673
+Step 5, eps = 0.06834, f_c_min - f_t_max = -0.588
+Step 6, eps = 0.06624, f_c_min - f_t_max = -0.069
+Step 7, eps = 0.06521, f_c_min - f_t_max = 0.1839
+Step 8, eps = 0.06572, f_c_min - f_t_max = 0.0535
+Step 9, eps = 0.06598, f_c_min - f_t_max = -0.000
+Step 10, eps = 0.06585, f_c_min - f_t_max = 0.0458
+Step 11, eps = 0.06592, f_c_min - f_t_max = 0.0148
+Step 12, eps = 0.06595, f_c_min - f_t_max = -0.003
+Step 13, eps = 0.06593, f_c_min - f_t_max = 0.0132
+Step 14, eps = 0.06594, f_c_min - f_t_max = -0.002
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 50, true_id = 52, target_label = 7, true_label = 5, robustness = 0.06593
+Step 0, eps = 0.05000, f_c_min - f_t_max = -2.808
+Step 1, eps = 0.01839, f_c_min - f_t_max = 3.2955
+Step 2, eps = 0.03033, f_c_min - f_t_max = 1.1041
+Step 3, eps = 0.03894, f_c_min - f_t_max = -0.549
+Step 4, eps = 0.03436, f_c_min - f_t_max = 0.3367
+Step 5, eps = 0.03658, f_c_min - f_t_max = -0.104
+Step 6, eps = 0.03546, f_c_min - f_t_max = 0.1193
+Step 7, eps = 0.03601, f_c_min - f_t_max = 0.0159
+Step 8, eps = 0.03630, f_c_min - f_t_max = -0.044
+Step 9, eps = 0.03615, f_c_min - f_t_max = -0.012
+Step 10, eps = 0.03608, f_c_min - f_t_max = -0.004
+Step 11, eps = 0.03605, f_c_min - f_t_max = 0.0112
+Step 12, eps = 0.03607, f_c_min - f_t_max = 0.0025
+Step 13, eps = 0.03608, f_c_min - f_t_max = 0.0021
+Step 14, eps = 0.03608, f_c_min - f_t_max = 0.0013
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 51, true_id = 53, target_label = 7, true_label = 5, robustness = 0.03608
+Step 0, eps = 0.05000, f_c_min - f_t_max = 6.3043
+Step 1, eps = 0.13591, f_c_min - f_t_max = -16.13
+Step 2, eps = 0.08244, f_c_min - f_t_max = -1.577
+Step 3, eps = 0.06420, f_c_min - f_t_max = 3.0515
+Step 4, eps = 0.07275, f_c_min - f_t_max = 0.9367
+Step 5, eps = 0.07744, f_c_min - f_t_max = -0.278
+Step 6, eps = 0.07506, f_c_min - f_t_max = 0.3500
+Step 7, eps = 0.07624, f_c_min - f_t_max = 0.0431
+Step 8, eps = 0.07684, f_c_min - f_t_max = -0.103
+Step 9, eps = 0.07654, f_c_min - f_t_max = -0.022
+Step 10, eps = 0.07639, f_c_min - f_t_max = 0.0095
+Step 11, eps = 0.07646, f_c_min - f_t_max = -0.007
+Step 12, eps = 0.07643, f_c_min - f_t_max = -0.006
+Step 13, eps = 0.07641, f_c_min - f_t_max = 0.0171
+Step 14, eps = 0.07642, f_c_min - f_t_max = 0.0001
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 52, true_id = 54, target_label = 4, true_label = 6, robustness = 0.07642
+Step 0, eps = 0.05000, f_c_min - f_t_max = -0.212
+Step 1, eps = 0.01839, f_c_min - f_t_max = 4.0109
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.5514
+Step 3, eps = 0.03894, f_c_min - f_t_max = 1.3974
+Step 4, eps = 0.04412, f_c_min - f_t_max = 0.6623
+Step 5, eps = 0.04697, f_c_min - f_t_max = 0.2418
+Step 6, eps = 0.04846, f_c_min - f_t_max = 0.0216
+Step 7, eps = 0.04922, f_c_min - f_t_max = -0.098
+Step 8, eps = 0.04884, f_c_min - f_t_max = -0.031
+Step 9, eps = 0.04865, f_c_min - f_t_max = -0.012
+Step 10, eps = 0.04856, f_c_min - f_t_max = 0.0055
+Step 11, eps = 0.04860, f_c_min - f_t_max = -0.001
+Step 12, eps = 0.04858, f_c_min - f_t_max = -0.003
+Step 13, eps = 0.04857, f_c_min - f_t_max = 0.0036
+Step 14, eps = 0.04857, f_c_min - f_t_max = 0.0089
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 53, true_id = 55, target_label = 8, true_label = 0, robustness = 0.04857
+Step 0, eps = 0.05000, f_c_min - f_t_max = 5.0307
+Step 1, eps = 0.13591, f_c_min - f_t_max = -19.04
+Step 2, eps = 0.08244, f_c_min - f_t_max = -3.494
+Step 3, eps = 0.06420, f_c_min - f_t_max = 1.5083
+Step 4, eps = 0.07275, f_c_min - f_t_max = -0.795
+Step 5, eps = 0.06834, f_c_min - f_t_max = 0.4198
+Step 6, eps = 0.07051, f_c_min - f_t_max = -0.169
+Step 7, eps = 0.06942, f_c_min - f_t_max = 0.1315
+Step 8, eps = 0.06996, f_c_min - f_t_max = -0.022
+Step 9, eps = 0.06969, f_c_min - f_t_max = 0.0600
+Step 10, eps = 0.06983, f_c_min - f_t_max = 0.0275
+Step 11, eps = 0.06989, f_c_min - f_t_max = 0.0033
+Step 12, eps = 0.06993, f_c_min - f_t_max = 0.0057
+Step 13, eps = 0.06995, f_c_min - f_t_max = -0.025
+Step 14, eps = 0.06994, f_c_min - f_t_max = -0.005
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 54, true_id = 56, target_label = 3, true_label = 4, robustness = 0.06993
+Step 0, eps = 0.05000, f_c_min - f_t_max = -2.167
+Step 1, eps = 0.01839, f_c_min - f_t_max = 4.8614
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.5247
+Step 3, eps = 0.03894, f_c_min - f_t_max = 0.6097
+Step 4, eps = 0.04412, f_c_min - f_t_max = -0.642
+Step 5, eps = 0.04145, f_c_min - f_t_max = 0.0167
+Step 6, eps = 0.04277, f_c_min - f_t_max = -0.302
+Step 7, eps = 0.04210, f_c_min - f_t_max = -0.143
+Step 8, eps = 0.04178, f_c_min - f_t_max = -0.059
+Step 9, eps = 0.04161, f_c_min - f_t_max = -0.027
+Step 10, eps = 0.04153, f_c_min - f_t_max = -0.003
+Step 11, eps = 0.04149, f_c_min - f_t_max = 0.0026
+Step 12, eps = 0.04151, f_c_min - f_t_max = 0.0035
+Step 13, eps = 0.04152, f_c_min - f_t_max = -0.004
+Step 14, eps = 0.04152, f_c_min - f_t_max = -0.005
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 55, true_id = 57, target_label = 2, true_label = 1, robustness = 0.04151
+Step 0, eps = 0.05000, f_c_min - f_t_max = 2.2778
+Step 1, eps = 0.13591, f_c_min - f_t_max = -23.23
+Step 2, eps = 0.08244, f_c_min - f_t_max = -6.883
+Step 3, eps = 0.06420, f_c_min - f_t_max = -1.422
+Step 4, eps = 0.05666, f_c_min - f_t_max = 0.6174
+Step 5, eps = 0.06031, f_c_min - f_t_max = -0.359
+Step 6, eps = 0.05846, f_c_min - f_t_max = 0.1349
+Step 7, eps = 0.05938, f_c_min - f_t_max = -0.112
+Step 8, eps = 0.05891, f_c_min - f_t_max = 0.0236
+Step 9, eps = 0.05914, f_c_min - f_t_max = -0.042
+Step 10, eps = 0.05903, f_c_min - f_t_max = -0.009
+Step 11, eps = 0.05897, f_c_min - f_t_max = 0.0100
+Step 12, eps = 0.05900, f_c_min - f_t_max = 0.0045
+Step 13, eps = 0.05902, f_c_min - f_t_max = -0.010
+Step 14, eps = 0.05901, f_c_min - f_t_max = -0.012
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 56, true_id = 58, target_label = 2, true_label = 9, robustness = 0.05900
+Step 0, eps = 0.05000, f_c_min - f_t_max = -1.728
+Step 1, eps = 0.01839, f_c_min - f_t_max = 3.8666
+Step 2, eps = 0.03033, f_c_min - f_t_max = 1.9369
+Step 3, eps = 0.03894, f_c_min - f_t_max = 0.4166
+Step 4, eps = 0.04412, f_c_min - f_t_max = -0.560
+Step 5, eps = 0.04145, f_c_min - f_t_max = -0.050
+Step 6, eps = 0.04018, f_c_min - f_t_max = 0.1936
+Step 7, eps = 0.04081, f_c_min - f_t_max = 0.0758
+Step 8, eps = 0.04113, f_c_min - f_t_max = 0.0022
+Step 9, eps = 0.04129, f_c_min - f_t_max = -0.019
+Step 10, eps = 0.04121, f_c_min - f_t_max = -0.003
+Step 11, eps = 0.04117, f_c_min - f_t_max = 0.0008
+Step 12, eps = 0.04119, f_c_min - f_t_max = -0.000
+Step 13, eps = 0.04118, f_c_min - f_t_max = 0.0012
+Step 14, eps = 0.04118, f_c_min - f_t_max = 0.0059
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 57, true_id = 59, target_label = 0, true_label = 5, robustness = 0.04118
+Step 0, eps = 0.05000, f_c_min - f_t_max = 5.5762
+Step 1, eps = 0.13591, f_c_min - f_t_max = -15.23
+Step 2, eps = 0.08244, f_c_min - f_t_max = -1.809
+Step 3, eps = 0.06420, f_c_min - f_t_max = 2.5691
+Step 4, eps = 0.07275, f_c_min - f_t_max = 0.5880
+Step 5, eps = 0.07744, f_c_min - f_t_max = -0.556
+Step 6, eps = 0.07506, f_c_min - f_t_max = 0.0266
+Step 7, eps = 0.07624, f_c_min - f_t_max = -0.249
+Step 8, eps = 0.07565, f_c_min - f_t_max = -0.112
+Step 9, eps = 0.07535, f_c_min - f_t_max = -0.038
+Step 10, eps = 0.07521, f_c_min - f_t_max = 0.0070
+Step 11, eps = 0.07528, f_c_min - f_t_max = -0.019
+Step 12, eps = 0.07524, f_c_min - f_t_max = -0.005
+Step 13, eps = 0.07522, f_c_min - f_t_max = -0.016
+Step 14, eps = 0.07521, f_c_min - f_t_max = -0.008
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 58, true_id = 60, target_label = 9, true_label = 7, robustness = 0.07521
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.5360
+Step 1, eps = 0.13591, f_c_min - f_t_max = -16.50
+Step 2, eps = 0.08244, f_c_min - f_t_max = -3.575
+Step 3, eps = 0.06420, f_c_min - f_t_max = 0.6225
+Step 4, eps = 0.07275, f_c_min - f_t_max = -1.300
+Step 5, eps = 0.06834, f_c_min - f_t_max = -0.298
+Step 6, eps = 0.06624, f_c_min - f_t_max = 0.1765
+Step 7, eps = 0.06728, f_c_min - f_t_max = -0.051
+Step 8, eps = 0.06676, f_c_min - f_t_max = 0.0597
+Step 9, eps = 0.06702, f_c_min - f_t_max = -0.005
+Step 10, eps = 0.06689, f_c_min - f_t_max = 0.0338
+Step 11, eps = 0.06695, f_c_min - f_t_max = 0.0191
+Step 12, eps = 0.06699, f_c_min - f_t_max = 0.0051
+Step 13, eps = 0.06700, f_c_min - f_t_max = 0.0033
+Step 14, eps = 0.06701, f_c_min - f_t_max = 0.0023
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 59, true_id = 61, target_label = 3, true_label = 8, robustness = 0.06701
+Step 0, eps = 0.05000, f_c_min - f_t_max = -4.668
+Step 1, eps = 0.01839, f_c_min - f_t_max = 1.9058
+Step 2, eps = 0.03033, f_c_min - f_t_max = -0.325
+Step 3, eps = 0.02362, f_c_min - f_t_max = 0.9636
+Step 4, eps = 0.02676, f_c_min - f_t_max = 0.3704
+Step 5, eps = 0.02849, f_c_min - f_t_max = 0.0374
+Step 6, eps = 0.02939, f_c_min - f_t_max = -0.141
+Step 7, eps = 0.02894, f_c_min - f_t_max = -0.050
+Step 8, eps = 0.02871, f_c_min - f_t_max = -0.006
+Step 9, eps = 0.02860, f_c_min - f_t_max = 0.0153
+Step 10, eps = 0.02866, f_c_min - f_t_max = 0.0053
+Step 11, eps = 0.02868, f_c_min - f_t_max = -0.002
+Step 12, eps = 0.02867, f_c_min - f_t_max = 0.0011
+Step 13, eps = 0.02868, f_c_min - f_t_max = -0.001
+Step 14, eps = 0.02867, f_c_min - f_t_max = 0.0002
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 60, true_id = 62, target_label = 8, true_label = 9, robustness = 0.02867
+Step 0, eps = 0.05000, f_c_min - f_t_max = -1.893
+Step 1, eps = 0.01839, f_c_min - f_t_max = 3.7148
+Step 2, eps = 0.03033, f_c_min - f_t_max = 1.7765
+Step 3, eps = 0.03894, f_c_min - f_t_max = 0.2489
+Step 4, eps = 0.04412, f_c_min - f_t_max = -0.727
+Step 5, eps = 0.04145, f_c_min - f_t_max = -0.218
+Step 6, eps = 0.04018, f_c_min - f_t_max = 0.0219
+Step 7, eps = 0.04081, f_c_min - f_t_max = -0.097
+Step 8, eps = 0.04049, f_c_min - f_t_max = -0.037
+Step 9, eps = 0.04033, f_c_min - f_t_max = -0.006
+Step 10, eps = 0.04025, f_c_min - f_t_max = 0.0066
+Step 11, eps = 0.04029, f_c_min - f_t_max = 0.0015
+Step 12, eps = 0.04031, f_c_min - f_t_max = -0.008
+Step 13, eps = 0.04030, f_c_min - f_t_max = 1.0609
+Step 14, eps = 0.04031, f_c_min - f_t_max = 0.0019
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 61, true_id = 63, target_label = 5, true_label = 3, robustness = 0.04031
+Step 0, eps = 0.05000, f_c_min - f_t_max = 5.6722
+Step 1, eps = 0.13591, f_c_min - f_t_max = -13.77
+Step 2, eps = 0.08244, f_c_min - f_t_max = -1.196
+Step 3, eps = 0.06420, f_c_min - f_t_max = 2.8346
+Step 4, eps = 0.07275, f_c_min - f_t_max = 0.9975
+Step 5, eps = 0.07744, f_c_min - f_t_max = -0.068
+Step 6, eps = 0.07506, f_c_min - f_t_max = 0.4891
+Step 7, eps = 0.07624, f_c_min - f_t_max = 0.2233
+Step 8, eps = 0.07684, f_c_min - f_t_max = 0.0875
+Step 9, eps = 0.07714, f_c_min - f_t_max = 0.0126
+Step 10, eps = 0.07729, f_c_min - f_t_max = -0.012
+Step 11, eps = 0.07721, f_c_min - f_t_max = 0.0017
+Step 12, eps = 0.07725, f_c_min - f_t_max = -0.008
+Step 13, eps = 0.07723, f_c_min - f_t_max = -0.011
+Step 14, eps = 0.07722, f_c_min - f_t_max = -0.013
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 62, true_id = 64, target_label = 0, true_label = 7, robustness = 0.07721
+Step 0, eps = 0.05000, f_c_min - f_t_max = -1.464
+Step 1, eps = 0.01839, f_c_min - f_t_max = 4.3089
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.3269
+Step 3, eps = 0.03894, f_c_min - f_t_max = 0.7487
+Step 4, eps = 0.04412, f_c_min - f_t_max = -0.260
+Step 5, eps = 0.04145, f_c_min - f_t_max = 0.2693
+Step 6, eps = 0.04277, f_c_min - f_t_max = 0.0067
+Step 7, eps = 0.04344, f_c_min - f_t_max = -0.127
+Step 8, eps = 0.04310, f_c_min - f_t_max = -0.059
+Step 9, eps = 0.04293, f_c_min - f_t_max = -0.030
+Step 10, eps = 0.04285, f_c_min - f_t_max = -0.015
+Step 11, eps = 0.04281, f_c_min - f_t_max = -0.000
+Step 12, eps = 0.04279, f_c_min - f_t_max = -0.000
+Step 13, eps = 0.04278, f_c_min - f_t_max = 0.0079
+Step 14, eps = 0.04278, f_c_min - f_t_max = 0.0133
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 63, true_id = 65, target_label = 8, true_label = 4, robustness = 0.04278
+Step 0, eps = 0.05000, f_c_min - f_t_max = -5.981
+Step 1, eps = 0.01839, f_c_min - f_t_max = 0.8881
+Step 2, eps = 0.03033, f_c_min - f_t_max = -1.505
+Step 3, eps = 0.02362, f_c_min - f_t_max = -0.130
+Step 4, eps = 0.02084, f_c_min - f_t_max = 0.4140
+Step 5, eps = 0.02219, f_c_min - f_t_max = 0.1534
+Step 6, eps = 0.02289, f_c_min - f_t_max = 0.0128
+Step 7, eps = 0.02325, f_c_min - f_t_max = -0.057
+Step 8, eps = 0.02307, f_c_min - f_t_max = -0.021
+Step 9, eps = 0.02298, f_c_min - f_t_max = -0.004
+Step 10, eps = 0.02294, f_c_min - f_t_max = 0.0044
+Step 11, eps = 0.02296, f_c_min - f_t_max = 0.0007
+Step 12, eps = 0.02297, f_c_min - f_t_max = -0.000
+Step 13, eps = 0.02296, f_c_min - f_t_max = 0.0001
+Step 14, eps = 0.02297, f_c_min - f_t_max = -0.002
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 64, true_id = 66, target_label = 5, true_label = 6, robustness = 0.02296
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.0367
+Step 1, eps = 0.13591, f_c_min - f_t_max = -21.32
+Step 2, eps = 0.08244, f_c_min - f_t_max = -5.564
+Step 3, eps = 0.06420, f_c_min - f_t_max = -0.464
+Step 4, eps = 0.05666, f_c_min - f_t_max = 1.4524
+Step 5, eps = 0.06031, f_c_min - f_t_max = 0.5286
+Step 6, eps = 0.06223, f_c_min - f_t_max = 0.0488
+Step 7, eps = 0.06321, f_c_min - f_t_max = -0.210
+Step 8, eps = 0.06271, f_c_min - f_t_max = -0.094
+Step 9, eps = 0.06247, f_c_min - f_t_max = -0.012
+Step 10, eps = 0.06235, f_c_min - f_t_max = 0.0110
+Step 11, eps = 0.06241, f_c_min - f_t_max = 0.0062
+Step 12, eps = 0.06244, f_c_min - f_t_max = -0.017
+Step 13, eps = 0.06242, f_c_min - f_t_max = -0.012
+Step 14, eps = 0.06242, f_c_min - f_t_max = -0.011
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 65, true_id = 67, target_label = 2, true_label = 4, robustness = 0.06241
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.4964
+Step 1, eps = 0.13591, f_c_min - f_t_max = -15.48
+Step 2, eps = 0.08244, f_c_min - f_t_max = -3.346
+Step 3, eps = 0.06420, f_c_min - f_t_max = 0.6657
+Step 4, eps = 0.07275, f_c_min - f_t_max = -1.164
+Step 5, eps = 0.06834, f_c_min - f_t_max = -0.204
+Step 6, eps = 0.06624, f_c_min - f_t_max = 0.2397
+Step 7, eps = 0.06728, f_c_min - f_t_max = 0.0186
+Step 8, eps = 0.06781, f_c_min - f_t_max = -0.094
+Step 9, eps = 0.06755, f_c_min - f_t_max = -0.033
+Step 10, eps = 0.06741, f_c_min - f_t_max = -0.018
+Step 11, eps = 0.06735, f_c_min - f_t_max = -0.001
+Step 12, eps = 0.06732, f_c_min - f_t_max = 0.0246
+Step 13, eps = 0.06733, f_c_min - f_t_max = 0.0082
+Step 14, eps = 0.06734, f_c_min - f_t_max = 0.0022
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 66, true_id = 68, target_label = 1, true_label = 3, robustness = 0.06734
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.8101
+Step 1, eps = 0.13591, f_c_min - f_t_max = -14.85
+Step 2, eps = 0.08244, f_c_min - f_t_max = -2.917
+Step 3, eps = 0.06420, f_c_min - f_t_max = 1.0304
+Step 4, eps = 0.07275, f_c_min - f_t_max = -0.781
+Step 5, eps = 0.06834, f_c_min - f_t_max = 0.1643
+Step 6, eps = 0.07051, f_c_min - f_t_max = -0.295
+Step 7, eps = 0.06942, f_c_min - f_t_max = -0.061
+Step 8, eps = 0.06888, f_c_min - f_t_max = 0.0557
+Step 9, eps = 0.06915, f_c_min - f_t_max = -0.004
+Step 10, eps = 0.06901, f_c_min - f_t_max = 0.0266
+Step 11, eps = 0.06908, f_c_min - f_t_max = 0.0003
+Step 12, eps = 0.06911, f_c_min - f_t_max = 0.0008
+Step 13, eps = 0.06913, f_c_min - f_t_max = 0.0053
+Step 14, eps = 0.06914, f_c_min - f_t_max = -0.009
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 67, true_id = 69, target_label = 6, true_label = 0, robustness = 0.06913
+Step 0, eps = 0.05000, f_c_min - f_t_max = 7.3460
+Step 1, eps = 0.13591, f_c_min - f_t_max = -20.01
+Step 2, eps = 0.08244, f_c_min - f_t_max = -2.448
+Step 3, eps = 0.06420, f_c_min - f_t_max = 3.3993
+Step 4, eps = 0.07275, f_c_min - f_t_max = 0.7448
+Step 5, eps = 0.07744, f_c_min - f_t_max = -0.780
+Step 6, eps = 0.07506, f_c_min - f_t_max = 0.0136
+Step 7, eps = 0.07624, f_c_min - f_t_max = -0.388
+Step 8, eps = 0.07565, f_c_min - f_t_max = -0.173
+Step 9, eps = 0.07535, f_c_min - f_t_max = -0.089
+Step 10, eps = 0.07521, f_c_min - f_t_max = -0.038
+Step 11, eps = 0.07513, f_c_min - f_t_max = -0.024
+Step 12, eps = 0.07510, f_c_min - f_t_max = 0.0008
+Step 13, eps = 0.07511, f_c_min - f_t_max = -0.011
+Step 14, eps = 0.07510, f_c_min - f_t_max = -0.023
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 68, true_id = 70, target_label = 5, true_label = 7, robustness = 0.07510
+Step 0, eps = 0.05000, f_c_min - f_t_max = 5.9341
+Step 1, eps = 0.13591, f_c_min - f_t_max = -10.92
+Step 2, eps = 0.08244, f_c_min - f_t_max = -0.066
+Step 3, eps = 0.06420, f_c_min - f_t_max = 3.4569
+Step 4, eps = 0.07275, f_c_min - f_t_max = 1.8453
+Step 5, eps = 0.07744, f_c_min - f_t_max = 0.9507
+Step 6, eps = 0.07990, f_c_min - f_t_max = 0.4407
+Step 7, eps = 0.08116, f_c_min - f_t_max = 0.1815
+Step 8, eps = 0.08179, f_c_min - f_t_max = 0.0730
+Step 9, eps = 0.08211, f_c_min - f_t_max = 0.0013
+Step 10, eps = 0.08228, f_c_min - f_t_max = -0.030
+Step 11, eps = 0.08219, f_c_min - f_t_max = -0.002
+Step 12, eps = 0.08215, f_c_min - f_t_max = -0.012
+Step 13, eps = 0.08213, f_c_min - f_t_max = -0.023
+Step 14, eps = 0.08212, f_c_min - f_t_max = -0.002
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 69, true_id = 71, target_label = 8, true_label = 0, robustness = 0.08211
+Step 0, eps = 0.05000, f_c_min - f_t_max = 1.8027
+Step 1, eps = 0.13591, f_c_min - f_t_max = -17.94
+Step 2, eps = 0.08244, f_c_min - f_t_max = -5.298
+Step 3, eps = 0.06420, f_c_min - f_t_max = -1.164
+Step 4, eps = 0.05666, f_c_min - f_t_max = 0.4363
+Step 5, eps = 0.06031, f_c_min - f_t_max = -0.323
+Step 6, eps = 0.05846, f_c_min - f_t_max = 0.0776
+Step 7, eps = 0.05938, f_c_min - f_t_max = -0.114
+Step 8, eps = 0.05891, f_c_min - f_t_max = -0.022
+Step 9, eps = 0.05868, f_c_min - f_t_max = 0.0257
+Step 10, eps = 0.05880, f_c_min - f_t_max = -0.001
+Step 11, eps = 0.05874, f_c_min - f_t_max = 0.0208
+Step 12, eps = 0.05877, f_c_min - f_t_max = 0.0095
+Step 13, eps = 0.05879, f_c_min - f_t_max = 0.0019
+Step 14, eps = 0.05879, f_c_min - f_t_max = -0.004
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 70, true_id = 72, target_label = 5, true_label = 2, robustness = 0.05879
+Step 0, eps = 0.05000, f_c_min - f_t_max = 0.1941
+Step 1, eps = 0.13591, f_c_min - f_t_max = -22.91
+Step 2, eps = 0.08244, f_c_min - f_t_max = -8.180
+Step 3, eps = 0.06420, f_c_min - f_t_max = -3.197
+Step 4, eps = 0.05666, f_c_min - f_t_max = -1.352
+Step 5, eps = 0.05322, f_c_min - f_t_max = -0.535
+Step 6, eps = 0.05159, f_c_min - f_t_max = -0.162
+Step 7, eps = 0.05079, f_c_min - f_t_max = 0.0164
+Step 8, eps = 0.05119, f_c_min - f_t_max = -0.079
+Step 9, eps = 0.05099, f_c_min - f_t_max = -0.020
+Step 10, eps = 0.05089, f_c_min - f_t_max = -0.008
+Step 11, eps = 0.05084, f_c_min - f_t_max = -0.000
+Step 12, eps = 0.05081, f_c_min - f_t_max = 0.0125
+Step 13, eps = 0.05082, f_c_min - f_t_max = 0.0032
+Step 14, eps = 0.05083, f_c_min - f_t_max = 0.0035
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 71, true_id = 73, target_label = 5, true_label = 9, robustness = 0.05083
+Step 0, eps = 0.05000, f_c_min - f_t_max = -1.358
+Step 1, eps = 0.01839, f_c_min - f_t_max = 5.0543
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.9004
+Step 3, eps = 0.03894, f_c_min - f_t_max = 1.1563
+Step 4, eps = 0.04412, f_c_min - f_t_max = 0.0138
+Step 5, eps = 0.04697, f_c_min - f_t_max = -0.634
+Step 6, eps = 0.04553, f_c_min - f_t_max = -0.310
+Step 7, eps = 0.04482, f_c_min - f_t_max = -0.147
+Step 8, eps = 0.04447, f_c_min - f_t_max = -0.062
+Step 9, eps = 0.04430, f_c_min - f_t_max = -0.026
+Step 10, eps = 0.04421, f_c_min - f_t_max = -0.007
+Step 11, eps = 0.04417, f_c_min - f_t_max = 0.0044
+Step 12, eps = 0.04419, f_c_min - f_t_max = -0.004
+Step 13, eps = 0.04418, f_c_min - f_t_max = -0.003
+Step 14, eps = 0.04417, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 72, true_id = 74, target_label = 3, true_label = 1, robustness = 0.04417
+Step 0, eps = 0.05000, f_c_min - f_t_max = -2.454
+Step 1, eps = 0.01839, f_c_min - f_t_max = 3.8145
+Step 2, eps = 0.03033, f_c_min - f_t_max = 1.6110
+Step 3, eps = 0.03894, f_c_min - f_t_max = -0.095
+Step 4, eps = 0.03436, f_c_min - f_t_max = 0.8254
+Step 5, eps = 0.03658, f_c_min - f_t_max = 0.3840
+Step 6, eps = 0.03774, f_c_min - f_t_max = 0.1437
+Step 7, eps = 0.03834, f_c_min - f_t_max = 0.0235
+Step 8, eps = 0.03864, f_c_min - f_t_max = -0.033
+Step 9, eps = 0.03849, f_c_min - f_t_max = -0.003
+Step 10, eps = 0.03841, f_c_min - f_t_max = 0.0108
+Step 11, eps = 0.03845, f_c_min - f_t_max = 0.0020
+Step 12, eps = 0.03847, f_c_min - f_t_max = -7.534
+Step 13, eps = 0.03846, f_c_min - f_t_max = 0.0040
+Step 14, eps = 0.03846, f_c_min - f_t_max = 0.0002
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 73, true_id = 75, target_label = 9, true_label = 7, robustness = 0.03846
+Step 0, eps = 0.05000, f_c_min - f_t_max = -0.512
+Step 1, eps = 0.01839, f_c_min - f_t_max = 5.4153
+Step 2, eps = 0.03033, f_c_min - f_t_max = 3.3935
+Step 3, eps = 0.03894, f_c_min - f_t_max = 1.7770
+Step 4, eps = 0.04412, f_c_min - f_t_max = 0.7368
+Step 5, eps = 0.04697, f_c_min - f_t_max = 0.1383
+Step 6, eps = 0.04846, f_c_min - f_t_max = -0.174
+Step 7, eps = 0.04771, f_c_min - f_t_max = -0.016
+Step 8, eps = 0.04734, f_c_min - f_t_max = 0.0625
+Step 9, eps = 0.04752, f_c_min - f_t_max = 0.0289
+Step 10, eps = 0.04762, f_c_min - f_t_max = 5.4359
+Step 11, eps = 0.04766, f_c_min - f_t_max = -0.009
+Step 12, eps = 0.04764, f_c_min - f_t_max = -0.000
+Step 13, eps = 0.04763, f_c_min - f_t_max = 0.0026
+Step 14, eps = 0.04763, f_c_min - f_t_max = -0.001
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 74, true_id = 76, target_label = 2, true_label = 3, robustness = 0.04763
+Step 0, eps = 0.05000, f_c_min - f_t_max = 0.2349
+Step 1, eps = 0.13591, f_c_min - f_t_max = -25.64
+Step 2, eps = 0.08244, f_c_min - f_t_max = -8.935
+Step 3, eps = 0.06420, f_c_min - f_t_max = -3.504
+Step 4, eps = 0.05666, f_c_min - f_t_max = -1.452
+Step 5, eps = 0.05322, f_c_min - f_t_max = -0.576
+Step 6, eps = 0.05159, f_c_min - f_t_max = -0.163
+Step 7, eps = 0.05079, f_c_min - f_t_max = 0.0389
+Step 8, eps = 0.05119, f_c_min - f_t_max = -0.059
+Step 9, eps = 0.05099, f_c_min - f_t_max = -0.010
+Step 10, eps = 0.05089, f_c_min - f_t_max = 0.0088
+Step 11, eps = 0.05094, f_c_min - f_t_max = 0.0036
+Step 12, eps = 0.05096, f_c_min - f_t_max = -0.013
+Step 13, eps = 0.05095, f_c_min - f_t_max = -0.008
+Step 14, eps = 0.05094, f_c_min - f_t_max = -0.005
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 75, true_id = 77, target_label = 5, true_label = 2, robustness = 0.05094
+Step 0, eps = 0.05000, f_c_min - f_t_max = -4.064
+Step 1, eps = 0.01839, f_c_min - f_t_max = 2.1537
+Step 2, eps = 0.03033, f_c_min - f_t_max = 0.0898
+Step 3, eps = 0.03894, f_c_min - f_t_max = -1.609
+Step 4, eps = 0.03436, f_c_min - f_t_max = -0.679
+Step 5, eps = 0.03228, f_c_min - f_t_max = -0.277
+Step 6, eps = 0.03129, f_c_min - f_t_max = -0.092
+Step 7, eps = 0.03080, f_c_min - f_t_max = 0.0010
+Step 8, eps = 0.03105, f_c_min - f_t_max = -0.041
+Step 9, eps = 0.03092, f_c_min - f_t_max = -0.020
+Step 10, eps = 0.03086, f_c_min - f_t_max = -0.009
+Step 11, eps = 0.03083, f_c_min - f_t_max = -0.004
+Step 12, eps = 0.03082, f_c_min - f_t_max = -0.000
+Step 13, eps = 0.03081, f_c_min - f_t_max = -9.059
+Step 14, eps = 0.03081, f_c_min - f_t_max = 0.0010
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 76, true_id = 78, target_label = 4, true_label = 9, robustness = 0.03081
+Step 0, eps = 0.05000, f_c_min - f_t_max = 12.957
+Step 1, eps = 0.13591, f_c_min - f_t_max = -8.404
+Step 2, eps = 0.08244, f_c_min - f_t_max = 5.3652
+Step 3, eps = 0.10585, f_c_min - f_t_max = -0.836
+Step 4, eps = 0.09341, f_c_min - f_t_max = 2.4459
+Step 5, eps = 0.09944, f_c_min - f_t_max = 0.8438
+Step 6, eps = 0.10259, f_c_min - f_t_max = 0.0063
+Step 7, eps = 0.10421, f_c_min - f_t_max = -0.418
+Step 8, eps = 0.10340, f_c_min - f_t_max = -0.219
+Step 9, eps = 0.10299, f_c_min - f_t_max = -0.108
+Step 10, eps = 0.10279, f_c_min - f_t_max = -0.050
+Step 11, eps = 0.10269, f_c_min - f_t_max = -0.024
+Step 12, eps = 0.10264, f_c_min - f_t_max = 0.0118
+Step 13, eps = 0.10267, f_c_min - f_t_max = -0.012
+Step 14, eps = 0.10266, f_c_min - f_t_max = -0.007
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 77, true_id = 79, target_label = 1, true_label = 7, robustness = 0.10264
+Step 0, eps = 0.05000, f_c_min - f_t_max = 4.2525
+Step 1, eps = 0.13591, f_c_min - f_t_max = -18.08
+Step 2, eps = 0.08244, f_c_min - f_t_max = -3.814
+Step 3, eps = 0.06420, f_c_min - f_t_max = 0.9351
+Step 4, eps = 0.07275, f_c_min - f_t_max = -1.231
+Step 5, eps = 0.06834, f_c_min - f_t_max = -0.093
+Step 6, eps = 0.06624, f_c_min - f_t_max = 0.4297
+Step 7, eps = 0.06728, f_c_min - f_t_max = 0.1823
+Step 8, eps = 0.06781, f_c_min - f_t_max = 0.0403
+Step 9, eps = 0.06808, f_c_min - f_t_max = -0.028
+Step 10, eps = 0.06794, f_c_min - f_t_max = 0.0086
+Step 11, eps = 0.06801, f_c_min - f_t_max = -0.004
+Step 12, eps = 0.06798, f_c_min - f_t_max = 0.0052
+Step 13, eps = 0.06799, f_c_min - f_t_max = -0.015
+Step 14, eps = 0.06798, f_c_min - f_t_max = -0.006
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 78, true_id = 80, target_label = 0, true_label = 7, robustness = 0.06798
+Step 0, eps = 0.05000, f_c_min - f_t_max = -1.195
+Step 1, eps = 0.01839, f_c_min - f_t_max = 4.0039
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.2312
+Step 3, eps = 0.03894, f_c_min - f_t_max = 0.8167
+Step 4, eps = 0.04412, f_c_min - f_t_max = -0.103
+Step 5, eps = 0.04145, f_c_min - f_t_max = 0.3757
+Step 6, eps = 0.04277, f_c_min - f_t_max = 0.1426
+Step 7, eps = 0.04344, f_c_min - f_t_max = 0.0225
+Step 8, eps = 0.04378, f_c_min - f_t_max = -0.034
+Step 9, eps = 0.04361, f_c_min - f_t_max = -0.008
+Step 10, eps = 0.04353, f_c_min - f_t_max = 0.0127
+Step 11, eps = 0.04357, f_c_min - f_t_max = 0.0003
+Step 12, eps = 0.04359, f_c_min - f_t_max = -0.005
+Step 13, eps = 0.04358, f_c_min - f_t_max = -0.004
+Step 14, eps = 0.04357, f_c_min - f_t_max = -0.004
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 79, true_id = 81, target_label = 4, true_label = 6, robustness = 0.04357
+Step 0, eps = 0.05000, f_c_min - f_t_max = 7.5579
+Step 1, eps = 0.13591, f_c_min - f_t_max = -8.167
+Step 2, eps = 0.08244, f_c_min - f_t_max = 1.9030
+Step 3, eps = 0.10585, f_c_min - f_t_max = -2.514
+Step 4, eps = 0.09341, f_c_min - f_t_max = -0.168
+Step 5, eps = 0.08775, f_c_min - f_t_max = 0.9040
+Step 6, eps = 0.09054, f_c_min - f_t_max = 0.3674
+Step 7, eps = 0.09196, f_c_min - f_t_max = 0.0946
+Step 8, eps = 0.09269, f_c_min - f_t_max = -0.045
+Step 9, eps = 0.09232, f_c_min - f_t_max = 0.0175
+Step 10, eps = 0.09250, f_c_min - f_t_max = 0.0139
+Step 11, eps = 0.09259, f_c_min - f_t_max = -0.045
+Step 12, eps = 0.09255, f_c_min - f_t_max = -0.032
+Step 13, eps = 0.09253, f_c_min - f_t_max = 0.0103
+Step 14, eps = 0.09254, f_c_min - f_t_max = -0.005
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 80, true_id = 82, target_label = 6, true_label = 2, robustness = 0.09253
+Step 0, eps = 0.05000, f_c_min - f_t_max = 6.4476
+Step 1, eps = 0.13591, f_c_min - f_t_max = -16.46
+Step 2, eps = 0.08244, f_c_min - f_t_max = -1.746
+Step 3, eps = 0.06420, f_c_min - f_t_max = 3.1067
+Step 4, eps = 0.07275, f_c_min - f_t_max = 0.8925
+Step 5, eps = 0.07744, f_c_min - f_t_max = -0.375
+Step 6, eps = 0.07506, f_c_min - f_t_max = 0.2594
+Step 7, eps = 0.07624, f_c_min - f_t_max = -0.058
+Step 8, eps = 0.07565, f_c_min - f_t_max = 0.1042
+Step 9, eps = 0.07594, f_c_min - f_t_max = 0.0376
+Step 10, eps = 0.07609, f_c_min - f_t_max = -0.011
+Step 11, eps = 0.07602, f_c_min - f_t_max = 0.0322
+Step 12, eps = 0.07605, f_c_min - f_t_max = 0.0260
+Step 13, eps = 0.07607, f_c_min - f_t_max = 0.0008
+Step 14, eps = 0.07608, f_c_min - f_t_max = -0.005
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 81, true_id = 83, target_label = 8, true_label = 7, robustness = 0.07607
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.1665
+Step 1, eps = 0.13591, f_c_min - f_t_max = -15.59
+Step 2, eps = 0.08244, f_c_min - f_t_max = -3.383
+Step 3, eps = 0.06420, f_c_min - f_t_max = 0.4635
+Step 4, eps = 0.07275, f_c_min - f_t_max = -1.292
+Step 5, eps = 0.06834, f_c_min - f_t_max = -0.357
+Step 6, eps = 0.06624, f_c_min - f_t_max = 0.0518
+Step 7, eps = 0.06728, f_c_min - f_t_max = -0.152
+Step 8, eps = 0.06676, f_c_min - f_t_max = -0.035
+Step 9, eps = 0.06650, f_c_min - f_t_max = 0.0150
+Step 10, eps = 0.06663, f_c_min - f_t_max = -0.021
+Step 11, eps = 0.06656, f_c_min - f_t_max = -0.009
+Step 12, eps = 0.06653, f_c_min - f_t_max = -0.001
+Step 13, eps = 0.06651, f_c_min - f_t_max = -4.839
+Step 14, eps = 0.06651, f_c_min - f_t_max = 0.0090
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 82, true_id = 84, target_label = 6, true_label = 8, robustness = 0.06651
+Step 0, eps = 0.05000, f_c_min - f_t_max = 7.4615
+Step 1, eps = 0.13591, f_c_min - f_t_max = -14.10
+Step 2, eps = 0.08244, f_c_min - f_t_max = -0.134
+Step 3, eps = 0.06420, f_c_min - f_t_max = 4.3391
+Step 4, eps = 0.07275, f_c_min - f_t_max = 2.3044
+Step 5, eps = 0.07744, f_c_min - f_t_max = 1.1531
+Step 6, eps = 0.07990, f_c_min - f_t_max = 0.5273
+Step 7, eps = 0.08116, f_c_min - f_t_max = 0.2208
+Step 8, eps = 0.08179, f_c_min - f_t_max = 0.0446
+Step 9, eps = 0.08211, f_c_min - f_t_max = -0.061
+Step 10, eps = 0.08195, f_c_min - f_t_max = -0.008
+Step 11, eps = 0.08187, f_c_min - f_t_max = 0.0291
+Step 12, eps = 0.08191, f_c_min - f_t_max = 0.0027
+Step 13, eps = 0.08193, f_c_min - f_t_max = 0.0039
+Step 14, eps = 0.08194, f_c_min - f_t_max = -0.002
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 83, true_id = 85, target_label = 3, true_label = 4, robustness = 0.08193
+Step 0, eps = 0.05000, f_c_min - f_t_max = 2.1816
+Step 1, eps = 0.13591, f_c_min - f_t_max = -21.03
+Step 2, eps = 0.08244, f_c_min - f_t_max = -6.117
+Step 3, eps = 0.06420, f_c_min - f_t_max = -1.177
+Step 4, eps = 0.05666, f_c_min - f_t_max = 0.6655
+Step 5, eps = 0.06031, f_c_min - f_t_max = -0.214
+Step 6, eps = 0.05846, f_c_min - f_t_max = 0.2234
+Step 7, eps = 0.05938, f_c_min - f_t_max = 0.0140
+Step 8, eps = 0.05984, f_c_min - f_t_max = -0.105
+Step 9, eps = 0.05961, f_c_min - f_t_max = -0.034
+Step 10, eps = 0.05949, f_c_min - f_t_max = -0.002
+Step 11, eps = 0.05943, f_c_min - f_t_max = -0.003
+Step 12, eps = 0.05941, f_c_min - f_t_max = 0.0023
+Step 13, eps = 0.05942, f_c_min - f_t_max = -0.006
+Step 14, eps = 0.05941, f_c_min - f_t_max = 0.0049
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 84, true_id = 86, target_label = 1, true_label = 7, robustness = 0.05941
+Step 0, eps = 0.05000, f_c_min - f_t_max = -3.810
+Step 1, eps = 0.01839, f_c_min - f_t_max = 1.6375
+Step 2, eps = 0.03033, f_c_min - f_t_max = -0.284
+Step 3, eps = 0.02362, f_c_min - f_t_max = 0.8124
+Step 4, eps = 0.02676, f_c_min - f_t_max = 0.3025
+Step 5, eps = 0.02849, f_c_min - f_t_max = 0.0216
+Step 6, eps = 0.02939, f_c_min - f_t_max = -0.130
+Step 7, eps = 0.02894, f_c_min - f_t_max = -0.053
+Step 8, eps = 0.02871, f_c_min - f_t_max = -0.018
+Step 9, eps = 0.02860, f_c_min - f_t_max = -0.002
+Step 10, eps = 0.02854, f_c_min - f_t_max = 0.0124
+Step 11, eps = 0.02857, f_c_min - f_t_max = 0.0066
+Step 12, eps = 0.02859, f_c_min - f_t_max = 0.0050
+Step 13, eps = 0.02859, f_c_min - f_t_max = 0.0040
+Step 14, eps = 0.02860, f_c_min - f_t_max = 0.0005
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 85, true_id = 87, target_label = 7, true_label = 3, robustness = 0.02860
+Step 0, eps = 0.05000, f_c_min - f_t_max = 2.8212
+Step 1, eps = 0.13591, f_c_min - f_t_max = -22.14
+Step 2, eps = 0.08244, f_c_min - f_t_max = -5.963
+Step 3, eps = 0.06420, f_c_min - f_t_max = -0.722
+Step 4, eps = 0.05666, f_c_min - f_t_max = 1.2267
+Step 5, eps = 0.06031, f_c_min - f_t_max = 0.2979
+Step 6, eps = 0.06223, f_c_min - f_t_max = -0.201
+Step 7, eps = 0.06126, f_c_min - f_t_max = 0.0585
+Step 8, eps = 0.06174, f_c_min - f_t_max = -0.070
+Step 9, eps = 0.06150, f_c_min - f_t_max = -0.009
+Step 10, eps = 0.06138, f_c_min - f_t_max = 0.0154
+Step 11, eps = 0.06144, f_c_min - f_t_max = -0.002
+Step 12, eps = 0.06141, f_c_min - f_t_max = 0.0126
+Step 13, eps = 0.06143, f_c_min - f_t_max = 0.0171
+Step 14, eps = 0.06143, f_c_min - f_t_max = 0.0110
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 86, true_id = 88, target_label = 5, true_label = 6, robustness = 0.06143
+Step 0, eps = 0.05000, f_c_min - f_t_max = 2.4209
+Step 1, eps = 0.13591, f_c_min - f_t_max = -19.56
+Step 2, eps = 0.08244, f_c_min - f_t_max = -5.570
+Step 3, eps = 0.06420, f_c_min - f_t_max = -0.872
+Step 4, eps = 0.05666, f_c_min - f_t_max = 0.9135
+Step 5, eps = 0.06031, f_c_min - f_t_max = 0.0546
+Step 6, eps = 0.06223, f_c_min - f_t_max = -0.411
+Step 7, eps = 0.06126, f_c_min - f_t_max = -0.147
+Step 8, eps = 0.06078, f_c_min - f_t_max = -0.055
+Step 9, eps = 0.06055, f_c_min - f_t_max = -0.005
+Step 10, eps = 0.06043, f_c_min - f_t_max = 0.0268
+Step 11, eps = 0.06049, f_c_min - f_t_max = 0.0130
+Step 12, eps = 0.06052, f_c_min - f_t_max = 0.0123
+Step 13, eps = 0.06053, f_c_min - f_t_max = -0.006
+Step 14, eps = 0.06053, f_c_min - f_t_max = 0.0063
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 87, true_id = 89, target_label = 9, true_label = 1, robustness = 0.06053
+Step 0, eps = 0.05000, f_c_min - f_t_max = 2.5806
+Step 1, eps = 0.13591, f_c_min - f_t_max = -18.97
+Step 2, eps = 0.08244, f_c_min - f_t_max = -5.155
+Step 3, eps = 0.06420, f_c_min - f_t_max = -0.603
+Step 4, eps = 0.05666, f_c_min - f_t_max = 1.1416
+Step 5, eps = 0.06031, f_c_min - f_t_max = 0.3042
+Step 6, eps = 0.06223, f_c_min - f_t_max = -0.137
+Step 7, eps = 0.06126, f_c_min - f_t_max = 0.0819
+Step 8, eps = 0.06174, f_c_min - f_t_max = -0.039
+Step 9, eps = 0.06150, f_c_min - f_t_max = 0.0129
+Step 10, eps = 0.06162, f_c_min - f_t_max = 0.0057
+Step 11, eps = 0.06168, f_c_min - f_t_max = -0.024
+Step 12, eps = 0.06165, f_c_min - f_t_max = 0.0048
+Step 13, eps = 0.06167, f_c_min - f_t_max = -0.002
+Step 14, eps = 0.06166, f_c_min - f_t_max = -0.011
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 88, true_id = 90, target_label = 2, true_label = 3, robustness = 0.06165
+Step 0, eps = 0.05000, f_c_min - f_t_max = 5.0330
+Step 1, eps = 0.13591, f_c_min - f_t_max = -15.20
+Step 2, eps = 0.08244, f_c_min - f_t_max = -2.129
+Step 3, eps = 0.06420, f_c_min - f_t_max = 2.0779
+Step 4, eps = 0.07275, f_c_min - f_t_max = 0.1477
+Step 5, eps = 0.07744, f_c_min - f_t_max = -0.957
+Step 6, eps = 0.07506, f_c_min - f_t_max = -0.379
+Step 7, eps = 0.07390, f_c_min - f_t_max = -0.109
+Step 8, eps = 0.07332, f_c_min - f_t_max = 0.0287
+Step 9, eps = 0.07361, f_c_min - f_t_max = -0.046
+Step 10, eps = 0.07346, f_c_min - f_t_max = -0.022
+Step 11, eps = 0.07339, f_c_min - f_t_max = 0.0194
+Step 12, eps = 0.07343, f_c_min - f_t_max = 0.0201
+Step 13, eps = 0.07345, f_c_min - f_t_max = -0.007
+Step 14, eps = 0.07344, f_c_min - f_t_max = -0.010
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 89, true_id = 91, target_label = 9, true_label = 6, robustness = 0.07343
+Step 0, eps = 0.05000, f_c_min - f_t_max = -1.231
+Step 1, eps = 0.01839, f_c_min - f_t_max = 3.9445
+Step 2, eps = 0.03033, f_c_min - f_t_max = 2.1758
+Step 3, eps = 0.03894, f_c_min - f_t_max = 0.7612
+Step 4, eps = 0.04412, f_c_min - f_t_max = -0.147
+Step 5, eps = 0.04145, f_c_min - f_t_max = 0.3318
+Step 6, eps = 0.04277, f_c_min - f_t_max = 0.0965
+Step 7, eps = 0.04344, f_c_min - f_t_max = -0.029
+Step 8, eps = 0.04310, f_c_min - f_t_max = 0.0301
+Step 9, eps = 0.04327, f_c_min - f_t_max = 0.0013
+Step 10, eps = 0.04336, f_c_min - f_t_max = -0.018
+Step 11, eps = 0.04331, f_c_min - f_t_max = -0.004
+Step 12, eps = 0.04329, f_c_min - f_t_max = 0.0040
+Step 13, eps = 0.04330, f_c_min - f_t_max = -0.002
+Step 14, eps = 0.04330, f_c_min - f_t_max = 5.6743
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 90, true_id = 93, target_label = 2, true_label = 3, robustness = 0.04330
+Step 0, eps = 0.05000, f_c_min - f_t_max = 1.3797
+Step 1, eps = 0.13591, f_c_min - f_t_max = -20.81
+Step 2, eps = 0.08244, f_c_min - f_t_max = -6.530
+Step 3, eps = 0.06420, f_c_min - f_t_max = -1.869
+Step 4, eps = 0.05666, f_c_min - f_t_max = -0.091
+Step 5, eps = 0.05322, f_c_min - f_t_max = 0.6907
+Step 6, eps = 0.05491, f_c_min - f_t_max = 0.3040
+Step 7, eps = 0.05578, f_c_min - f_t_max = 0.1012
+Step 8, eps = 0.05622, f_c_min - f_t_max = 0.0012
+Step 9, eps = 0.05644, f_c_min - f_t_max = -0.049
+Step 10, eps = 0.05633, f_c_min - f_t_max = -0.028
+Step 11, eps = 0.05627, f_c_min - f_t_max = -0.017
+Step 12, eps = 0.05624, f_c_min - f_t_max = -0.003
+Step 13, eps = 0.05623, f_c_min - f_t_max = 0.0034
+Step 14, eps = 0.05624, f_c_min - f_t_max = 0.0062
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 91, true_id = 94, target_label = 4, true_label = 1, robustness = 0.05624
+Step 0, eps = 0.05000, f_c_min - f_t_max = 3.4623
+Step 1, eps = 0.13591, f_c_min - f_t_max = -11.76
+Step 2, eps = 0.08244, f_c_min - f_t_max = -1.881
+Step 3, eps = 0.06420, f_c_min - f_t_max = 1.2210
+Step 4, eps = 0.07275, f_c_min - f_t_max = -0.194
+Step 5, eps = 0.06834, f_c_min - f_t_max = 0.5315
+Step 6, eps = 0.07051, f_c_min - f_t_max = 0.1873
+Step 7, eps = 0.07162, f_c_min - f_t_max = 0.0076
+Step 8, eps = 0.07218, f_c_min - f_t_max = -0.104
+Step 9, eps = 0.07190, f_c_min - f_t_max = -0.050
+Step 10, eps = 0.07176, f_c_min - f_t_max = -0.043
+Step 11, eps = 0.07169, f_c_min - f_t_max = -0.031
+Step 12, eps = 0.07166, f_c_min - f_t_max = -0.026
+Step 13, eps = 0.07164, f_c_min - f_t_max = -0.016
+Step 14, eps = 0.07163, f_c_min - f_t_max = -0.014
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 92, true_id = 95, target_label = 0, true_label = 4, robustness = 0.07162
+Step 0, eps = 0.05000, f_c_min - f_t_max = -2.586
+Step 1, eps = 0.01839, f_c_min - f_t_max = 4.0616
+Step 2, eps = 0.03033, f_c_min - f_t_max = 1.8360
+Step 3, eps = 0.03894, f_c_min - f_t_max = 0.0235
+Step 4, eps = 0.04412, f_c_min - f_t_max = -1.161
+Step 5, eps = 0.04145, f_c_min - f_t_max = -0.539
+Step 6, eps = 0.04018, f_c_min - f_t_max = -0.258
+Step 7, eps = 0.03955, f_c_min - f_t_max = -0.117
+Step 8, eps = 0.03925, f_c_min - f_t_max = -0.047
+Step 9, eps = 0.03909, f_c_min - f_t_max = -0.014
+Step 10, eps = 0.03902, f_c_min - f_t_max = 0.0003
+Step 11, eps = 0.03905, f_c_min - f_t_max = -0.004
+Step 12, eps = 0.03904, f_c_min - f_t_max = -0.000
+Step 13, eps = 0.03903, f_c_min - f_t_max = -0.003
+Step 14, eps = 0.03902, f_c_min - f_t_max = -0.001
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 93, true_id = 96, target_label = 2, true_label = 1, robustness = 0.03902
+Step 0, eps = 0.05000, f_c_min - f_t_max = -0.498
+Step 1, eps = 0.01839, f_c_min - f_t_max = 5.5972
+Step 2, eps = 0.03033, f_c_min - f_t_max = 3.5529
+Step 3, eps = 0.03894, f_c_min - f_t_max = 1.8907
+Step 4, eps = 0.04412, f_c_min - f_t_max = 0.8040
+Step 5, eps = 0.04697, f_c_min - f_t_max = 0.1792
+Step 6, eps = 0.04846, f_c_min - f_t_max = -0.158
+Step 7, eps = 0.04771, f_c_min - f_t_max = 0.0113
+Step 8, eps = 0.04808, f_c_min - f_t_max = -0.070
+Step 9, eps = 0.04790, f_c_min - f_t_max = -0.024
+Step 10, eps = 0.04780, f_c_min - f_t_max = -0.008
+Step 11, eps = 0.04776, f_c_min - f_t_max = 0.0030
+Step 12, eps = 0.04778, f_c_min - f_t_max = -0.004
+Step 13, eps = 0.04777, f_c_min - f_t_max = 0.0034
+Step 14, eps = 0.04777, f_c_min - f_t_max = -0.005
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 94, true_id = 97, target_label = 5, true_label = 7, robustness = 0.04777
+Step 0, eps = 0.05000, f_c_min - f_t_max = 7.6597
+Step 1, eps = 0.13591, f_c_min - f_t_max = -16.34
+Step 2, eps = 0.08244, f_c_min - f_t_max = -0.849
+Step 3, eps = 0.06420, f_c_min - f_t_max = 4.1847
+Step 4, eps = 0.07275, f_c_min - f_t_max = 1.9176
+Step 5, eps = 0.07744, f_c_min - f_t_max = 0.6041
+Step 6, eps = 0.07990, f_c_min - f_t_max = -0.105
+Step 7, eps = 0.07866, f_c_min - f_t_max = 0.2454
+Step 8, eps = 0.07928, f_c_min - f_t_max = 0.0718
+Step 9, eps = 0.07959, f_c_min - f_t_max = -0.008
+Step 10, eps = 0.07943, f_c_min - f_t_max = 0.0353
+Step 11, eps = 0.07951, f_c_min - f_t_max = -0.001
+Step 12, eps = 0.07947, f_c_min - f_t_max = 0.0221
+Step 13, eps = 0.07949, f_c_min - f_t_max = 0.0061
+Step 14, eps = 0.07950, f_c_min - f_t_max = -0.003
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 95, true_id = 98, target_label = 3, true_label = 6, robustness = 0.07949
+Step 0, eps = 0.05000, f_c_min - f_t_max = 4.4000
+Step 1, eps = 0.13591, f_c_min - f_t_max = -18.92
+Step 2, eps = 0.08244, f_c_min - f_t_max = -3.974
+Step 3, eps = 0.06420, f_c_min - f_t_max = 0.9764
+Step 4, eps = 0.07275, f_c_min - f_t_max = -1.286
+Step 5, eps = 0.06834, f_c_min - f_t_max = -0.096
+Step 6, eps = 0.06624, f_c_min - f_t_max = 0.4446
+Step 7, eps = 0.06728, f_c_min - f_t_max = 0.1755
+Step 8, eps = 0.06781, f_c_min - f_t_max = 0.0406
+Step 9, eps = 0.06808, f_c_min - f_t_max = -0.028
+Step 10, eps = 0.06794, f_c_min - f_t_max = -0.006
+Step 11, eps = 0.06788, f_c_min - f_t_max = 0.0240
+Step 12, eps = 0.06791, f_c_min - f_t_max = 0.0097
+Step 13, eps = 0.06793, f_c_min - f_t_max = 0.0080
+Step 14, eps = 0.06793, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/mnist_cnn_4layer_5_3_sigmoid, image no = 96, true_id = 99, target_label = 3, true_label = 9, robustness = 0.06793
+[L0] method = guided_by_endpoint-sigmoid, total images = 97, avg robustness = 0.05819, avg verify runtime = 0.78, avg sample runtime = 11.70, avg GD runtime = 0.00, sample num = 1000, step = 15
+[L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.05819, std = 0.01627, var = 0.00026, max = 0.10264, min = 0.02296
+cur_shape: (32, 32, 3)
+(32, 32, 3)
+flatten
+(32, 32, 3)
+FC
+(1, 1, 100)
+activation
+(1, 1, 100)
+FC
+(1, 1, 100)
+activation
+(1, 1, 100)
+FC
+(1, 1, 100)
+activation
+(1, 1, 100)
+FC
+(1, 1, 100)
+activation
+(1, 1, 100)
+FC
+(1, 1, 100)
+activation
+(1, 1, 100)
+FC
+(1, 1, 10)
+--------abstracted model-----------
+data_from_local:  True
+x_test.shape:  (100, 32, 32, 3)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 32, 32, 3)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 32, 32, 3)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 32, 32, 3)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 32, 32, 3)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 32, 32, 3)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 32, 32, 3)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 32, 32, 3)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 32, 32, 3)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 32, 32, 3)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  1
+after label:  [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  5
+after label:  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  2
+after label:  [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  9
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+x_test.shape:  (100, 32, 32, 3)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  3
+after label:  [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  8
+after label:  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  4
+after label:  [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  6
+after label:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  0
+after label:  [1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+x_test.shape:  (100, 32, 32, 3)
+label:  7
+after label:  [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+generating labels...
+[DATAGEN][L1] no = 1, true_id = 0, true_label = 3, predicted = 5, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 2, true_id = 1, true_label = 8, predicted = 8, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 3, true_id = 2, true_label = 8, predicted = 2, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 4, true_id = 3, true_label = 0, predicted = 0, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 5, true_id = 4, true_label = 6, predicted = 6, correct = True, seq = [9], info = ['random']
+[DATAGEN][L1] no = 6, true_id = 5, true_label = 6, predicted = 6, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 7, true_id = 6, true_label = 1, predicted = 3, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 8, true_id = 7, true_label = 6, predicted = 6, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 9, true_id = 8, true_label = 3, predicted = 2, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 10, true_id = 9, true_label = 1, predicted = 1, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 11, true_id = 10, true_label = 0, predicted = 0, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 12, true_id = 11, true_label = 9, predicted = 9, correct = True, seq = [0], info = ['random']
+[DATAGEN][L1] no = 13, true_id = 12, true_label = 5, predicted = 4, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 14, true_id = 13, true_label = 7, predicted = 2, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 15, true_id = 14, true_label = 9, predicted = 9, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 16, true_id = 15, true_label = 8, predicted = 0, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 17, true_id = 16, true_label = 5, predicted = 5, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 18, true_id = 17, true_label = 7, predicted = 0, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 19, true_id = 18, true_label = 8, predicted = 8, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 20, true_id = 19, true_label = 6, predicted = 6, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 21, true_id = 20, true_label = 7, predicted = 9, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 22, true_id = 21, true_label = 0, predicted = 0, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 23, true_id = 22, true_label = 4, predicted = 0, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 24, true_id = 23, true_label = 9, predicted = 9, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 25, true_id = 24, true_label = 5, predicted = 2, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 26, true_id = 25, true_label = 2, predicted = 6, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 27, true_id = 26, true_label = 4, predicted = 6, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 28, true_id = 27, true_label = 0, predicted = 7, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 29, true_id = 28, true_label = 9, predicted = 7, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 30, true_id = 29, true_label = 6, predicted = 6, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 31, true_id = 30, true_label = 6, predicted = 6, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 32, true_id = 31, true_label = 5, predicted = 4, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 33, true_id = 32, true_label = 4, predicted = 4, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 34, true_id = 33, true_label = 5, predicted = 5, correct = True, seq = [4], info = ['random']
+[DATAGEN][L1] no = 35, true_id = 34, true_label = 9, predicted = 9, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 36, true_id = 35, true_label = 2, predicted = 1, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 37, true_id = 36, true_label = 4, predicted = 4, correct = True, seq = [1], info = ['random']
+[DATAGEN][L1] no = 38, true_id = 37, true_label = 1, predicted = 8, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 39, true_id = 38, true_label = 9, predicted = 9, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 40, true_id = 39, true_label = 5, predicted = 3, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 41, true_id = 40, true_label = 4, predicted = 0, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 42, true_id = 41, true_label = 6, predicted = 2, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 43, true_id = 42, true_label = 5, predicted = 3, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 44, true_id = 43, true_label = 6, predicted = 6, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 45, true_id = 44, true_label = 0, predicted = 0, correct = True, seq = [1], info = ['random']
+[DATAGEN][L1] no = 46, true_id = 45, true_label = 9, predicted = 8, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 47, true_id = 46, true_label = 3, predicted = 3, correct = True, seq = [0], info = ['random']
+[DATAGEN][L1] no = 48, true_id = 47, true_label = 9, predicted = 9, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 49, true_id = 48, true_label = 7, predicted = 4, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 50, true_id = 49, true_label = 6, predicted = 6, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 51, true_id = 50, true_label = 9, predicted = 9, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 52, true_id = 51, true_label = 8, predicted = 0, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 53, true_id = 52, true_label = 0, predicted = 6, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 54, true_id = 53, true_label = 3, predicted = 3, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 55, true_id = 54, true_label = 8, predicted = 8, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 56, true_id = 55, true_label = 8, predicted = 8, correct = True, seq = [9], info = ['random']
+[DATAGEN][L1] no = 57, true_id = 56, true_label = 7, predicted = 7, correct = True, seq = [3], info = ['random']
+[DATAGEN][L1] no = 58, true_id = 57, true_label = 7, predicted = 4, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 59, true_id = 58, true_label = 4, predicted = 5, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 60, true_id = 59, true_label = 6, predicted = 2, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 61, true_id = 60, true_label = 7, predicted = 7, correct = True, seq = [0], info = ['random']
+[DATAGEN][L1] no = 62, true_id = 61, true_label = 3, predicted = 5, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 63, true_id = 62, true_label = 6, predicted = 4, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 64, true_id = 63, true_label = 3, predicted = 9, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 65, true_id = 64, true_label = 6, predicted = 6, correct = True, seq = [1], info = ['random']
+[DATAGEN][L1] no = 66, true_id = 65, true_label = 2, predicted = 2, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 67, true_id = 66, true_label = 1, predicted = 1, correct = True, seq = [0], info = ['random']
+[DATAGEN][L1] no = 68, true_id = 67, true_label = 2, predicted = 2, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 69, true_id = 68, true_label = 3, predicted = 3, correct = True, seq = [8], info = ['random']
+[DATAGEN][L1] no = 70, true_id = 69, true_label = 7, predicted = 9, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 71, true_id = 70, true_label = 2, predicted = 2, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 72, true_id = 71, true_label = 6, predicted = 4, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 73, true_id = 72, true_label = 8, predicted = 0, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 74, true_id = 73, true_label = 8, predicted = 8, correct = True, seq = [9], info = ['random']
+[DATAGEN][L1] no = 75, true_id = 74, true_label = 0, predicted = 0, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 76, true_id = 75, true_label = 2, predicted = 4, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 77, true_id = 76, true_label = 9, predicted = 9, correct = True, seq = [5], info = ['random']
+[DATAGEN][L1] no = 78, true_id = 77, true_label = 3, predicted = 5, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 79, true_id = 78, true_label = 3, predicted = 6, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 80, true_id = 79, true_label = 8, predicted = 8, correct = True, seq = [1], info = ['random']
+[DATAGEN][L1] no = 81, true_id = 80, true_label = 8, predicted = 8, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 82, true_id = 81, true_label = 1, predicted = 8, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 83, true_id = 82, true_label = 1, predicted = 8, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 84, true_id = 83, true_label = 7, predicted = 3, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 85, true_id = 84, true_label = 2, predicted = 2, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 86, true_id = 85, true_label = 5, predicted = 7, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 87, true_id = 86, true_label = 2, predicted = 2, correct = True, seq = [6], info = ['random']
+[DATAGEN][L1] no = 88, true_id = 87, true_label = 7, predicted = 4, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 89, true_id = 88, true_label = 8, predicted = 8, correct = True, seq = [1], info = ['random']
+[DATAGEN][L1] no = 90, true_id = 89, true_label = 9, predicted = 9, correct = True, seq = [7], info = ['random']
+[DATAGEN][L1] no = 91, true_id = 90, true_label = 0, predicted = 0, correct = True, seq = [2], info = ['random']
+[DATAGEN][L1] no = 92, true_id = 91, true_label = 3, predicted = 2, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 93, true_id = 92, true_label = 8, predicted = 8, correct = True, seq = [9], info = ['random']
+[DATAGEN][L1] no = 94, true_id = 93, true_label = 6, predicted = 6, correct = True, seq = [0], info = ['random']
+[DATAGEN][L1] no = 95, true_id = 94, true_label = 4, predicted = 7, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 96, true_id = 95, true_label = 6, predicted = 6, correct = True, seq = [4], info = ['random']
+[DATAGEN][L1] no = 97, true_id = 96, true_label = 6, predicted = 4, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 98, true_id = 97, true_label = 0, predicted = 2, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 99, true_id = 98, true_label = 0, predicted = 4, correct = False, seq = [], info = []
+[DATAGEN][L1] no = 100, true_id = 99, true_label = 7, predicted = 7, correct = True, seq = [5], info = ['random']
+labels generated
+52 images generated in total.
+----------generated data---------
+===========================================
+model name = pretrained_model/table1/cifar10_ffnn_5x100.h5
+Warming up...
+Step 0, eps = 0.05000, f_c_min - f_t_max = -29.59
+Step 1, eps = 0.01839, f_c_min - f_t_max = -20.13
+Step 2, eps = 0.00677, f_c_min - f_t_max = -0.249
+Step 3, eps = 0.00249, f_c_min - f_t_max = 7.0796
+Step 4, eps = 0.00410, f_c_min - f_t_max = 5.0211
+Step 5, eps = 0.00527, f_c_min - f_t_max = 3.0169
+Step 6, eps = 0.00597, f_c_min - f_t_max = 1.5743
+Step 7, eps = 0.00636, f_c_min - f_t_max = 0.7138
+Step 8, eps = 0.00656, f_c_min - f_t_max = 0.2471
+Step 9, eps = 0.00666, f_c_min - f_t_max = 0.0056
+Step 10, eps = 0.00671, f_c_min - f_t_max = -0.119
+Step 11, eps = 0.00669, f_c_min - f_t_max = -0.055
+Step 12, eps = 0.00667, f_c_min - f_t_max = -0.027
+Step 13, eps = 0.00667, f_c_min - f_t_max = -0.015
+Step 14, eps = 0.00667, f_c_min - f_t_max = -0.005
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 0, true_id = 1, target_label = 6, true_label = 8, robustness = 0.00666
+Step 0, eps = 0.05000, f_c_min - f_t_max = -22.39
+Step 1, eps = 0.01839, f_c_min - f_t_max = -18.28
+Step 2, eps = 0.00677, f_c_min - f_t_max = -8.426
+Step 3, eps = 0.00249, f_c_min - f_t_max = -1.064
+Step 4, eps = 0.00092, f_c_min - f_t_max = 1.2564
+Step 5, eps = 0.00151, f_c_min - f_t_max = 0.4510
+Step 6, eps = 0.00194, f_c_min - f_t_max = -0.187
+Step 7, eps = 0.00171, f_c_min - f_t_max = 0.1571
+Step 8, eps = 0.00182, f_c_min - f_t_max = -0.007
+Step 9, eps = 0.00177, f_c_min - f_t_max = 0.0756
+Step 10, eps = 0.00179, f_c_min - f_t_max = 0.0352
+Step 11, eps = 0.00181, f_c_min - f_t_max = 0.0138
+Step 12, eps = 0.00181, f_c_min - f_t_max = 0.0018
+Step 13, eps = 0.00182, f_c_min - f_t_max = -0.002
+Step 14, eps = 0.00182, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 1, true_id = 3, target_label = 8, true_label = 0, robustness = 0.00181
+Step 0, eps = 0.05000, f_c_min - f_t_max = -33.90
+Step 1, eps = 0.01839, f_c_min - f_t_max = -28.52
+Step 2, eps = 0.00677, f_c_min - f_t_max = -2.885
+Step 3, eps = 0.00249, f_c_min - f_t_max = 5.8532
+Step 4, eps = 0.00410, f_c_min - f_t_max = 3.5234
+Step 5, eps = 0.00527, f_c_min - f_t_max = 1.1152
+Step 6, eps = 0.00597, f_c_min - f_t_max = -0.619
+Step 7, eps = 0.00561, f_c_min - f_t_max = 0.3001
+Step 8, eps = 0.00579, f_c_min - f_t_max = -0.142
+Step 9, eps = 0.00570, f_c_min - f_t_max = 0.0834
+Step 10, eps = 0.00574, f_c_min - f_t_max = -0.035
+Step 11, eps = 0.00572, f_c_min - f_t_max = 0.0234
+Step 12, eps = 0.00573, f_c_min - f_t_max = -0.003
+Step 13, eps = 0.00573, f_c_min - f_t_max = 0.0063
+Step 14, eps = 0.00573, f_c_min - f_t_max = 0.0044
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 2, true_id = 4, target_label = 9, true_label = 6, robustness = 0.00573
+Step 0, eps = 0.05000, f_c_min - f_t_max = -29.96
+Step 1, eps = 0.01839, f_c_min - f_t_max = -27.00
+Step 2, eps = 0.00677, f_c_min - f_t_max = -10.50
+Step 3, eps = 0.00249, f_c_min - f_t_max = 5.2117
+Step 4, eps = 0.00410, f_c_min - f_t_max = 1.8783
+Step 5, eps = 0.00527, f_c_min - f_t_max = -2.963
+Step 6, eps = 0.00465, f_c_min - f_t_max = -0.117
+Step 7, eps = 0.00437, f_c_min - f_t_max = 0.9886
+Step 8, eps = 0.00451, f_c_min - f_t_max = 0.4600
+Step 9, eps = 0.00458, f_c_min - f_t_max = 0.1769
+Step 10, eps = 0.00461, f_c_min - f_t_max = 0.0319
+Step 11, eps = 0.00463, f_c_min - f_t_max = -0.035
+Step 12, eps = 0.00462, f_c_min - f_t_max = 0.0016
+Step 13, eps = 0.00463, f_c_min - f_t_max = -0.019
+Step 14, eps = 0.00463, f_c_min - f_t_max = -0.013
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 3, true_id = 5, target_label = 8, true_label = 6, robustness = 0.00462
+Step 0, eps = 0.05000, f_c_min - f_t_max = -31.58
+Step 1, eps = 0.01839, f_c_min - f_t_max = -27.03
+Step 2, eps = 0.00677, f_c_min - f_t_max = -11.54
+Step 3, eps = 0.00249, f_c_min - f_t_max = 2.8788
+Step 4, eps = 0.00410, f_c_min - f_t_max = -1.775
+Step 5, eps = 0.00320, f_c_min - f_t_max = 1.1335
+Step 6, eps = 0.00362, f_c_min - f_t_max = -0.137
+Step 7, eps = 0.00340, f_c_min - f_t_max = 0.5398
+Step 8, eps = 0.00351, f_c_min - f_t_max = 0.2108
+Step 9, eps = 0.00357, f_c_min - f_t_max = 0.0383
+Step 10, eps = 0.00359, f_c_min - f_t_max = -0.050
+Step 11, eps = 0.00358, f_c_min - f_t_max = -0.004
+Step 12, eps = 0.00357, f_c_min - f_t_max = 0.0164
+Step 13, eps = 0.00358, f_c_min - f_t_max = 0.0061
+Step 14, eps = 0.00358, f_c_min - f_t_max = 0.0004
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 4, true_id = 7, target_label = 7, true_label = 6, robustness = 0.00358
+Step 0, eps = 0.05000, f_c_min - f_t_max = -30.02
+Step 1, eps = 0.01839, f_c_min - f_t_max = -22.57
+Step 2, eps = 0.00677, f_c_min - f_t_max = -4.389
+Step 3, eps = 0.00249, f_c_min - f_t_max = 7.6677
+Step 4, eps = 0.00410, f_c_min - f_t_max = 4.7567
+Step 5, eps = 0.00527, f_c_min - f_t_max = 1.3336
+Step 6, eps = 0.00597, f_c_min - f_t_max = -1.285
+Step 7, eps = 0.00561, f_c_min - f_t_max = 0.1029
+Step 8, eps = 0.00579, f_c_min - f_t_max = -0.574
+Step 9, eps = 0.00570, f_c_min - f_t_max = -0.229
+Step 10, eps = 0.00565, f_c_min - f_t_max = -0.064
+Step 11, eps = 0.00563, f_c_min - f_t_max = 0.0186
+Step 12, eps = 0.00564, f_c_min - f_t_max = -0.017
+Step 13, eps = 0.00564, f_c_min - f_t_max = 0.0048
+Step 14, eps = 0.00564, f_c_min - f_t_max = -0.011
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 5, true_id = 9, target_label = 3, true_label = 1, robustness = 0.00564
+Step 0, eps = 0.05000, f_c_min - f_t_max = -20.42
+Step 1, eps = 0.01839, f_c_min - f_t_max = -16.63
+Step 2, eps = 0.00677, f_c_min - f_t_max = -4.136
+Step 3, eps = 0.00249, f_c_min - f_t_max = 2.1389
+Step 4, eps = 0.00410, f_c_min - f_t_max = -0.091
+Step 5, eps = 0.00320, f_c_min - f_t_max = 1.1837
+Step 6, eps = 0.00362, f_c_min - f_t_max = 0.6014
+Step 7, eps = 0.00386, f_c_min - f_t_max = 0.2641
+Step 8, eps = 0.00398, f_c_min - f_t_max = 0.0920
+Step 9, eps = 0.00404, f_c_min - f_t_max = -0.002
+Step 10, eps = 0.00401, f_c_min - f_t_max = 0.0456
+Step 11, eps = 0.00402, f_c_min - f_t_max = 0.0300
+Step 12, eps = 0.00403, f_c_min - f_t_max = 0.0119
+Step 13, eps = 0.00404, f_c_min - f_t_max = 0.0125
+Step 14, eps = 0.00404, f_c_min - f_t_max = 0.0056
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 6, true_id = 10, target_label = 6, true_label = 0, robustness = 0.00404
+Step 0, eps = 0.05000, f_c_min - f_t_max = -29.27
+Step 1, eps = 0.01839, f_c_min - f_t_max = -22.03
+Step 2, eps = 0.00677, f_c_min - f_t_max = -5.739
+Step 3, eps = 0.00249, f_c_min - f_t_max = 4.3840
+Step 4, eps = 0.00410, f_c_min - f_t_max = 1.0251
+Step 5, eps = 0.00527, f_c_min - f_t_max = -2.053
+Step 6, eps = 0.00465, f_c_min - f_t_max = -0.394
+Step 7, eps = 0.00437, f_c_min - f_t_max = 0.3458
+Step 8, eps = 0.00451, f_c_min - f_t_max = -0.016
+Step 9, eps = 0.00444, f_c_min - f_t_max = 0.1685
+Step 10, eps = 0.00447, f_c_min - f_t_max = 0.0788
+Step 11, eps = 0.00449, f_c_min - f_t_max = 0.0207
+Step 12, eps = 0.00450, f_c_min - f_t_max = 0.0179
+Step 13, eps = 0.00450, f_c_min - f_t_max = -0.013
+Step 14, eps = 0.00450, f_c_min - f_t_max = 0.0051
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 7, true_id = 11, target_label = 0, true_label = 9, robustness = 0.00450
+Step 0, eps = 0.05000, f_c_min - f_t_max = -32.85
+Step 1, eps = 0.01839, f_c_min - f_t_max = -28.03
+Step 2, eps = 0.00677, f_c_min - f_t_max = -14.01
+Step 3, eps = 0.00249, f_c_min - f_t_max = 0.6286
+Step 4, eps = 0.00410, f_c_min - f_t_max = -4.953
+Step 5, eps = 0.00320, f_c_min - f_t_max = -1.500
+Step 6, eps = 0.00282, f_c_min - f_t_max = -0.292
+Step 7, eps = 0.00265, f_c_min - f_t_max = 0.1955
+Step 8, eps = 0.00273, f_c_min - f_t_max = -0.042
+Step 9, eps = 0.00269, f_c_min - f_t_max = 0.0782
+Step 10, eps = 0.00271, f_c_min - f_t_max = 0.0209
+Step 11, eps = 0.00272, f_c_min - f_t_max = -0.011
+Step 12, eps = 0.00272, f_c_min - f_t_max = 0.0021
+Step 13, eps = 0.00272, f_c_min - f_t_max = -0.004
+Step 14, eps = 0.00272, f_c_min - f_t_max = 0.0028
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 8, true_id = 14, target_label = 8, true_label = 9, robustness = 0.00272
+Step 0, eps = 0.05000, f_c_min - f_t_max = -26.36
+Step 1, eps = 0.01839, f_c_min - f_t_max = -22.39
+Step 2, eps = 0.00677, f_c_min - f_t_max = -9.126
+Step 3, eps = 0.00249, f_c_min - f_t_max = 0.6179
+Step 4, eps = 0.00410, f_c_min - f_t_max = -2.184
+Step 5, eps = 0.00320, f_c_min - f_t_max = -0.382
+Step 6, eps = 0.00282, f_c_min - f_t_max = 0.1922
+Step 7, eps = 0.00300, f_c_min - f_t_max = -0.075
+Step 8, eps = 0.00291, f_c_min - f_t_max = 0.0618
+Step 9, eps = 0.00296, f_c_min - f_t_max = -0.003
+Step 10, eps = 0.00293, f_c_min - f_t_max = 0.0305
+Step 11, eps = 0.00294, f_c_min - f_t_max = 0.0108
+Step 12, eps = 0.00295, f_c_min - f_t_max = 0.0020
+Step 13, eps = 0.00295, f_c_min - f_t_max = 0.0002
+Step 14, eps = 0.00295, f_c_min - f_t_max = -0.003
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 9, true_id = 16, target_label = 2, true_label = 5, robustness = 0.00295
+Step 0, eps = 0.05000, f_c_min - f_t_max = -31.79
+Step 1, eps = 0.01839, f_c_min - f_t_max = -23.62
+Step 2, eps = 0.00677, f_c_min - f_t_max = -3.644
+Step 3, eps = 0.00249, f_c_min - f_t_max = 8.0136
+Step 4, eps = 0.00410, f_c_min - f_t_max = 4.6698
+Step 5, eps = 0.00527, f_c_min - f_t_max = 1.4119
+Step 6, eps = 0.00597, f_c_min - f_t_max = -0.863
+Step 7, eps = 0.00561, f_c_min - f_t_max = 0.3334
+Step 8, eps = 0.00579, f_c_min - f_t_max = -0.239
+Step 9, eps = 0.00570, f_c_min - f_t_max = 0.0582
+Step 10, eps = 0.00574, f_c_min - f_t_max = -0.100
+Step 11, eps = 0.00572, f_c_min - f_t_max = -0.032
+Step 12, eps = 0.00571, f_c_min - f_t_max = 0.0235
+Step 13, eps = 0.00571, f_c_min - f_t_max = 0.0054
+Step 14, eps = 0.00572, f_c_min - f_t_max = -0.003
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 10, true_id = 18, target_label = 7, true_label = 8, robustness = 0.00571
+Step 0, eps = 0.05000, f_c_min - f_t_max = -25.56
+Step 1, eps = 0.01839, f_c_min - f_t_max = -21.00
+Step 2, eps = 0.00677, f_c_min - f_t_max = -5.085
+Step 3, eps = 0.00249, f_c_min - f_t_max = 1.7465
+Step 4, eps = 0.00410, f_c_min - f_t_max = -0.227
+Step 5, eps = 0.00320, f_c_min - f_t_max = 0.9864
+Step 6, eps = 0.00362, f_c_min - f_t_max = 0.4513
+Step 7, eps = 0.00386, f_c_min - f_t_max = 0.1327
+Step 8, eps = 0.00398, f_c_min - f_t_max = -0.042
+Step 9, eps = 0.00392, f_c_min - f_t_max = 0.0467
+Step 10, eps = 0.00395, f_c_min - f_t_max = 0.0033
+Step 11, eps = 0.00396, f_c_min - f_t_max = -0.019
+Step 12, eps = 0.00395, f_c_min - f_t_max = -0.007
+Step 13, eps = 0.00395, f_c_min - f_t_max = -0.001
+Step 14, eps = 0.00395, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 11, true_id = 19, target_label = 5, true_label = 6, robustness = 0.00395
+Step 0, eps = 0.05000, f_c_min - f_t_max = -19.82
+Step 1, eps = 0.01839, f_c_min - f_t_max = -9.707
+Step 2, eps = 0.00677, f_c_min - f_t_max = 0.8284
+Step 3, eps = 0.01116, f_c_min - f_t_max = -3.168
+Step 4, eps = 0.00869, f_c_min - f_t_max = -0.859
+Step 5, eps = 0.00767, f_c_min - f_t_max = 0.0547
+Step 6, eps = 0.00816, f_c_min - f_t_max = -0.384
+Step 7, eps = 0.00791, f_c_min - f_t_max = -0.155
+Step 8, eps = 0.00779, f_c_min - f_t_max = -0.047
+Step 9, eps = 0.00773, f_c_min - f_t_max = 0.0013
+Step 10, eps = 0.00776, f_c_min - f_t_max = -0.025
+Step 11, eps = 0.00774, f_c_min - f_t_max = -0.007
+Step 12, eps = 0.00774, f_c_min - f_t_max = -0.005
+Step 13, eps = 0.00773, f_c_min - f_t_max = -0.001
+Step 14, eps = 0.00773, f_c_min - f_t_max = 0.0008
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 12, true_id = 21, target_label = 3, true_label = 0, robustness = 0.00773
+Step 0, eps = 0.05000, f_c_min - f_t_max = -30.93
+Step 1, eps = 0.01839, f_c_min - f_t_max = -23.36
+Step 2, eps = 0.00677, f_c_min - f_t_max = 0.4640
+Step 3, eps = 0.01116, f_c_min - f_t_max = -14.45
+Step 4, eps = 0.00869, f_c_min - f_t_max = -6.785
+Step 5, eps = 0.00767, f_c_min - f_t_max = -2.858
+Step 6, eps = 0.00720, f_c_min - f_t_max = -1.172
+Step 7, eps = 0.00698, f_c_min - f_t_max = -0.357
+Step 8, eps = 0.00687, f_c_min - f_t_max = 0.0513
+Step 9, eps = 0.00693, f_c_min - f_t_max = -0.152
+Step 10, eps = 0.00690, f_c_min - f_t_max = -0.050
+Step 11, eps = 0.00689, f_c_min - f_t_max = 0.0031
+Step 12, eps = 0.00689, f_c_min - f_t_max = -0.020
+Step 13, eps = 0.00689, f_c_min - f_t_max = -0.010
+Step 14, eps = 0.00689, f_c_min - f_t_max = -0.002
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 13, true_id = 23, target_label = 2, true_label = 9, robustness = 0.00689
+Step 0, eps = 0.05000, f_c_min - f_t_max = -24.56
+Step 1, eps = 0.01839, f_c_min - f_t_max = -21.66
+Step 2, eps = 0.00677, f_c_min - f_t_max = -11.79
+Step 3, eps = 0.00249, f_c_min - f_t_max = -0.650
+Step 4, eps = 0.00092, f_c_min - f_t_max = 0.9126
+Step 5, eps = 0.00151, f_c_min - f_t_max = 0.4204
+Step 6, eps = 0.00194, f_c_min - f_t_max = -0.004
+Step 7, eps = 0.00171, f_c_min - f_t_max = 0.2290
+Step 8, eps = 0.00182, f_c_min - f_t_max = 0.1174
+Step 9, eps = 0.00188, f_c_min - f_t_max = 0.0590
+Step 10, eps = 0.00191, f_c_min - f_t_max = 0.0269
+Step 11, eps = 0.00192, f_c_min - f_t_max = 0.0108
+Step 12, eps = 0.00193, f_c_min - f_t_max = 0.0028
+Step 13, eps = 0.00193, f_c_min - f_t_max = -0.001
+Step 14, eps = 0.00193, f_c_min - f_t_max = 0.0013
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 14, true_id = 29, target_label = 3, true_label = 6, robustness = 0.00193
+Step 0, eps = 0.05000, f_c_min - f_t_max = -25.41
+Step 1, eps = 0.01839, f_c_min - f_t_max = -22.99
+Step 2, eps = 0.00677, f_c_min - f_t_max = -14.06
+Step 3, eps = 0.00249, f_c_min - f_t_max = -1.172
+Step 4, eps = 0.00092, f_c_min - f_t_max = 2.1571
+Step 5, eps = 0.00151, f_c_min - f_t_max = 1.1179
+Step 6, eps = 0.00194, f_c_min - f_t_max = 0.2003
+Step 7, eps = 0.00220, f_c_min - f_t_max = -0.421
+Step 8, eps = 0.00206, f_c_min - f_t_max = -0.095
+Step 9, eps = 0.00200, f_c_min - f_t_max = 0.0539
+Step 10, eps = 0.00203, f_c_min - f_t_max = -0.020
+Step 11, eps = 0.00202, f_c_min - f_t_max = 0.0176
+Step 12, eps = 0.00202, f_c_min - f_t_max = 0.0032
+Step 13, eps = 0.00203, f_c_min - f_t_max = -0.009
+Step 14, eps = 0.00203, f_c_min - f_t_max = -0.005
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 15, true_id = 30, target_label = 3, true_label = 6, robustness = 0.00202
+Step 0, eps = 0.05000, f_c_min - f_t_max = -21.34
+Step 1, eps = 0.01839, f_c_min - f_t_max = -18.06
+Step 2, eps = 0.00677, f_c_min - f_t_max = -6.812
+Step 3, eps = 0.00249, f_c_min - f_t_max = -0.609
+Step 4, eps = 0.00092, f_c_min - f_t_max = 0.4402
+Step 5, eps = 0.00151, f_c_min - f_t_max = 0.1088
+Step 6, eps = 0.00194, f_c_min - f_t_max = -0.177
+Step 7, eps = 0.00171, f_c_min - f_t_max = -0.020
+Step 8, eps = 0.00161, f_c_min - f_t_max = 0.0476
+Step 9, eps = 0.00166, f_c_min - f_t_max = 0.0145
+Step 10, eps = 0.00168, f_c_min - f_t_max = -0.002
+Step 11, eps = 0.00167, f_c_min - f_t_max = 0.0057
+Step 12, eps = 0.00168, f_c_min - f_t_max = 0.0017
+Step 13, eps = 0.00168, f_c_min - f_t_max = 5.7816
+Step 14, eps = 0.00168, f_c_min - f_t_max = -0.001
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 16, true_id = 32, target_label = 5, true_label = 4, robustness = 0.00168
+Step 0, eps = 0.05000, f_c_min - f_t_max = -27.44
+Step 1, eps = 0.01839, f_c_min - f_t_max = -23.21
+Step 2, eps = 0.00677, f_c_min - f_t_max = -9.751
+Step 3, eps = 0.00249, f_c_min - f_t_max = 1.2990
+Step 4, eps = 0.00410, f_c_min - f_t_max = -2.090
+Step 5, eps = 0.00320, f_c_min - f_t_max = 0.0918
+Step 6, eps = 0.00362, f_c_min - f_t_max = -0.846
+Step 7, eps = 0.00340, f_c_min - f_t_max = -0.343
+Step 8, eps = 0.00330, f_c_min - f_t_max = -0.117
+Step 9, eps = 0.00325, f_c_min - f_t_max = -0.011
+Step 10, eps = 0.00322, f_c_min - f_t_max = 0.0409
+Step 11, eps = 0.00323, f_c_min - f_t_max = 0.0151
+Step 12, eps = 0.00324, f_c_min - f_t_max = 0.0025
+Step 13, eps = 0.00324, f_c_min - f_t_max = -0.004
+Step 14, eps = 0.00324, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 17, true_id = 33, target_label = 4, true_label = 5, robustness = 0.00324
+Step 0, eps = 0.05000, f_c_min - f_t_max = -35.56
+Step 1, eps = 0.01839, f_c_min - f_t_max = -29.90
+Step 2, eps = 0.00677, f_c_min - f_t_max = -15.94
+Step 3, eps = 0.00249, f_c_min - f_t_max = -2.919
+Step 4, eps = 0.00092, f_c_min - f_t_max = 1.8610
+Step 5, eps = 0.00151, f_c_min - f_t_max = 0.2142
+Step 6, eps = 0.00194, f_c_min - f_t_max = -1.112
+Step 7, eps = 0.00171, f_c_min - f_t_max = -0.397
+Step 8, eps = 0.00161, f_c_min - f_t_max = -0.079
+Step 9, eps = 0.00156, f_c_min - f_t_max = 0.0705
+Step 10, eps = 0.00158, f_c_min - f_t_max = -0.003
+Step 11, eps = 0.00157, f_c_min - f_t_max = 0.0320
+Step 12, eps = 0.00158, f_c_min - f_t_max = 0.0141
+Step 13, eps = 0.00158, f_c_min - f_t_max = 0.0050
+Step 14, eps = 0.00158, f_c_min - f_t_max = 0.0009
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 18, true_id = 34, target_label = 7, true_label = 9, robustness = 0.00158
+Step 0, eps = 0.05000, f_c_min - f_t_max = -29.03
+Step 1, eps = 0.01839, f_c_min - f_t_max = -23.29
+Step 2, eps = 0.00677, f_c_min - f_t_max = -1.433
+Step 3, eps = 0.00249, f_c_min - f_t_max = 4.5806
+Step 4, eps = 0.00410, f_c_min - f_t_max = 3.0493
+Step 5, eps = 0.00527, f_c_min - f_t_max = 1.5051
+Step 6, eps = 0.00597, f_c_min - f_t_max = 0.3097
+Step 7, eps = 0.00636, f_c_min - f_t_max = -0.473
+Step 8, eps = 0.00616, f_c_min - f_t_max = -0.066
+Step 9, eps = 0.00607, f_c_min - f_t_max = 0.1258
+Step 10, eps = 0.00611, f_c_min - f_t_max = 0.0334
+Step 11, eps = 0.00614, f_c_min - f_t_max = -0.013
+Step 12, eps = 0.00613, f_c_min - f_t_max = 0.0084
+Step 13, eps = 0.00613, f_c_min - f_t_max = -0.001
+Step 14, eps = 0.00613, f_c_min - f_t_max = 0.0010
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 19, true_id = 36, target_label = 1, true_label = 4, robustness = 0.00613
+Step 0, eps = 0.05000, f_c_min - f_t_max = -33.66
+Step 1, eps = 0.01839, f_c_min - f_t_max = -26.06
+Step 2, eps = 0.00677, f_c_min - f_t_max = -11.90
+Step 3, eps = 0.00249, f_c_min - f_t_max = -0.530
+Step 4, eps = 0.00092, f_c_min - f_t_max = 3.6492
+Step 5, eps = 0.00151, f_c_min - f_t_max = 2.1776
+Step 6, eps = 0.00194, f_c_min - f_t_max = 1.0198
+Step 7, eps = 0.00220, f_c_min - f_t_max = 0.2952
+Step 8, eps = 0.00234, f_c_min - f_t_max = -0.101
+Step 9, eps = 0.00227, f_c_min - f_t_max = 0.0996
+Step 10, eps = 0.00230, f_c_min - f_t_max = -0.002
+Step 11, eps = 0.00228, f_c_min - f_t_max = 0.0508
+Step 12, eps = 0.00229, f_c_min - f_t_max = 0.0263
+Step 13, eps = 0.00230, f_c_min - f_t_max = 0.0106
+Step 14, eps = 0.00230, f_c_min - f_t_max = 0.0059
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 20, true_id = 38, target_label = 7, true_label = 9, robustness = 0.00230
+Step 0, eps = 0.05000, f_c_min - f_t_max = -24.91
+Step 1, eps = 0.01839, f_c_min - f_t_max = -23.12
+Step 2, eps = 0.00677, f_c_min - f_t_max = -12.82
+Step 3, eps = 0.00249, f_c_min - f_t_max = -2.007
+Step 4, eps = 0.00092, f_c_min - f_t_max = 0.0564
+Step 5, eps = 0.00151, f_c_min - f_t_max = -0.565
+Step 6, eps = 0.00118, f_c_min - f_t_max = -0.195
+Step 7, eps = 0.00104, f_c_min - f_t_max = -0.057
+Step 8, eps = 0.00097, f_c_min - f_t_max = 0.0016
+Step 9, eps = 0.00101, f_c_min - f_t_max = -0.027
+Step 10, eps = 0.00099, f_c_min - f_t_max = -0.012
+Step 11, eps = 0.00098, f_c_min - f_t_max = -0.005
+Step 12, eps = 0.00098, f_c_min - f_t_max = -0.001
+Step 13, eps = 0.00098, f_c_min - f_t_max = 1.4662
+Step 14, eps = 0.00098, f_c_min - f_t_max = -0.001
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 21, true_id = 43, target_label = 5, true_label = 6, robustness = 0.00098
+Step 0, eps = 0.05000, f_c_min - f_t_max = -25.93
+Step 1, eps = 0.01839, f_c_min - f_t_max = -21.46
+Step 2, eps = 0.00677, f_c_min - f_t_max = -7.568
+Step 3, eps = 0.00249, f_c_min - f_t_max = 0.8124
+Step 4, eps = 0.00410, f_c_min - f_t_max = -2.014
+Step 5, eps = 0.00320, f_c_min - f_t_max = -0.323
+Step 6, eps = 0.00282, f_c_min - f_t_max = 0.3029
+Step 7, eps = 0.00300, f_c_min - f_t_max = 0.0079
+Step 8, eps = 0.00310, f_c_min - f_t_max = -0.149
+Step 9, eps = 0.00305, f_c_min - f_t_max = -0.072
+Step 10, eps = 0.00303, f_c_min - f_t_max = -0.032
+Step 11, eps = 0.00301, f_c_min - f_t_max = -0.012
+Step 12, eps = 0.00301, f_c_min - f_t_max = -0.002
+Step 13, eps = 0.00301, f_c_min - f_t_max = 0.0067
+Step 14, eps = 0.00301, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 22, true_id = 44, target_label = 1, true_label = 0, robustness = 0.00301
+Step 0, eps = 0.05000, f_c_min - f_t_max = -23.02
+Step 1, eps = 0.01839, f_c_min - f_t_max = -19.68
+Step 2, eps = 0.00677, f_c_min - f_t_max = -8.478
+Step 3, eps = 0.00249, f_c_min - f_t_max = 2.3122
+Step 4, eps = 0.00410, f_c_min - f_t_max = -1.634
+Step 5, eps = 0.00320, f_c_min - f_t_max = 0.8418
+Step 6, eps = 0.00362, f_c_min - f_t_max = -0.247
+Step 7, eps = 0.00340, f_c_min - f_t_max = 0.3346
+Step 8, eps = 0.00351, f_c_min - f_t_max = 0.0538
+Step 9, eps = 0.00357, f_c_min - f_t_max = -0.096
+Step 10, eps = 0.00354, f_c_min - f_t_max = -0.020
+Step 11, eps = 0.00352, f_c_min - f_t_max = 0.0166
+Step 12, eps = 0.00353, f_c_min - f_t_max = -0.002
+Step 13, eps = 0.00353, f_c_min - f_t_max = 0.0067
+Step 14, eps = 0.00353, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 23, true_id = 46, target_label = 0, true_label = 3, robustness = 0.00353
+Step 0, eps = 0.05000, f_c_min - f_t_max = -28.90
+Step 1, eps = 0.01839, f_c_min - f_t_max = -24.80
+Step 2, eps = 0.00677, f_c_min - f_t_max = -12.19
+Step 3, eps = 0.00249, f_c_min - f_t_max = 0.1473
+Step 4, eps = 0.00410, f_c_min - f_t_max = -4.938
+Step 5, eps = 0.00320, f_c_min - f_t_max = -1.968
+Step 6, eps = 0.00282, f_c_min - f_t_max = -0.805
+Step 7, eps = 0.00265, f_c_min - f_t_max = -0.300
+Step 8, eps = 0.00257, f_c_min - f_t_max = -0.073
+Step 9, eps = 0.00253, f_c_min - f_t_max = 0.0397
+Step 10, eps = 0.00255, f_c_min - f_t_max = -0.014
+Step 11, eps = 0.00254, f_c_min - f_t_max = 0.0129
+Step 12, eps = 0.00254, f_c_min - f_t_max = -0.002
+Step 13, eps = 0.00254, f_c_min - f_t_max = 0.0043
+Step 14, eps = 0.00254, f_c_min - f_t_max = 0.0012
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 24, true_id = 47, target_label = 3, true_label = 9, robustness = 0.00254
+Step 0, eps = 0.05000, f_c_min - f_t_max = -26.08
+Step 1, eps = 0.01839, f_c_min - f_t_max = -22.87
+Step 2, eps = 0.00677, f_c_min - f_t_max = -7.392
+Step 3, eps = 0.00249, f_c_min - f_t_max = 1.8890
+Step 4, eps = 0.00410, f_c_min - f_t_max = -0.533
+Step 5, eps = 0.00320, f_c_min - f_t_max = 0.9985
+Step 6, eps = 0.00362, f_c_min - f_t_max = 0.3386
+Step 7, eps = 0.00386, f_c_min - f_t_max = -0.066
+Step 8, eps = 0.00374, f_c_min - f_t_max = 0.1431
+Step 9, eps = 0.00380, f_c_min - f_t_max = 0.0418
+Step 10, eps = 0.00383, f_c_min - f_t_max = -0.011
+Step 11, eps = 0.00381, f_c_min - f_t_max = 0.0158
+Step 12, eps = 0.00382, f_c_min - f_t_max = 0.0002
+Step 13, eps = 0.00382, f_c_min - f_t_max = -0.005
+Step 14, eps = 0.00382, f_c_min - f_t_max = -0.002
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 25, true_id = 49, target_label = 5, true_label = 6, robustness = 0.00382
+Step 0, eps = 0.05000, f_c_min - f_t_max = -34.87
+Step 1, eps = 0.01839, f_c_min - f_t_max = -29.31
+Step 2, eps = 0.00677, f_c_min - f_t_max = -4.736
+Step 3, eps = 0.00249, f_c_min - f_t_max = 8.1627
+Step 4, eps = 0.00410, f_c_min - f_t_max = 5.8651
+Step 5, eps = 0.00527, f_c_min - f_t_max = 2.4824
+Step 6, eps = 0.00597, f_c_min - f_t_max = -0.626
+Step 7, eps = 0.00561, f_c_min - f_t_max = 1.0775
+Step 8, eps = 0.00579, f_c_min - f_t_max = 0.2690
+Step 9, eps = 0.00588, f_c_min - f_t_max = -0.177
+Step 10, eps = 0.00583, f_c_min - f_t_max = 0.0476
+Step 11, eps = 0.00586, f_c_min - f_t_max = -0.060
+Step 12, eps = 0.00584, f_c_min - f_t_max = -0.005
+Step 13, eps = 0.00584, f_c_min - f_t_max = 0.0229
+Step 14, eps = 0.00584, f_c_min - f_t_max = 0.0094
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 26, true_id = 50, target_label = 7, true_label = 9, robustness = 0.00584
+Step 0, eps = 0.05000, f_c_min - f_t_max = -20.68
+Step 1, eps = 0.01839, f_c_min - f_t_max = -18.44
+Step 2, eps = 0.00677, f_c_min - f_t_max = -9.580
+Step 3, eps = 0.00249, f_c_min - f_t_max = -0.499
+Step 4, eps = 0.00092, f_c_min - f_t_max = 1.6129
+Step 5, eps = 0.00151, f_c_min - f_t_max = 0.9556
+Step 6, eps = 0.00194, f_c_min - f_t_max = 0.3767
+Step 7, eps = 0.00220, f_c_min - f_t_max = -0.011
+Step 8, eps = 0.00206, f_c_min - f_t_max = 0.1907
+Step 9, eps = 0.00213, f_c_min - f_t_max = 0.0902
+Step 10, eps = 0.00216, f_c_min - f_t_max = 0.0395
+Step 11, eps = 0.00218, f_c_min - f_t_max = 0.0115
+Step 12, eps = 0.00219, f_c_min - f_t_max = -0.001
+Step 13, eps = 0.00218, f_c_min - f_t_max = 0.0029
+Step 14, eps = 0.00219, f_c_min - f_t_max = 0.0054
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 27, true_id = 53, target_label = 2, true_label = 3, robustness = 0.00219
+Step 0, eps = 0.05000, f_c_min - f_t_max = -27.16
+Step 1, eps = 0.01839, f_c_min - f_t_max = -22.47
+Step 2, eps = 0.00677, f_c_min - f_t_max = -7.233
+Step 3, eps = 0.00249, f_c_min - f_t_max = 5.3323
+Step 4, eps = 0.00410, f_c_min - f_t_max = 1.9155
+Step 5, eps = 0.00527, f_c_min - f_t_max = -1.695
+Step 6, eps = 0.00465, f_c_min - f_t_max = 0.3556
+Step 7, eps = 0.00495, f_c_min - f_t_max = -0.607
+Step 8, eps = 0.00480, f_c_min - f_t_max = -0.119
+Step 9, eps = 0.00472, f_c_min - f_t_max = 0.1199
+Step 10, eps = 0.00476, f_c_min - f_t_max = 0.0113
+Step 11, eps = 0.00478, f_c_min - f_t_max = -0.052
+Step 12, eps = 0.00477, f_c_min - f_t_max = -0.024
+Step 13, eps = 0.00477, f_c_min - f_t_max = -0.013
+Step 14, eps = 0.00476, f_c_min - f_t_max = -0.003
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 28, true_id = 54, target_label = 2, true_label = 8, robustness = 0.00476
+Step 0, eps = 0.05000, f_c_min - f_t_max = -31.48
+Step 1, eps = 0.01839, f_c_min - f_t_max = -27.99
+Step 2, eps = 0.00677, f_c_min - f_t_max = -12.49
+Step 3, eps = 0.00249, f_c_min - f_t_max = -0.375
+Step 4, eps = 0.00092, f_c_min - f_t_max = 2.4964
+Step 5, eps = 0.00151, f_c_min - f_t_max = 1.5604
+Step 6, eps = 0.00194, f_c_min - f_t_max = 0.7788
+Step 7, eps = 0.00220, f_c_min - f_t_max = 0.2554
+Step 8, eps = 0.00234, f_c_min - f_t_max = -0.040
+Step 9, eps = 0.00227, f_c_min - f_t_max = 0.1127
+Step 10, eps = 0.00230, f_c_min - f_t_max = 0.0369
+Step 11, eps = 0.00232, f_c_min - f_t_max = -0.003
+Step 12, eps = 0.00231, f_c_min - f_t_max = 0.0171
+Step 13, eps = 0.00232, f_c_min - f_t_max = 0.0047
+Step 14, eps = 0.00232, f_c_min - f_t_max = 0.0017
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 29, true_id = 55, target_label = 9, true_label = 8, robustness = 0.00232
+Step 0, eps = 0.05000, f_c_min - f_t_max = -27.00
+Step 1, eps = 0.01839, f_c_min - f_t_max = -21.69
+Step 2, eps = 0.00677, f_c_min - f_t_max = -7.545
+Step 3, eps = 0.00249, f_c_min - f_t_max = -0.730
+Step 4, eps = 0.00092, f_c_min - f_t_max = 1.2172
+Step 5, eps = 0.00151, f_c_min - f_t_max = 0.5448
+Step 6, eps = 0.00194, f_c_min - f_t_max = 0.0106
+Step 7, eps = 0.00220, f_c_min - f_t_max = -0.327
+Step 8, eps = 0.00206, f_c_min - f_t_max = -0.151
+Step 9, eps = 0.00200, f_c_min - f_t_max = -0.069
+Step 10, eps = 0.00197, f_c_min - f_t_max = -0.028
+Step 11, eps = 0.00195, f_c_min - f_t_max = -0.008
+Step 12, eps = 0.00195, f_c_min - f_t_max = 0.0007
+Step 13, eps = 0.00195, f_c_min - f_t_max = -0.002
+Step 14, eps = 0.00195, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 30, true_id = 56, target_label = 3, true_label = 7, robustness = 0.00195
+Step 0, eps = 0.05000, f_c_min - f_t_max = -28.91
+Step 1, eps = 0.01839, f_c_min - f_t_max = -21.18
+Step 2, eps = 0.00677, f_c_min - f_t_max = 0.6834
+Step 3, eps = 0.01116, f_c_min - f_t_max = -10.11
+Step 4, eps = 0.00869, f_c_min - f_t_max = -3.704
+Step 5, eps = 0.00767, f_c_min - f_t_max = -1.174
+Step 6, eps = 0.00720, f_c_min - f_t_max = -0.173
+Step 7, eps = 0.00698, f_c_min - f_t_max = 0.2733
+Step 8, eps = 0.00709, f_c_min - f_t_max = 0.0569
+Step 9, eps = 0.00715, f_c_min - f_t_max = -0.059
+Step 10, eps = 0.00712, f_c_min - f_t_max = -0.005
+Step 11, eps = 0.00711, f_c_min - f_t_max = 0.0244
+Step 12, eps = 0.00711, f_c_min - f_t_max = 0.0104
+Step 13, eps = 0.00712, f_c_min - f_t_max = 0.0075
+Step 14, eps = 0.00712, f_c_min - f_t_max = 0.0034
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 31, true_id = 60, target_label = 0, true_label = 7, robustness = 0.00712
+Step 0, eps = 0.05000, f_c_min - f_t_max = -32.18
+Step 1, eps = 0.01839, f_c_min - f_t_max = -29.69
+Step 2, eps = 0.00677, f_c_min - f_t_max = -13.70
+Step 3, eps = 0.00249, f_c_min - f_t_max = 2.7481
+Step 4, eps = 0.00410, f_c_min - f_t_max = -2.409
+Step 5, eps = 0.00320, f_c_min - f_t_max = 0.8866
+Step 6, eps = 0.00362, f_c_min - f_t_max = -0.532
+Step 7, eps = 0.00340, f_c_min - f_t_max = 0.2249
+Step 8, eps = 0.00351, f_c_min - f_t_max = -0.140
+Step 9, eps = 0.00346, f_c_min - f_t_max = 0.0532
+Step 10, eps = 0.00348, f_c_min - f_t_max = -0.041
+Step 11, eps = 0.00347, f_c_min - f_t_max = 0.0071
+Step 12, eps = 0.00348, f_c_min - f_t_max = -0.024
+Step 13, eps = 0.00347, f_c_min - f_t_max = -0.002
+Step 14, eps = 0.00347, f_c_min - f_t_max = 0.0048
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 32, true_id = 64, target_label = 1, true_label = 6, robustness = 0.00347
+Step 0, eps = 0.05000, f_c_min - f_t_max = -19.76
+Step 1, eps = 0.01839, f_c_min - f_t_max = -17.46
+Step 2, eps = 0.00677, f_c_min - f_t_max = -8.038
+Step 3, eps = 0.00249, f_c_min - f_t_max = -0.248
+Step 4, eps = 0.00092, f_c_min - f_t_max = 0.6549
+Step 5, eps = 0.00151, f_c_min - f_t_max = 0.3759
+Step 6, eps = 0.00194, f_c_min - f_t_max = 0.1300
+Step 7, eps = 0.00220, f_c_min - f_t_max = -0.038
+Step 8, eps = 0.00206, f_c_min - f_t_max = 0.0513
+Step 9, eps = 0.00213, f_c_min - f_t_max = 0.0078
+Step 10, eps = 0.00216, f_c_min - f_t_max = -0.014
+Step 11, eps = 0.00215, f_c_min - f_t_max = -0.003
+Step 12, eps = 0.00214, f_c_min - f_t_max = 0.0018
+Step 13, eps = 0.00214, f_c_min - f_t_max = -0.000
+Step 14, eps = 0.00214, f_c_min - f_t_max = 0.0008
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 33, true_id = 65, target_label = 5, true_label = 2, robustness = 0.00214
+Step 0, eps = 0.05000, f_c_min - f_t_max = -32.17
+Step 1, eps = 0.01839, f_c_min - f_t_max = -25.83
+Step 2, eps = 0.00677, f_c_min - f_t_max = -9.850
+Step 3, eps = 0.00249, f_c_min - f_t_max = 3.5418
+Step 4, eps = 0.00410, f_c_min - f_t_max = -0.363
+Step 5, eps = 0.00320, f_c_min - f_t_max = 2.1095
+Step 6, eps = 0.00362, f_c_min - f_t_max = 1.0439
+Step 7, eps = 0.00386, f_c_min - f_t_max = 0.3902
+Step 8, eps = 0.00398, f_c_min - f_t_max = 0.0260
+Step 9, eps = 0.00404, f_c_min - f_t_max = -0.161
+Step 10, eps = 0.00401, f_c_min - f_t_max = -0.069
+Step 11, eps = 0.00399, f_c_min - f_t_max = -0.018
+Step 12, eps = 0.00399, f_c_min - f_t_max = 0.0060
+Step 13, eps = 0.00399, f_c_min - f_t_max = -0.010
+Step 14, eps = 0.00399, f_c_min - f_t_max = -0.002
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 34, true_id = 66, target_label = 0, true_label = 1, robustness = 0.00399
+Step 0, eps = 0.05000, f_c_min - f_t_max = -22.37
+Step 1, eps = 0.01839, f_c_min - f_t_max = -17.97
+Step 2, eps = 0.00677, f_c_min - f_t_max = -3.693
+Step 3, eps = 0.00249, f_c_min - f_t_max = 2.1698
+Step 4, eps = 0.00410, f_c_min - f_t_max = 0.3392
+Step 5, eps = 0.00527, f_c_min - f_t_max = -1.282
+Step 6, eps = 0.00465, f_c_min - f_t_max = -0.406
+Step 7, eps = 0.00437, f_c_min - f_t_max = -0.024
+Step 8, eps = 0.00423, f_c_min - f_t_max = 0.1575
+Step 9, eps = 0.00430, f_c_min - f_t_max = 0.0661
+Step 10, eps = 0.00433, f_c_min - f_t_max = 0.0166
+Step 11, eps = 0.00435, f_c_min - f_t_max = 0.0006
+Step 12, eps = 0.00436, f_c_min - f_t_max = -0.002
+Step 13, eps = 0.00436, f_c_min - f_t_max = -0.001
+Step 14, eps = 0.00435, f_c_min - f_t_max = 0.0024
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 35, true_id = 67, target_label = 5, true_label = 2, robustness = 0.00435
+Step 0, eps = 0.05000, f_c_min - f_t_max = -24.80
+Step 1, eps = 0.01839, f_c_min - f_t_max = -23.02
+Step 2, eps = 0.00677, f_c_min - f_t_max = -14.17
+Step 3, eps = 0.00249, f_c_min - f_t_max = -0.931
+Step 4, eps = 0.00092, f_c_min - f_t_max = 4.1500
+Step 5, eps = 0.00151, f_c_min - f_t_max = 2.5015
+Step 6, eps = 0.00194, f_c_min - f_t_max = 1.0697
+Step 7, eps = 0.00220, f_c_min - f_t_max = 0.1454
+Step 8, eps = 0.00234, f_c_min - f_t_max = -0.373
+Step 9, eps = 0.00227, f_c_min - f_t_max = -0.107
+Step 10, eps = 0.00223, f_c_min - f_t_max = 0.0210
+Step 11, eps = 0.00225, f_c_min - f_t_max = -0.042
+Step 12, eps = 0.00224, f_c_min - f_t_max = -0.013
+Step 13, eps = 0.00224, f_c_min - f_t_max = 0.0033
+Step 14, eps = 0.00224, f_c_min - f_t_max = -0.005
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 36, true_id = 68, target_label = 8, true_label = 3, robustness = 0.00224
+Step 0, eps = 0.05000, f_c_min - f_t_max = -22.38
+Step 1, eps = 0.01839, f_c_min - f_t_max = -18.20
+Step 2, eps = 0.00677, f_c_min - f_t_max = -5.525
+Step 3, eps = 0.00249, f_c_min - f_t_max = -0.233
+Step 4, eps = 0.00092, f_c_min - f_t_max = 0.7917
+Step 5, eps = 0.00151, f_c_min - f_t_max = 0.4564
+Step 6, eps = 0.00194, f_c_min - f_t_max = 0.1774
+Step 7, eps = 0.00220, f_c_min - f_t_max = -0.006
+Step 8, eps = 0.00206, f_c_min - f_t_max = 0.0893
+Step 9, eps = 0.00213, f_c_min - f_t_max = 0.0425
+Step 10, eps = 0.00216, f_c_min - f_t_max = 0.0209
+Step 11, eps = 0.00218, f_c_min - f_t_max = 0.0074
+Step 12, eps = 0.00219, f_c_min - f_t_max = -0.001
+Step 13, eps = 0.00218, f_c_min - f_t_max = 0.0033
+Step 14, eps = 0.00219, f_c_min - f_t_max = 0.0003
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 37, true_id = 70, target_label = 5, true_label = 2, robustness = 0.00219
+Step 0, eps = 0.05000, f_c_min - f_t_max = -30.97
+Step 1, eps = 0.01839, f_c_min - f_t_max = -26.09
+Step 2, eps = 0.00677, f_c_min - f_t_max = -8.536
+Step 3, eps = 0.00249, f_c_min - f_t_max = 4.0513
+Step 4, eps = 0.00410, f_c_min - f_t_max = 0.5387
+Step 5, eps = 0.00527, f_c_min - f_t_max = -3.264
+Step 6, eps = 0.00465, f_c_min - f_t_max = -1.144
+Step 7, eps = 0.00437, f_c_min - f_t_max = -0.257
+Step 8, eps = 0.00423, f_c_min - f_t_max = 0.1545
+Step 9, eps = 0.00430, f_c_min - f_t_max = -0.045
+Step 10, eps = 0.00427, f_c_min - f_t_max = 0.0545
+Step 11, eps = 0.00428, f_c_min - f_t_max = 0.0090
+Step 12, eps = 0.00429, f_c_min - f_t_max = -0.020
+Step 13, eps = 0.00429, f_c_min - f_t_max = -0.005
+Step 14, eps = 0.00429, f_c_min - f_t_max = -0.001
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 38, true_id = 73, target_label = 9, true_label = 8, robustness = 0.00428
+Step 0, eps = 0.05000, f_c_min - f_t_max = -19.26
+Step 1, eps = 0.01839, f_c_min - f_t_max = -15.36
+Step 2, eps = 0.00677, f_c_min - f_t_max = -6.666
+Step 3, eps = 0.00249, f_c_min - f_t_max = 0.1691
+Step 4, eps = 0.00410, f_c_min - f_t_max = -2.565
+Step 5, eps = 0.00320, f_c_min - f_t_max = -1.001
+Step 6, eps = 0.00282, f_c_min - f_t_max = -0.365
+Step 7, eps = 0.00265, f_c_min - f_t_max = -0.085
+Step 8, eps = 0.00257, f_c_min - f_t_max = 0.0450
+Step 9, eps = 0.00261, f_c_min - f_t_max = -0.020
+Step 10, eps = 0.00259, f_c_min - f_t_max = 0.0128
+Step 11, eps = 0.00260, f_c_min - f_t_max = -0.003
+Step 12, eps = 0.00259, f_c_min - f_t_max = 0.0041
+Step 13, eps = 0.00260, f_c_min - f_t_max = -0.000
+Step 14, eps = 0.00259, f_c_min - f_t_max = 0.0021
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 39, true_id = 74, target_label = 2, true_label = 0, robustness = 0.00259
+Step 0, eps = 0.05000, f_c_min - f_t_max = -30.55
+Step 1, eps = 0.01839, f_c_min - f_t_max = -24.24
+Step 2, eps = 0.00677, f_c_min - f_t_max = -9.386
+Step 3, eps = 0.00249, f_c_min - f_t_max = 1.0389
+Step 4, eps = 0.00410, f_c_min - f_t_max = -2.809
+Step 5, eps = 0.00320, f_c_min - f_t_max = -0.618
+Step 6, eps = 0.00282, f_c_min - f_t_max = 0.2650
+Step 7, eps = 0.00300, f_c_min - f_t_max = -0.163
+Step 8, eps = 0.00291, f_c_min - f_t_max = 0.0552
+Step 9, eps = 0.00296, f_c_min - f_t_max = -0.051
+Step 10, eps = 0.00293, f_c_min - f_t_max = 0.0031
+Step 11, eps = 0.00294, f_c_min - f_t_max = -0.024
+Step 12, eps = 0.00294, f_c_min - f_t_max = -0.010
+Step 13, eps = 0.00294, f_c_min - f_t_max = -0.005
+Step 14, eps = 0.00293, f_c_min - f_t_max = 0.0008
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 40, true_id = 76, target_label = 5, true_label = 9, robustness = 0.00293
+Step 0, eps = 0.05000, f_c_min - f_t_max = -33.88
+Step 1, eps = 0.01839, f_c_min - f_t_max = -28.64
+Step 2, eps = 0.00677, f_c_min - f_t_max = -10.33
+Step 3, eps = 0.00249, f_c_min - f_t_max = -0.226
+Step 4, eps = 0.00092, f_c_min - f_t_max = 2.0923
+Step 5, eps = 0.00151, f_c_min - f_t_max = 1.3204
+Step 6, eps = 0.00194, f_c_min - f_t_max = 0.6851
+Step 7, eps = 0.00220, f_c_min - f_t_max = 0.2723
+Step 8, eps = 0.00234, f_c_min - f_t_max = 0.0347
+Step 9, eps = 0.00241, f_c_min - f_t_max = -0.092
+Step 10, eps = 0.00238, f_c_min - f_t_max = -0.027
+Step 11, eps = 0.00236, f_c_min - f_t_max = 0.0024
+Step 12, eps = 0.00237, f_c_min - f_t_max = -0.012
+Step 13, eps = 0.00236, f_c_min - f_t_max = -0.005
+Step 14, eps = 0.00236, f_c_min - f_t_max = -0.001
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 41, true_id = 79, target_label = 1, true_label = 8, robustness = 0.00236
+Step 0, eps = 0.05000, f_c_min - f_t_max = -30.53
+Step 1, eps = 0.01839, f_c_min - f_t_max = -25.35
+Step 2, eps = 0.00677, f_c_min - f_t_max = -7.587
+Step 3, eps = 0.00249, f_c_min - f_t_max = 4.6970
+Step 4, eps = 0.00410, f_c_min - f_t_max = 0.8112
+Step 5, eps = 0.00527, f_c_min - f_t_max = -2.780
+Step 6, eps = 0.00465, f_c_min - f_t_max = -0.799
+Step 7, eps = 0.00437, f_c_min - f_t_max = 0.0483
+Step 8, eps = 0.00451, f_c_min - f_t_max = -0.364
+Step 9, eps = 0.00444, f_c_min - f_t_max = -0.154
+Step 10, eps = 0.00440, f_c_min - f_t_max = -0.053
+Step 11, eps = 0.00439, f_c_min - f_t_max = -0.003
+Step 12, eps = 0.00438, f_c_min - f_t_max = 0.0257
+Step 13, eps = 0.00438, f_c_min - f_t_max = 0.0063
+Step 14, eps = 0.00438, f_c_min - f_t_max = 0.0058
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 42, true_id = 80, target_label = 7, true_label = 8, robustness = 0.00438
+Step 0, eps = 0.05000, f_c_min - f_t_max = -21.45
+Step 1, eps = 0.01839, f_c_min - f_t_max = -15.00
+Step 2, eps = 0.00677, f_c_min - f_t_max = -1.680
+Step 3, eps = 0.00249, f_c_min - f_t_max = 2.1944
+Step 4, eps = 0.00410, f_c_min - f_t_max = 1.0588
+Step 5, eps = 0.00527, f_c_min - f_t_max = -0.015
+Step 6, eps = 0.00465, f_c_min - f_t_max = 0.5796
+Step 7, eps = 0.00495, f_c_min - f_t_max = 0.2977
+Step 8, eps = 0.00511, f_c_min - f_t_max = 0.1430
+Step 9, eps = 0.00519, f_c_min - f_t_max = 0.0662
+Step 10, eps = 0.00523, f_c_min - f_t_max = 0.0263
+Step 11, eps = 0.00525, f_c_min - f_t_max = 0.0025
+Step 12, eps = 0.00526, f_c_min - f_t_max = -0.007
+Step 13, eps = 0.00525, f_c_min - f_t_max = -0.003
+Step 14, eps = 0.00525, f_c_min - f_t_max = 0.0003/home/asus/miniconda3/envs/dualapp-old/lib/python3.7/site-packages/numba/core/ir_utils.py:2067: NumbaPendingDeprecationWarning: 
+Encountered the use of a type that is scheduled for deprecation: type 'reflected list' found for argument 'strategy_map_LB' of function 'compute_bounds'.
+
+For more information visit https://numba.pydata.org/numba-doc/latest/reference/deprecation.html#deprecation-of-reflection-for-list-and-set-types
+
+File "cnn_bounds_core.py", line 404:
+@njit
+def compute_bounds(weights, biases, out_shape, nlayer, x0, eps, p_n, strides, pads, LBs, UBs, strategy_map_LB, strategy_map_UB, method):
+^
+
+  warnings.warn(NumbaPendingDeprecationWarning(msg, loc=loc))
+/home/asus/miniconda3/envs/dualapp-old/lib/python3.7/site-packages/numba/core/ir_utils.py:2067: NumbaPendingDeprecationWarning: 
+Encountered the use of a type that is scheduled for deprecation: type 'reflected list' found for argument 'strategy_map_UB' of function 'compute_bounds'.
+
+For more information visit https://numba.pydata.org/numba-doc/latest/reference/deprecation.html#deprecation-of-reflection-for-list-and-set-types
+
+File "cnn_bounds_core.py", line 404:
+@njit
+def compute_bounds(weights, biases, out_shape, nlayer, x0, eps, p_n, strides, pads, LBs, UBs, strategy_map_LB, strategy_map_UB, method):
+^
+
+  warnings.warn(NumbaPendingDeprecationWarning(msg, loc=loc))
+/home/asus/miniconda3/envs/dualapp-old/lib/python3.7/site-packages/numba/core/ir_utils.py:2067: NumbaPendingDeprecationWarning: 
+Encountered the use of a type that is scheduled for deprecation: type 'reflected list' found for argument 'strategy_map_LB' of function 'compute_bounds'.
+
+For more information visit https://numba.pydata.org/numba-doc/latest/reference/deprecation.html#deprecation-of-reflection-for-list-and-set-types
+
+File "cnn_bounds_core.py", line 404:
+@njit
+def compute_bounds(weights, biases, out_shape, nlayer, x0, eps, p_n, strides, pads, LBs, UBs, strategy_map_LB, strategy_map_UB, method):
+^
+
+  warnings.warn(NumbaPendingDeprecationWarning(msg, loc=loc))
+/home/asus/miniconda3/envs/dualapp-old/lib/python3.7/site-packages/numba/core/ir_utils.py:2067: NumbaPendingDeprecationWarning: 
+Encountered the use of a type that is scheduled for deprecation: type 'reflected list' found for argument 'strategy_map_UB' of function 'compute_bounds'.
+
+For more information visit https://numba.pydata.org/numba-doc/latest/reference/deprecation.html#deprecation-of-reflection-for-list-and-set-types
+
+File "cnn_bounds_core.py", line 404:
+@njit
+def compute_bounds(weights, biases, out_shape, nlayer, x0, eps, p_n, strides, pads, LBs, UBs, strategy_map_LB, strategy_map_UB, method):
+^
+
+  warnings.warn(NumbaPendingDeprecationWarning(msg, loc=loc))
+/home/asus/miniconda3/envs/dualapp-old/lib/python3.7/site-packages/numba/core/ir_utils.py:2067: NumbaPendingDeprecationWarning: 
+Encountered the use of a type that is scheduled for deprecation: type 'reflected list' found for argument 'strategy_map_LB' of function 'compute_bounds'.
+
+For more information visit https://numba.pydata.org/numba-doc/latest/reference/deprecation.html#deprecation-of-reflection-for-list-and-set-types
+
+File "cnn_bounds_core.py", line 404:
+@njit
+def compute_bounds(weights, biases, out_shape, nlayer, x0, eps, p_n, strides, pads, LBs, UBs, strategy_map_LB, strategy_map_UB, method):
+^
+
+  warnings.warn(NumbaPendingDeprecationWarning(msg, loc=loc))
+/home/asus/miniconda3/envs/dualapp-old/lib/python3.7/site-packages/numba/core/ir_utils.py:2067: NumbaPendingDeprecationWarning: 
+Encountered the use of a type that is scheduled for deprecation: type 'reflected list' found for argument 'strategy_map_UB' of function 'compute_bounds'.
+
+For more information visit https://numba.pydata.org/numba-doc/latest/reference/deprecation.html#deprecation-of-reflection-for-list-and-set-types
+
+File "cnn_bounds_core.py", line 404:
+@njit
+def compute_bounds(weights, biases, out_shape, nlayer, x0, eps, p_n, strides, pads, LBs, UBs, strategy_map_LB, strategy_map_UB, method):
+^
+
+  warnings.warn(NumbaPendingDeprecationWarning(msg, loc=loc))
+/home/asus/DualApp/cnn_bounds.py:364: NumbaPerformanceWarning: np.dot() is faster on contiguous arrays, called on (array(float32, 2d, A), array(float32, 2d, A))
+  A_new[x,y,:,t,u,:] += np.dot(A[x,y,:,p,q,:],W[:,t-inner_stride[0]*p,u-inner_stride[1]*q,:])
+/home/asus/DualApp/cnn_bounds.py:367: NumbaPerformanceWarning: np.dot() is faster on contiguous arrays, called on (array(float32, 2d, A), array(float32, 1d, C))
+  B_new[x,y,:] += np.dot(A[x,y,:,p,q,:],b)
+
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 43, true_id = 84, target_label = 6, true_label = 2, robustness = 0.00525
+Step 0, eps = 0.05000, f_c_min - f_t_max = -21.65
+Step 1, eps = 0.01839, f_c_min - f_t_max = -19.27
+Step 2, eps = 0.00677, f_c_min - f_t_max = -8.635
+Step 3, eps = 0.00249, f_c_min - f_t_max = 0.5290
+Step 4, eps = 0.00410, f_c_min - f_t_max = -2.583
+Step 5, eps = 0.00320, f_c_min - f_t_max = -0.697
+Step 6, eps = 0.00282, f_c_min - f_t_max = -0.016
+Step 7, eps = 0.00265, f_c_min - f_t_max = 0.2684
+Step 8, eps = 0.00273, f_c_min - f_t_max = 0.1280
+Step 9, eps = 0.00278, f_c_min - f_t_max = 0.0548
+Step 10, eps = 0.00280, f_c_min - f_t_max = 0.0174
+Step 11, eps = 0.00281, f_c_min - f_t_max = -0.002
+Step 12, eps = 0.00280, f_c_min - f_t_max = 0.0098
+Step 13, eps = 0.00281, f_c_min - f_t_max = 0.0039
+Step 14, eps = 0.00281, f_c_min - f_t_max = -0.000
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 44, true_id = 86, target_label = 6, true_label = 2, robustness = 0.00281
+Step 0, eps = 0.05000, f_c_min - f_t_max = -33.52
+Step 1, eps = 0.01839, f_c_min - f_t_max = -28.15
+Step 2, eps = 0.00677, f_c_min - f_t_max = -10.50
+Step 3, eps = 0.00249, f_c_min - f_t_max = 0.6090
+Step 4, eps = 0.00410, f_c_min - f_t_max = -2.992
+Step 5, eps = 0.00320, f_c_min - f_t_max = -0.813
+Step 6, eps = 0.00282, f_c_min - f_t_max = -0.022
+Step 7, eps = 0.00265, f_c_min - f_t_max = 0.3046
+Step 8, eps = 0.00273, f_c_min - f_t_max = 0.1440
+Step 9, eps = 0.00278, f_c_min - f_t_max = 0.0603
+Step 10, eps = 0.00280, f_c_min - f_t_max = 0.0161
+Step 11, eps = 0.00281, f_c_min - f_t_max = -0.008
+Step 12, eps = 0.00280, f_c_min - f_t_max = 0.0060
+Step 13, eps = 0.00281, f_c_min - f_t_max = -0.001
+Step 14, eps = 0.00281, f_c_min - f_t_max = 0.0030
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 45, true_id = 88, target_label = 1, true_label = 8, robustness = 0.00281
+Step 0, eps = 0.05000, f_c_min - f_t_max = -35.30
+Step 1, eps = 0.01839, f_c_min - f_t_max = -26.42
+Step 2, eps = 0.00677, f_c_min - f_t_max = -3.675
+Step 3, eps = 0.00249, f_c_min - f_t_max = 6.2919
+Step 4, eps = 0.00410, f_c_min - f_t_max = 4.0533
+Step 5, eps = 0.00527, f_c_min - f_t_max = 1.4937
+Step 6, eps = 0.00597, f_c_min - f_t_max = -0.647
+Step 7, eps = 0.00561, f_c_min - f_t_max = 0.5253
+Step 8, eps = 0.00579, f_c_min - f_t_max = -0.037
+Step 9, eps = 0.00570, f_c_min - f_t_max = 0.2524
+Step 10, eps = 0.00574, f_c_min - f_t_max = 0.1088
+Step 11, eps = 0.00577, f_c_min - f_t_max = 0.0371
+Step 12, eps = 0.00578, f_c_min - f_t_max = 0.0001
+Step 13, eps = 0.00578, f_c_min - f_t_max = -0.017
+Step 14, eps = 0.00578, f_c_min - f_t_max = -0.012
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 46, true_id = 89, target_label = 7, true_label = 9, robustness = 0.00578
+Step 0, eps = 0.05000, f_c_min - f_t_max = -18.94
+Step 1, eps = 0.01839, f_c_min - f_t_max = -15.94
+Step 2, eps = 0.00677, f_c_min - f_t_max = -5.300
+Step 3, eps = 0.00249, f_c_min - f_t_max = 2.3758
+Step 4, eps = 0.00410, f_c_min - f_t_max = -0.148
+Step 5, eps = 0.00320, f_c_min - f_t_max = 1.4167
+Step 6, eps = 0.00362, f_c_min - f_t_max = 0.7300
+Step 7, eps = 0.00386, f_c_min - f_t_max = 0.3161
+Step 8, eps = 0.00398, f_c_min - f_t_max = 0.0927
+Step 9, eps = 0.00404, f_c_min - f_t_max = -0.026
+Step 10, eps = 0.00401, f_c_min - f_t_max = 0.0317
+Step 11, eps = 0.00402, f_c_min - f_t_max = 0.0034
+Step 12, eps = 0.00403, f_c_min - f_t_max = -0.011
+Step 13, eps = 0.00403, f_c_min - f_t_max = -0.003
+Step 14, eps = 0.00403, f_c_min - f_t_max = 0.0015
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 47, true_id = 90, target_label = 2, true_label = 0, robustness = 0.00403
+Step 0, eps = 0.05000, f_c_min - f_t_max = -30.17
+Step 1, eps = 0.01839, f_c_min - f_t_max = -23.39
+Step 2, eps = 0.00677, f_c_min - f_t_max = -2.279
+Step 3, eps = 0.00249, f_c_min - f_t_max = 3.8956
+Step 4, eps = 0.00410, f_c_min - f_t_max = 2.3040
+Step 5, eps = 0.00527, f_c_min - f_t_max = 0.6361
+Step 6, eps = 0.00597, f_c_min - f_t_max = -0.617
+Step 7, eps = 0.00561, f_c_min - f_t_max = 0.0523
+Step 8, eps = 0.00579, f_c_min - f_t_max = -0.268
+Step 9, eps = 0.00570, f_c_min - f_t_max = -0.108
+Step 10, eps = 0.00565, f_c_min - f_t_max = -0.024
+Step 11, eps = 0.00563, f_c_min - f_t_max = 0.0173
+Step 12, eps = 0.00564, f_c_min - f_t_max = -0.005
+Step 13, eps = 0.00564, f_c_min - f_t_max = 0.0021
+Step 14, eps = 0.00564, f_c_min - f_t_max = -0.005
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 48, true_id = 92, target_label = 9, true_label = 8, robustness = 0.00564
+Step 0, eps = 0.05000, f_c_min - f_t_max = -28.20
+Step 1, eps = 0.01839, f_c_min - f_t_max = -22.24
+Step 2, eps = 0.00677, f_c_min - f_t_max = -7.616
+Step 3, eps = 0.00249, f_c_min - f_t_max = 2.4809
+Step 4, eps = 0.00410, f_c_min - f_t_max = 0.2688
+Step 5, eps = 0.00527, f_c_min - f_t_max = -2.536
+Step 6, eps = 0.00465, f_c_min - f_t_max = -0.889
+Step 7, eps = 0.00437, f_c_min - f_t_max = -0.258
+Step 8, eps = 0.00423, f_c_min - f_t_max = 0.0127
+Step 9, eps = 0.00430, f_c_min - f_t_max = -0.119
+Step 10, eps = 0.00427, f_c_min - f_t_max = -0.051
+Step 11, eps = 0.00425, f_c_min - f_t_max = -0.020
+Step 12, eps = 0.00424, f_c_min - f_t_max = -0.001
+Step 13, eps = 0.00424, f_c_min - f_t_max = 0.0094
+Step 14, eps = 0.00424, f_c_min - f_t_max = 0.0006
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 49, true_id = 93, target_label = 0, true_label = 6, robustness = 0.00424
+Step 0, eps = 0.05000, f_c_min - f_t_max = -25.96
+Step 1, eps = 0.01839, f_c_min - f_t_max = -21.87
+Step 2, eps = 0.00677, f_c_min - f_t_max = -8.946
+Step 3, eps = 0.00249, f_c_min - f_t_max = -1.504
+Step 4, eps = 0.00092, f_c_min - f_t_max = 0.2752
+Step 5, eps = 0.00151, f_c_min - f_t_max = -0.325
+Step 6, eps = 0.00118, f_c_min - f_t_max = 0.0228
+Step 7, eps = 0.00133, f_c_min - f_t_max = -0.136
+Step 8, eps = 0.00125, f_c_min - f_t_max = -0.053
+Step 9, eps = 0.00121, f_c_min - f_t_max = -0.014
+Step 10, eps = 0.00119, f_c_min - f_t_max = 0.0042
+Step 11, eps = 0.00120, f_c_min - f_t_max = -0.004
+Step 12, eps = 0.00120, f_c_min - f_t_max = -0.000
+Step 13, eps = 0.00120, f_c_min - f_t_max = 0.0023
+Step 14, eps = 0.00120, f_c_min - f_t_max = 0.0007
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 50, true_id = 95, target_label = 4, true_label = 6, robustness = 0.00120
+Step 0, eps = 0.05000, f_c_min - f_t_max = -27.23
+Step 1, eps = 0.01839, f_c_min - f_t_max = -20.89
+Step 2, eps = 0.00677, f_c_min - f_t_max = -6.792
+Step 3, eps = 0.00249, f_c_min - f_t_max = -0.257
+Step 4, eps = 0.00092, f_c_min - f_t_max = 1.2130
+Step 5, eps = 0.00151, f_c_min - f_t_max = 0.7092
+Step 6, eps = 0.00194, f_c_min - f_t_max = 0.3075
+Step 7, eps = 0.00220, f_c_min - f_t_max = 0.0489
+Step 8, eps = 0.00234, f_c_min - f_t_max = -0.097
+Step 9, eps = 0.00227, f_c_min - f_t_max = -0.022
+Step 10, eps = 0.00223, f_c_min - f_t_max = 0.0151
+Step 11, eps = 0.00225, f_c_min - f_t_max = -0.004
+Step 12, eps = 0.00224, f_c_min - f_t_max = 0.0044
+Step 13, eps = 0.00224, f_c_min - f_t_max = 0.0007
+Step 14, eps = 0.00225, f_c_min - f_t_max = -0.002
+method = guided_by_endpoint-sigmoid, model = pretrained_model/table1/cifar10_ffnn_5x100.h5, image no = 51, true_id = 99, target_label = 5, true_label = 7, robustness = 0.00224
+sampling total time: 476.9911541938782, GD total time: 0, len_inputs: 52
+[L0] method = guided_by_endpoint-sigmoid, total images = 52, avg robustness = 0.00370, avg verify runtime = 1.92, avg sample runtime = 9.17, avg GD runtime = 0.00, sample num = 1000, step = 15
+[L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.00370, std = 0.00166, var = 0.00000, max = 0.00773, min = 0.00098

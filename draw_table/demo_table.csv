@@ -1,0 +1,3 @@
+Dataset,Model,Nodes,DA bounds,DA time (s)
+Mnist,CNN 4-5,8690,0.05819,12.479999999999999
+Cifar-10,FNN 5x100,510,0.00370,11.09
