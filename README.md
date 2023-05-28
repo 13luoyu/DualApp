@@ -114,59 +114,50 @@ We also provide commands that will install all the necessary dependencies step b
 
 1. To obtain the results in Figure 8, run:
     ```
-    python main_figure_8.py
+    nohup ./run_figure_8.sh >logs/run_figure_8.log &
     ```
-    Then, record the verified robustness ratios in each experiment to a *.txt* file and run **draw_figure_8/draw.sh** to draw images. The example *.txt* files are given in **draw_figure_8/**. The first part is the perturbations, and the rests are the verified robustness ratio for DualApp on Sigmoid, DualApp on Tanh, $\alpha$-$\beta$-CROWN on Sigmoid, $\alpha$-$\beta$-CROWN on Tanh, ERAN on Sigmoid, and ERAN on Tanh, respectively.
+    After the command finishes running, the process will reorganize the log and draw figures. The figures are stored in **draw_figure_8/**, e.g., the result figure for verifying the fc model trained on Mnist with normal method (Figure 8(a)) is **draw_figure_8/mnist_fc_normal.png**.
     
-    Example output of Figure 8 (models with sigmoid activation function on Mnist):
-    
-    | Model | Epsilon | Verified Robustness Ratio (%) |
-    |:--------:|:-------------:|:-------------:|
-    | FC 6*500 | 0.01 | 93.68 |
-    | FC 6*500 | 0.02 | 84.21 |
-    | FC 6*500 | 0.03 | 66.32 |
-    | FC 6*500 | 0.04 | 46.32 |
-    | FC PGD 0.1 | 0.02 | 98.00 |
-    | FC PGD 0.1 | 0.04 | 97.00 |
-    | FC PGD 0.1 | 0.06 | 93.00 |
-    | FC PGD 0.3 | 0.04 | 92.78 |
-    | FC PGD 0.3 | 0.06 | 85.57 |
-    | FC PGD 0.3 | 0.08 | 78.35 |
-    | FC PGD 0.3 | 0.1 | 63.92 |
+    ![draw_figure_8/mnist_fc_normal.png](draw_figure_8/mnist_fc_normal.png)
+
 
 
 2. To obtain the results in Table 1, run:
     ```
-    python main_table_1.py
+    nohup ./run_table_1.sh >logs/run_table_1.log &
     ```
 
-    Example output of Figure 8 (models with sigmoid activation function on Mnist):
+    After the command finishes running, the results are organized into tabular data in *CSV* format and stored in **draw_table/table_1.csv**. Example output of Table 1 (on Mnist) are:
     
-    | Model | Certified Lower Bound |
-    |:--------:|:-------------:|
-    | CNN 4-5 | 0.05819 |
-    | CNN 5-5 | 0.05985 |
-    | CNN 6-5 | 0.06450 |
-    | CNN 8-5 | 0.11412 |
-    | FNN 5*100 | 0.00633 |
-    | FNN 6*200 | 0.02969 |
+    | Dataset | Model | Nodes | DA Bounds | NW Bounds | NW Impr (%) | DC Bounds | DC Impr (%) | VN Bounds | VN Impr (%) | RV Bounds | RV Impr (%) | DA Time (s) | Others Time (s) |
+    |--|--------|-------------|--|--|--|--|--|--|--|--|--|--|--|
+    | Mnist|CNN 4-5|8690|0.05819|0.05698|2.12|0.05394|7.88|0.05425|7.26|0.05220|11.48|14.88|1.42|
+    |  | CNN 5-5|10690|0.05985|0.05813|2.96|0.05481|9.2|0.05503|8.76|0.05125|16.78|24.41|3.54|
+    |  | CNN 6-5|12300|0.06450|0.06235|3.45|0.05898|9.36|0.05882|9.66|0.05409|19.25|30.91|7.04|
+    |  | CNN 8-5|14570|0.11412|0.11907|-4.16|0.08782|29.95|0.08819|29.4|0.06853|66.53|39.28|13.35|
+    |  | FNN 5x100|510|0.00635|0.00575|10.43|0.00607|4.61|0.00616|3.08|0.00519|22.35|12.53|5.34|
+    |  | FNN 6x200|1210|0.02976|0.02909|2.3|0.02511|18.52|0.02829|5.2|0.01812|64.24|56.76|99.09|
 
 3. To obtain the results in Figure 9, run:
     ```
-    python main_figure_9.py
+    nohup ./run_figure_9.sh >logs/run_figure_9.log &
     ```
-    Then, record the certified lower bounds and time in each experiment and write them to **draw_figure_9/draw.py** to draw images. The example datas are given in **draw_figure_9/draw.py**. 
+    After the command finishes running, the process will reorganize the log and draw figures. The figures are stored in **draw_figure_9/**, e.g., the result figure for exploring the influence of sampling number in Monte Carlo method (Figure 9(a)) is **draw_figure_9/Sampling_fashion_mnist_fnn.png**.
+    
+    ![draw_figure_9/Sampling_fashion_mnist_fnn.png](draw_figure_9/Sampling_fashion_mnist_fnn.png)
 
 4. To obtain the results in Figure 10, run:
     ```
-    python main_figure_10.py
+    nohup ./run_figure_10.sh >logs/run_figure_10.log &
     ```
-    Then, record the certified lower bounds and time in each experiment and write them to **draw_figure_10/draw.py** to draw images. The example datas are given in **draw_figure_10/draw.py**. 
+    After the command finishes running, the process will reorganize the log and draw figures. The figures are stored in **draw_figure_10/**, e.g., the result figure for comparison of Monte Carlo and gradient-based method on FNN and Mnist (Figure 10(a)) is **draw_figure_10/GD_sample_mnist_fnn.png**.
+    
+    ![draw_figure_10/GD_sample_mnist_fnn.png](draw_figure_10/GD_sample_mnist_fnn.png)
 
 
-The corresbonding pretrained models are provided in the folder 'pretrained_model/'. Note that we just submit models used in the experiments in body part of the paper due to the limit of supplementary material. You can refer to https://github.com/13luoyu/trained_network for other models used in Appendix. 
+The corresbonding pretrained models are provided in the folder **pretrained_model/**. Note that we just submit models used in the experiments in body part of the paper due to the limit of supplementary material. You can refer to https://github.com/13luoyu/trained_network for other models used in our [Technical Report](issta2023-DualApp-TR.pdf) Appendix C. 
 
-Results will be saved in 'logs/'. The result of FNNs will be saved in 'logs/cnn_bounds_full_with_LP_xxx.txt', and that of CNNs will be saved in 'logs/cnn_bounds_full_core_with_LP_xxx.txt'. Here xxx refers to the time stamp.
+Results will be saved in **logs/**. The full logs and results are saved in **logs/run_\*.log**. The simplified results of FNNs will be saved in **logs/cnn_bounds_full_with_LP_xxx.txt**, and that of CNNs will be saved in **logs/cnn_bounds_full_core_with_LP_xxx.txt**, where xxx refers to the time stamp.
 
 
 
