@@ -53,21 +53,11 @@ For simplify, we provide a docker image to run:
     conda activate dualapp
     ```
 
-5. Run demo to get parts of the results of DualApp in Table 1, including CNN4-5 on Mnist, Fashion Mnist, and FNN5*100 on Cifar-10.
+5. Run demo to get parts of the results of DualApp in Table 1, including CNN 4-5 on Mnist and FNN 5*100 on Cifar-10.
     ```
     python demo.py
     ```
-    After the command runs, the terminal will print out a series of related information. The result is at the last two rows of each result, like:
-    ```
-    [L0] method = guided_by_endpoint-sigmoid, total images = 97, avg robustness = 0.05819, avg verify runtime = 1.02, avg sample runtime = 13.86, avg GD runtime = 0.00, sample num = 1000, step = 15
-    [L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.05819, std = 0.01627, var = 0.00026, max = 0.10264, min = 0.02296
 
-    [L0] method = guided_by_endpoint-sigmoid, total images = 84, avg robustness = 0.07703, avg verify runtime = 1.06, avg sample runtime = 14.02, avg GD runtime = 0.00, sample num = 1000, step = 15
-    [L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.07703, std = 0.04249, var = 0.00181, max = 0.24479, min = 0.00661
-
-    [L0] method = guided_by_endpoint-sigmoid, total images = 52, avg robustness = 0.00370, avg verify runtime = 4.18, avg sample runtime = 13.72, avg GD runtime = 0.00, sample num = 1000, step = 15
-    [L0] method = guided_by_endpoint-sigmoid, robustness: mean = 0.00370, std = 0.00166, var = 0.00000, max = 0.00773, min = 0.00098
-    ```
 
 ### Install Step-By-Step
 
