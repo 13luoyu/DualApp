@@ -4,5 +4,6 @@
 
 python main_figure_8.py
 cd draw_figure_8
+python reorganize_data.py
 ./draw.sh
 cd ..
