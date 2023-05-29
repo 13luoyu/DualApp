@@ -78,13 +78,19 @@ We also provide commands that will install all the necessary dependencies step b
     sudo apt install build-essential zlib1g-dev libbz2-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev
     sudo apt-get install -y libgl1-mesa-dev
     sudo apt-get install libglib2.0-dev
+    sudo apt install wget
+    sudo apt install git
     ```
 2. Install miniconda.
     ```
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    chmod a+x Miniconda3-latest-Linux-x86_64.sh
     ./Miniconda3-latest-Linux-x86_64.sh
+    cd miniconda3/bin
+    ./conda init
     ```
-3. Create a virtual python environment and install all the required python dependencies(such as numpy and tensorflow).
+3. Restart bash
+4. Create a virtual python environment and install all the required python dependencies(such as numpy and tensorflow).
     ```
     git clone https://github.com/13luoyu/DualApp.git
     cd DualApp
@@ -92,12 +98,12 @@ We also provide commands that will install all the necessary dependencies step b
     conda activate dualapp
     pip install -r requirements.txt
     ```
-4. Modify one file of tensorflow package.
+5. Modify one file of tensorflow package.
     ```
     python modify_file.py
     ```
 
-5. Run demo to get parts of the results of DualApp in Table 1, including CNN 4-5 on Mnist and FNN 5*100 on Cifar-10.
+6. Run demo to get parts of the results of DualApp in Table 1, including CNN 4-5 on Mnist and FNN 5*100 on Cifar-10.
     ```
     nohup ./run_demo.sh >logs/run_demo.log &
     ```
