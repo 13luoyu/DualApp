@@ -18,7 +18,7 @@ DualApp is a prototype tool for the robustness verification of neural networks. 
 >    - main_figure_8.py
 >    - main_figure_9.py
 >    - main_figure_10.py
->    - main_table_1.py
+>    - main_table_2.py
 >    - main_figure_3_approximation_domain.py
 >    - main_figure_3_actual_domain.py
 > - Draw Pictures and Table in Paper: 
@@ -26,7 +26,7 @@ DualApp is a prototype tool for the robustness verification of neural networks. 
 >    - draw_figure_8/draw.py
 >    - draw_figure_9/draw.py
 >    - draw_figure_10/draw.py
->    - draw_table/draw_table_1.py
+>    - draw_table/draw_table_2.py
 > - Log file:
 >    - logs/
 > - Others
@@ -54,7 +54,7 @@ For simplify, we provide a docker image to run:
     conda activate dualapp
     ```
 
-5. Run demo to get parts of the results of DualApp in Table 1, including CNN 4-5 on Mnist and FNN 5*100 on Cifar-10.
+5. Run demo to get parts of the results of DualApp in Table 2, including CNN 4-5 on Mnist and FNN 5*100 on Cifar-10.
     ```
     nohup ./run_demo.sh >logs/run_demo.log &
     ```
@@ -103,7 +103,7 @@ We also provide commands that will install all the necessary dependencies step b
     python modify_file.py
     ```
 
-6. Run demo to get parts of the results of DualApp in Table 1, including CNN 4-5 on Mnist and FNN 5*100 on Cifar-10.
+6. Run demo to get parts of the results of DualApp in Table 2, including CNN 4-5 on Mnist and FNN 5*100 on Cifar-10.
     ```
     nohup ./run_demo.sh >logs/run_demo.log &
     ```
@@ -118,7 +118,7 @@ We also provide commands that will install all the necessary dependencies step b
 
 ## Detailed Instructions
 
-1. To obtain the results in Figure 8, run:
+1. To obtain the results in Figure 8 and Table 1, run:
     ```
     nohup ./run_figure_8.sh >logs/run_figure_8.log &
     ```
@@ -126,14 +126,21 @@ We also provide commands that will install all the necessary dependencies step b
     
     ![draw_figure_8/mnist_fc_normal.png](draw_figure_8/mnist_fc_normal.png)
 
+    The verification time is organized into tabular data in *CSV* format and stored in **draw_table/table_1.csv**. Example output of Table 1 are:
+    | Dataset | Model | DualApp | abCrown | ERAN |
+    |--|--|--|--|--|
+    |MNIST|FC|8.1s|2.3s|14.39s|
+    |MNIST|FC|1.05s|2.25s|3.3s|
+    |MNIST|FC|3.24s|4.46s|34.16s|
+    |MNIST|FC|1.92s|0.88s|6.46s|
 
 
-2. To obtain the results in Table 1, run:
+2. To obtain the results in Table 2, run:
     ```
-    nohup ./run_table_1.sh >logs/run_table_1.log &
+    nohup ./run_table_2.sh >logs/run_table_2.log &
     ```
 
-    After the command finishes running, the results are organized into tabular data in *CSV* format and stored in **draw_table/table_1.csv**. Example output of Table 1 (on Mnist) are:
+    After the command finishes running, the results are organized into tabular data in *CSV* format and stored in **draw_table/table_2.csv**. Example output of Table 2 (on Mnist) are:
     
     | Dataset | Model | Nodes | DA Bounds | NW Bounds | NW Impr (%) | DC Bounds | DC Impr (%) | VN Bounds | VN Impr (%) | RV Bounds | RV Impr (%) | DA Time (s) | Others Time (s) |
     |--|--------|-------------|--|--|--|--|--|--|--|--|--|--|--|

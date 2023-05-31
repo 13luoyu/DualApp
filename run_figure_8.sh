@@ -7,3 +7,6 @@ cd draw_figure_8
 python reorganize_data.py
 ./draw.sh
 cd ..
+cd draw_table
+python draw_table_1.py
+cd ..
