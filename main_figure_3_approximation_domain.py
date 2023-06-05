@@ -3,11 +3,9 @@ from cnn_bounds_for_figure_3 import *
 import os
 
 def printlog(s):
-    print(s, file=open("logs/figure_3_"+timestr+".txt", "a"))
+    print(s, file=open("logs/figure_3_approximation_domain.txt", "a"))
 
 if __name__ == '__main__':
-    
-    # epss = [0.5, 1, 1.5, 2, 2.5]
 
     for i in range(50000):
     
@@ -31,7 +29,7 @@ if __name__ == '__main__':
         X = tf.random.uniform((1,1,2), minval=-1, maxval=1).numpy()
         net(X)
 
-        # 为权重赋值
+        # 为权重赋值，用于Example1, Figure2
         # optimizer2 = tf.keras.optimizers.SGD(lr=1.0)
         # weights = [[1,1],[1,-1]]
         # optimizer2.apply_gradients(zip([net.weights[0]-weights], net.layers[1].trainable_variables))
@@ -57,9 +55,9 @@ if __name__ == '__main__':
         w2 = net.weights[4].numpy()
         printlog("{} {} {} {}".format(w2[0,0], w2[0,1], w2[1,0], w2[1,1]))
 
-        X = np.array([[[0,0]]])
+        # X = np.array([[[0,0]]])
 
-        # X = tf.random.uniform((1,1,2), minval=-1, maxval=1).numpy()
+        X = tf.random.uniform((1,1,2), minval=-1, maxval=1).numpy()
         LB_total, UB_total = run_certified_bounds(model_name, X, method='NeWise')
         printlog("NeWise:")
         printlog("x1:[{} {}]".format(LB_total[0][0][0][0],UB_total[0][0][0][0]))

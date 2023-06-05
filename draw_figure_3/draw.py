@@ -174,8 +174,8 @@ def compute2():
 
 
 
-def draw3():
-    with open("approximation_domain_sigmoid.txt") as f:
+def draw3(app_file, act_file):
+    with open(app_file) as f:
         lines = f.readlines()
     
     real, NW, DC, VN, RV = [], [], [], [], []
@@ -225,7 +225,7 @@ def draw3():
                 ls = l.split(" ")
                 RV.append(float(ls[1]) - float(ls[0]))
     
-    with open("actual_domain_sigmoid.txt") as f:
+    with open(act_file) as f:
         lines = f.readlines()
     i = 0
     for line in lines:
@@ -285,8 +285,10 @@ def draw3():
 
 
 if __name__ == "__main__":
-    # compute()
+    # compute1()
     # compute2()
     draw1()  # draw Figure 3(a)
     # draw2()
-    draw3()  # draw Figure 3(b)
+    draw3("../logs/figure_3_approximation_domain.txt", "../logs/figure_3_actual_domain.txt")  # draw Figure 3(b)
+    # Our data:
+    # draw3("approximation_domain_sigmoid.txt", "actual_domain_sigmoid.txt")

@@ -1,6 +1,8 @@
 import numpy as np
 from scipy.optimize import minimize
-from pprint import pprint
+
+def printlog(s):
+    print(s, file=open("logs/figure_3_actual_domain.txt", "a"))
 
 def sigmoid(x):
     return 1.0 / (1.0 + np.exp(-x))
@@ -155,15 +157,15 @@ def deal_with_sigmoid(file_name):
             y11, y12 = minimize(y1_min(y_args), x0, method="SLSQP", constraints=cons), minimize(y1_max(y_args), x0, method="SLSQP", constraints=cons)
             # y2最小值，最大值
             y21, y22 = minimize(y2_min(y_args), x0, method="SLSQP", constraints=cons), minimize(y2_max(y_args), x0, method="SLSQP", constraints=cons)
-            print("{:.3f} {:.3f}".format(con_args[0], con_args[1]))
-            print("{:.3f} {:.3f}".format(con_args[2], con_args[3]))
-            print("{:.3f} {:.3f}".format(x31.fun, -x32.fun))
-            print("{:.3f} {:.3f}".format(x41.fun, -x42.fun))
-            print("{:.3f} {:.3f}".format(x51.fun, -x52.fun))
-            print("{:.3f} {:.3f}".format(x61.fun, -x62.fun))
-            print("{:.3f} {:.3f}".format(y11.fun, -y12.fun))
-            print("{:.3f} {:.3f}".format(y21.fun, -y22.fun))
-            print()
+            printlog("{:.3f} {:.3f}".format(con_args[0], con_args[1]))
+            printlog("{:.3f} {:.3f}".format(con_args[2], con_args[3]))
+            printlog("{:.3f} {:.3f}".format(x31.fun, -x32.fun))
+            printlog("{:.3f} {:.3f}".format(x41.fun, -x42.fun))
+            printlog("{:.3f} {:.3f}".format(x51.fun, -x52.fun))
+            printlog("{:.3f} {:.3f}".format(x61.fun, -x62.fun))
+            printlog("{:.3f} {:.3f}".format(y11.fun, -y12.fun))
+            printlog("{:.3f} {:.3f}".format(y21.fun, -y22.fun))
+            printlog()
             y_args = []
             con_args = []
             step = 0
@@ -209,15 +211,15 @@ def deal_with_tanh(file_name):
             y11, y12 = minimize(y1_min_2(y_args), x0, method="SLSQP", constraints=cons), minimize(y1_max_2(y_args), x0, method="SLSQP", constraints=cons)
             # y2最小值，最大值
             y21, y22 = minimize(y2_min_2(y_args), x0, method="SLSQP", constraints=cons), minimize(y2_max_2(y_args), x0, method="SLSQP", constraints=cons)
-            print("{:.3f} {:.3f}".format(con_args[0], con_args[1]))
-            print("{:.3f} {:.3f}".format(con_args[2], con_args[3]))
-            print("{:.3f} {:.3f}".format(x31.fun, -x32.fun))
-            print("{:.3f} {:.3f}".format(x41.fun, -x42.fun))
-            print("{:.3f} {:.3f}".format(x51.fun, -x52.fun))
-            print("{:.3f} {:.3f}".format(x61.fun, -x62.fun))
-            print("{:.3f} {:.3f}".format(y11.fun, -y12.fun))
-            print("{:.3f} {:.3f}".format(y21.fun, -y22.fun))
-            print()
+            printlog("{:.3f} {:.3f}".format(con_args[0], con_args[1]))
+            printlog("{:.3f} {:.3f}".format(con_args[2], con_args[3]))
+            printlog("{:.3f} {:.3f}".format(x31.fun, -x32.fun))
+            printlog("{:.3f} {:.3f}".format(x41.fun, -x42.fun))
+            printlog("{:.3f} {:.3f}".format(x51.fun, -x52.fun))
+            printlog("{:.3f} {:.3f}".format(x61.fun, -x62.fun))
+            printlog("{:.3f} {:.3f}".format(y11.fun, -y12.fun))
+            printlog("{:.3f} {:.3f}".format(y21.fun, -y22.fun))
+            printlog()
             y_args = []
             con_args = []
             step = 0
@@ -225,6 +227,5 @@ def deal_with_tanh(file_name):
 
 
 if __name__ == '__main__':
-    # deal_with_sigmoid("table_one_20230213_175411.txt")
+    deal_with_sigmoid("table_one_20230213_175411.txt")
     # deal_with_tanh("table_one_20230213_175924.txt")
-    deal_with_sigmoid("t.txt")

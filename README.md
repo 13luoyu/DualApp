@@ -172,6 +172,14 @@ The corresbonding pretrained models are provided in the folder **pretrained_mode
 
 Results will be saved in **logs/**. The full logs and results are saved in **logs/run_\*.log**. The simplified results of FNNs will be saved in **logs/cnn_bounds_full_with_LP_xxx.txt**, and that of CNNs will be saved in **logs/cnn_bounds_full_core_with_LP_xxx.txt**, where xxx refers to the time stamp.
 
+5. To obtain the results in Figure 3, run:
+    ```
+    nohup ./run_figure_3.sh >logs/run_figure_3.log &
+    ```
+    The command will generate 50,000 neural networks with the same architecture as that in Figure 2 and compute the approximation domains as well as actual domains of each neuron. The overestimation will be computed and organized in Figure. **draw_figure_3/diff_case.png** (Figure 3(a)) shows the overestimation on a network and **draw_figure_3/percentage.png** (Figure 3(b)) shows its distribution. 
+    ![draw_figure_3/diff_case.png](draw_figure_3/diff_case.png)
+    ![draw_figure_3/percentage.png](draw_figure_3/percentage.png)
+
 
 
 ## Interface
